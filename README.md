@@ -1,2 +1,2 @@
-# hckrs-app
-Hckrs.eu's web app and website
+# Hckrs.eu web app and website
+WIP
