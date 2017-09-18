@@ -10,6 +10,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-jss": "latest",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "latest",
     "rebass": "^1.0.4",
     "recompose": "latest",
