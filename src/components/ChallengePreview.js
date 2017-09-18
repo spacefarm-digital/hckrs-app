@@ -2,53 +2,75 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card'
+import Card, { CardActions, CardContent } from 'material-ui/Card'
 import Button from 'material-ui/Button'
 import Typography from 'material-ui/Typography'
+import { Link } from 'react-router-dom'
 
 import placeholder from '../assets/placeholder.jpg'
+
+import { BackgroundImage, Flex, Heading, Text, Image } from 'rebass'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  categories: PropTypes.arrayOf(PropTypes.string),
+  location: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  numberOfHacks: PropTypes.number.isRequired,
+  status: PropTypes.oneOf(['Active', 'Upcoming', 'Past']).isRequired,
+  logo: PropTypes.string.isRequired,
 }
 
 const defaultProps = {
-    title: "Default title",
-    description: "Default description. It will actually be much, much, much longer. Not that much though.",
-    image: "http://d33wubrfki0l68.cloudfront.net/23bb750557ddff734113452c4e5f1bd7f0fa1f98/35c41/static/placeholder-object.9c517475.jpg",
+  title: 'Default title',
+  description:
+    'Default description. It will actually be much, much, much longer. Not that much though.',
+  image: placeholder,
+  location: 'The world',
+  date: '01/01/2017',
+  numberOfHacks: 0,
+  status: 'Upcoming',
+  logo: placeholder,
 }
 
-const WideCardMedia = styled(CardMedia)`
-    height: 0;
-    position: relative;
-    padding-bottom: 56.25%;
-`
-
-const ChallengePreview = (props) => {
+const ChallengePreview = props => {
   return (
     <div>
       <Card>
-        <WideCardMedia image={props.image} title="Contemplative Reptile" />
+        <BackgroundImage
+          src={props.image}
+          title="Contemplative Reptile"
+          ratio={1 / 2}
+        />
         <CardContent>
-          <Typography type="headline" component="h2">
-            {props.title}
-          </Typography>
-          <Typography component="p">{props.description}</Typography>
+          <Flex justify="space-between" mb={2}>
+            <Text>{props.categories}</Text>
+            <Text>{props.status}</Text>
+          </Flex>
+          <Flex align="center" mb={3}>
+            <Image src={props.logo} mr={2} w={40} />
+            <Heading is="h2" f={3}>
+              {props.title}
+            </Heading>
+          </Flex>
+          <Text mb={3}>{props.description}</Text>
+          <Flex justify="space-between" align="center">
+            <Button color="primary" component={Link} to="/mama">
+              {props.numberOfHacks} joined
+            </Button>
+            <Button raised color="primary">
+              See more
+            </Button>
+          </Flex>
         </CardContent>
-        <CardActions>
-          <Button dense color="primary">
-            Share
-          </Button>
-        </CardActions>
       </Card>
     </div>
   )
 }
 
-ChallengePreview.propTypes = propTypes;
-ChallengePreview.defaultProps = defaultProps;
+ChallengePreview.propTypes = propTypes
+ChallengePreview.defaultProps = defaultProps
 
 export default ChallengePreview
