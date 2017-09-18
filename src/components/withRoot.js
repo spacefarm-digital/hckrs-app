@@ -6,6 +6,10 @@ import { withStyles, MuiThemeProvider } from 'material-ui/styles'
 import wrapDisplayName from 'recompose/wrapDisplayName'
 import createContext from '../styles/createContext'
 
+import { Provider } from 'rebass'
+
+import { BrowserRouter } from 'react-router-dom'
+
 // Apply some reset
 const styles = theme => ({
   '@global': {
@@ -38,16 +42,25 @@ function withRoot(BaseComponent) {
 
     render() {
       return (
-        <JssProvider registry={context.sheetsRegistry} jss={context.jss}>
-          <MuiThemeProvider
-            theme={context.theme}
-            sheetsManager={context.sheetsManager}
-          >
-            <AppWrapper>
-              <BaseComponent />
-            </AppWrapper>
-          </MuiThemeProvider>
-        </JssProvider>
+        <BrowserRouter>
+          <JssProvider registry={context.sheetsRegistry} jss={context.jss}>
+            <Provider
+              theme={{
+                font: 'Roboto, Helvetica, sans-serif',
+                fontSizes: [12, 16, 24, 36, 48, 72],
+              }}
+            >
+              <MuiThemeProvider
+                theme={context.theme}
+                sheetsManager={context.sheetsManager}
+              >
+                <AppWrapper>
+                  <BaseComponent />
+                </AppWrapper>
+              </MuiThemeProvider>
+            </Provider>
+          </JssProvider>
+        </BrowserRouter>
       )
     }
   }
