@@ -8,15 +8,20 @@ import ChallengePreview from '../components/ChallengePreview'
 
 import { Container, Box } from 'rebass'
 
+import PrimaryNav from '../components/PrimaryNav'
+
 class Index extends Component {
   render() {
     return (
-      <Container pt={4}>
-        <Box mb={3}>
-          <ProfilePreview />
-        </Box>
-        <ChallengePreview />
-      </Container>
+      <div>
+        <Container pt={4}>
+          <Box mb={3}>
+            <ProfilePreview />
+          </Box>
+          <ChallengePreview />
+        </Container>
+        <PrimaryNav />
+      </div>
     )
   }
 }
