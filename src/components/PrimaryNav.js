@@ -26,7 +26,7 @@ class PrimaryNav extends React.Component {
     const { value } = this.state
 
     return (
-      <Fixed bottom w={1} is="nav">
+      <Fixed bottom w={1} z={999} is="nav">
         <BottomNavigation value={value} onChange={this.handleChange} showLabels>
           <BottomNavigationButton
             label="Home"
