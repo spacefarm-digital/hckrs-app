@@ -3,8 +3,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Card, { CardContent } from 'material-ui/Card'
-import Typography from 'material-ui/Typography'
+import { Text, Heading, Flex, Box } from 'rebass'
 import Grid from 'material-ui/Grid'
+
+import CategoryChip from '../components/CategoryChip'
 
 import { Avatar } from 'rebass'
 
@@ -29,20 +31,29 @@ const ProfilePreview = props => {
   return (
     <Card>
       <CardContent>
-        <Grid container align="center">
-          <Grid item>
+        <Flex mh={-2} w={1}>
+          <Box px={2}>
             <Avatar src={props.avatar} size="4rem" />
-          </Grid>
-          <Grid item>
-            <Typography type="title" component="h2" gutterBottom>
+          </Box>
+          <Box px={2} w={1}>
+            <Heading f={2} is="h2" mb={2}>
               {props.name}
-            </Typography>
-            <Typography>
+            </Heading>
+            <Text bold mb={3}>
               {props.numberOfHacks} hacks, Located in {props.location}
-            </Typography>
-            <Typography>Interested in: {props.categories}</Typography>
-          </Grid>
-        </Grid>
+            </Text>
+            <Text bold mb={2}>
+              Interested in: {props.categories}
+            </Text>
+            <Flex wrap w={1} is="ul" mx={-1}>
+              <Box is="li" px={1} mb={2}>
+                <CategoryChip color="#bcf5dd" to="/category">
+                  ✈️ Aviation
+                </CategoryChip>
+              </Box>
+            </Flex>
+          </Box>
+        </Flex>
       </CardContent>
     </Card>
   )
