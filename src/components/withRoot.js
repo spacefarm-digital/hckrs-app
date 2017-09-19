@@ -8,8 +8,6 @@ import createContext from '../styles/createContext'
 
 import { Provider } from 'rebass'
 
-import { BrowserRouter } from 'react-router-dom'
-
 // Apply some reset
 const styles = theme => ({
   '@global': {
@@ -42,25 +40,23 @@ function withRoot(BaseComponent) {
 
     render() {
       return (
-        <BrowserRouter>
-          <JssProvider registry={context.sheetsRegistry} jss={context.jss}>
-            <Provider
-              theme={{
-                font: 'Roboto, Helvetica, sans-serif',
-                fontSizes: [12, 16, 24, 36, 48, 72],
-              }}
+        <JssProvider registry={context.sheetsRegistry} jss={context.jss}>
+          <Provider
+            theme={{
+              font: 'Roboto, Helvetica, sans-serif',
+              fontSizes: [12, 16, 24, 36, 48, 72],
+            }}
+          >
+            <MuiThemeProvider
+              theme={context.theme}
+              sheetsManager={context.sheetsManager}
             >
-              <MuiThemeProvider
-                theme={context.theme}
-                sheetsManager={context.sheetsManager}
-              >
-                <AppWrapper>
-                  <BaseComponent />
-                </AppWrapper>
-              </MuiThemeProvider>
-            </Provider>
-          </JssProvider>
-        </BrowserRouter>
+              <AppWrapper>
+                <BaseComponent />
+              </AppWrapper>
+            </MuiThemeProvider>
+          </Provider>
+        </JssProvider>
       )
     }
   }

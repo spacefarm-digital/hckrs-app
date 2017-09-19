@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
 import CleanLink from '../components/extended/CleanLink'
 
@@ -7,7 +7,8 @@ import { Fixed } from 'rebass'
 import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
-import RestoreIcon from 'material-ui-icons/Restore'
+import HomeIcon from 'material-ui-icons/Home'
+import NotificationsIcon from 'material-ui-icons/Notifications'
 import BusinessIcon from 'material-ui-icons/Business'
 import GroupIcon from 'material-ui-icons/Group'
 import FiberNewIcon from 'material-ui-icons/FiberNew'
@@ -28,8 +29,8 @@ class PrimaryNav extends React.Component {
       <Fixed bottom w={1} is="nav">
         <BottomNavigation value={value} onChange={this.handleChange} showLabels>
           <BottomNavigationButton
-            label="Benefits"
-            icon={<RestoreIcon />}
+            label="Home"
+            icon={<HomeIcon />}
             component={CleanLink}
             to="/"
           />
@@ -37,19 +38,25 @@ class PrimaryNav extends React.Component {
             label="Challenges"
             icon={<BusinessIcon />}
             component={CleanLink}
-            to="/"
+            to="/challenges"
           />
           <BottomNavigationButton
             label="Hackers"
             icon={<GroupIcon />}
             component={CleanLink}
-            to="/"
+            to="/hackers"
           />
           <BottomNavigationButton
             label="News"
             icon={<FiberNewIcon />}
             component={CleanLink}
-            to="/"
+            to="/news"
+          />
+          <BottomNavigationButton
+            label="Activity"
+            icon={<NotificationsIcon />}
+            component={CleanLink}
+            to="/activity"
           />
         </BottomNavigation>
       </Fixed>

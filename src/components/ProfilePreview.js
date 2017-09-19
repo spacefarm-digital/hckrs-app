@@ -2,8 +2,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card'
+import Card, { CardContent } from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
 import Grid from 'material-ui/Grid'
 

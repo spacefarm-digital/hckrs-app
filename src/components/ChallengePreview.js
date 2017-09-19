@@ -2,9 +2,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Card, { CardActions, CardContent } from 'material-ui/Card'
+import Card, { CardContent } from 'material-ui/Card'
 import Button from 'material-ui/Button'
-import Typography from 'material-ui/Typography'
 import { Link } from 'react-router-dom'
 
 import placeholder from '../assets/placeholder.jpg'
@@ -57,7 +56,7 @@ const ChallengePreview = props => {
           </Flex>
           <Text mb={3}>{props.description}</Text>
           <Flex justify="space-between" align="center">
-            <Button color="primary" component={Link} to="/mama">
+            <Button color="primary" component={Link} to="/">
               {props.numberOfHacks} joined
             </Button>
             <Button raised color="primary">

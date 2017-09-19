@@ -1,7 +1,14 @@
 // @flow
 
-import React from 'react';
-import { render } from 'react-dom';
-import Index from './pages/index';
+import React from 'react'
+import { render } from 'react-dom'
+import App from './components/App'
 
-render(<Index />, document.querySelector('#root'));
+import { BrowserRouter } from 'react-router-dom'
+
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.querySelector('#root'),
+)
