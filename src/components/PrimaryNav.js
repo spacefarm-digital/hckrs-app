@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 
+import CleanLink from '../components/extended/CleanLink'
+
 import { Fixed } from 'rebass'
 
 import BottomNavigation, {
@@ -23,17 +25,32 @@ class PrimaryNav extends React.Component {
     const { value } = this.state
 
     return (
-      <Fixed bottom w={1}>
-        <BottomNavigation
-          value={value}
-          color="accent"
-          onChange={this.handleChange}
-          showLabels
-        >
-          <BottomNavigationButton label="Benefits" icon={<RestoreIcon />} />
-          <BottomNavigationButton label="Challenges" icon={<BusinessIcon />} />
-          <BottomNavigationButton label="Hackers" icon={<GroupIcon />} />
-          <BottomNavigationButton label="News" icon={<FiberNewIcon />} />
+      <Fixed bottom w={1} is="nav">
+        <BottomNavigation value={value} onChange={this.handleChange} showLabels>
+          <BottomNavigationButton
+            label="Benefits"
+            icon={<RestoreIcon />}
+            component={CleanLink}
+            to="/"
+          />
+          <BottomNavigationButton
+            label="Challenges"
+            icon={<BusinessIcon />}
+            component={CleanLink}
+            to="/"
+          />
+          <BottomNavigationButton
+            label="Hackers"
+            icon={<GroupIcon />}
+            component={CleanLink}
+            to="/"
+          />
+          <BottomNavigationButton
+            label="News"
+            icon={<FiberNewIcon />}
+            component={CleanLink}
+            to="/"
+          />
         </BottomNavigation>
       </Fixed>
     )
