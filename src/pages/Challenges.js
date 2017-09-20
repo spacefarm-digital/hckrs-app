@@ -15,7 +15,7 @@ class Challenges extends Component {
   render() {
     return (
       <div>
-        <Filter />
+        {/* <Filter /> */}
         {/* Main */}
         <Container is="main">
           {/* <Grid container>
