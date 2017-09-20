@@ -1,11 +1,11 @@
 /* eslint-disable flowtype/require-valid-file-annotation */
 
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import { Container, Box } from "rebass";
+import { Container, Box } from 'rebass'
 
-import ProfilePreview from "../components/ProfilePreview";
-import ChallengePreview from "../components/ChallengePreview";
+import ProfilePreview from '../components/ProfilePreview'
+import ChallengePreview from '../components/ChallengePreview'
 
 class Home extends Component {
   render() {
@@ -16,7 +16,7 @@ class Home extends Component {
         </Box>
         <ChallengePreview />
       </Container>
-    );
+    )
   }
 }
-export default Home;
+export default Home

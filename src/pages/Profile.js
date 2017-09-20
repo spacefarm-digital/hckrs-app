@@ -2,19 +2,17 @@
 
 import React, { Component } from 'react'
 
-import { Container, Box, Heading } from 'rebass'
+import { Container, Box } from 'rebass'
 
-class Hackers extends Component {
+class Profile extends Component {
   render() {
     return (
       <Container pt={4} is="main">
         <Box mb={3}>
-          <Heading f={5} is="h1">
-            Hackers page
-          </Heading>
+          <h1>Profile page</h1>
         </Box>
       </Container>
     )
   }
 }
-export default Hackers
+export default Profile

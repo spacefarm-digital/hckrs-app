@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 import placeholder from '../assets/placeholder.jpg'
 
-import { BackgroundImage, Flex, Heading, Text, Image } from 'rebass'
+import { BackgroundImage, Flex, Box, Heading, Text, Image } from 'rebass'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
@@ -55,13 +55,17 @@ const ChallengePreview = props => {
             </Heading>
           </Flex>
           <Text mb={3}>{props.description}</Text>
-          <Flex justify="space-between" align="center">
-            <Button color="primary" component={Link} to="/">
-              {props.numberOfHacks} joined
-            </Button>
-            <Button raised color="primary">
-              See more
-            </Button>
+          <Flex mx={-1} justify="flex-end" align="center">
+            <Box px={1}>
+              <Button color="primary" component={Link} to="/">
+                {props.numberOfHacks} joined
+              </Button>
+            </Box>
+            <Box px={1}>
+              <Button raised color="primary">
+                See more
+              </Button>
+            </Box>
           </Flex>
         </CardContent>
       </Card>
