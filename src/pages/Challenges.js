@@ -18,13 +18,13 @@ class Challenges extends Component {
         <Filter />
         {/* Main */}
         <Container is="main">
-          <Grid container>
+          {/* <Grid container>
             {[0, 1, 2].map(value => (
               <Grid xs={12} sm={6} lg={4} xl={3} key={value} item>
                 <ChallengePreview />
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
         </Container>
       </div>
     )

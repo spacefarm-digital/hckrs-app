@@ -11,10 +11,10 @@ class Home extends Component {
   render() {
     return (
       <Container pt={4} is="main">
-        <Box mb={3}>
+        {/* <Box mb={3}>
           <ProfilePreview />
         </Box>
-        <ChallengePreview />
+        <ChallengePreview /> */}
       </Container>
     )
   }
