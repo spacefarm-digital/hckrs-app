@@ -14,7 +14,7 @@ import Activity from '../pages/Activity'
 import Test from '../pages/Test'
 import Profile from '../pages/Profile'
 
-import { Container, Box } from 'rebass'
+import { Box } from 'rebass'
 
 class Main extends Component {
   render() {

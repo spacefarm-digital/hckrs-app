@@ -2,15 +2,13 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
-import { Flex, Box, Text, Heading, Fixed } from 'rebass'
+import { Flex, Heading, Fixed } from 'rebass'
 
 import CleanLink from '../components/extended/CleanLink'
 import DesktopTab from '../components/extended/DesktopTab'
 
 import AppBar from 'material-ui/AppBar'
 import Toolbar from 'material-ui/Toolbar'
-import Button from 'material-ui/Button'
-import Icon from 'material-ui/Icon'
 import IconButton from 'material-ui/IconButton'
 import AccountCircleIcon from 'material-ui-icons/AccountCircle'
 
@@ -23,10 +21,7 @@ import BusinessIcon from 'material-ui-icons/Business'
 import GroupIcon from 'material-ui-icons/Group'
 import FiberNewIcon from 'material-ui-icons/FiberNew'
 
-import Tabs, { Tab } from 'material-ui/Tabs'
-import PhoneIcon from 'material-ui-icons/Phone'
-import FavoriteIcon from 'material-ui-icons/Favorite'
-import PersonPinIcon from 'material-ui-icons/PersonPin'
+import Tabs from 'material-ui/Tabs'
 
 const defaultProps = { title: 'Example title' }
 

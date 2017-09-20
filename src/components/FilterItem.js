@@ -5,8 +5,6 @@ import PropTypes from 'prop-types'
 import Menu, { MenuItem } from 'material-ui/Menu'
 import Button from 'material-ui/Button'
 
-import { Text } from 'rebass'
-
 const options = ['⏳ Upcoming', '✅ Active', '🕐 Past']
 class FilterItem extends React.Component {
   state = {

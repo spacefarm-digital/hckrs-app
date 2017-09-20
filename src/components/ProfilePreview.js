@@ -4,7 +4,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Card, { CardContent } from 'material-ui/Card'
 import { Text, Heading, Flex, Box } from 'rebass'
-import Grid from 'material-ui/Grid'
 
 import CategoryChip from '../components/CategoryChip'
 

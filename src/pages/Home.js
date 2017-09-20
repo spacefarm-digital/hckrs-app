@@ -2,10 +2,7 @@
 
 import React, { Component } from 'react'
 
-import { Container, Box } from 'rebass'
-
-import ProfilePreview from '../components/ProfilePreview'
-import ChallengePreview from '../components/ChallengePreview'
+import { Container } from 'rebass'
 
 class Home extends Component {
   render() {

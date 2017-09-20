@@ -1,10 +1,14 @@
 import React from 'react'
-import { Heading } from 'rebass'
+import { Heading, Container } from 'rebass'
+import TypeIcon from '../components/extended/TypeIcon'
 
 const PageTitle = () => (
-  <Heading f={[3, 4]} is="h1">
-    Challenges
-  </Heading>
+  <Container mx="auto">
+    <Heading f={[3, 4]} is="h1" px={3} pt={4} mb={2}>
+      <TypeIcon />
+      Challenges
+    </Heading>
+  </Container>
 )
 
 export default PageTitle
