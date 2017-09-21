@@ -59,3 +59,4 @@ typings/
 
 /public
 /build
+.DS_Store

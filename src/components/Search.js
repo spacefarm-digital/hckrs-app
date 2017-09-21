@@ -1,8 +1,5 @@
 import React from 'react'
 import Input from 'material-ui/Input'
-import style from 'styled-components'
-
-const SearchInput = styled(input)``
 
 const Search = () => (
   <Input

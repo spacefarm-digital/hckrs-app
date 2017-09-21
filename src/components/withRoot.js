@@ -1,7 +1,6 @@
 /* eslint-disable flowtype/require-valid-file-annotation */
 
 import React, { Component } from 'react'
-import JssProvider from 'react-jss/lib/JssProvider'
 import { withStyles, MuiThemeProvider } from 'material-ui/styles'
 import reset from 'reset-css'
 import wrapDisplayName from 'recompose/wrapDisplayName'
@@ -44,25 +43,23 @@ function withRoot(BaseComponent) {
 
     render() {
       return (
-        <JssProvider registry={context.sheetsRegistry} jss={context.jss}>
+        <Provider
+          theme={{
+            font: 'Roboto, Helvetica, sans-serif',
+            fontSizes: [12, 16, 24, 36, 48, 72],
+            weights: [400, 500],
+          }}
+        >
           {/* Rebass theme */}
-          <Provider
-            theme={{
-              font: 'Roboto, Helvetica, sans-serif',
-              fontSizes: [12, 16, 24, 36, 48, 72],
-              weights: [400, 500],
-            }}
+          <MuiThemeProvider
+            theme={context.themeMui}
+            sheetsManager={context.sheetsManager}
           >
-            <MuiThemeProvider
-              theme={context.theme}
-              sheetsManager={context.sheetsManager}
-            >
-              <AppWrapper>
-                <BaseComponent />
-              </AppWrapper>
-            </MuiThemeProvider>
-          </Provider>
-        </JssProvider>
+            <AppWrapper>
+              <BaseComponent />
+            </AppWrapper>
+          </MuiThemeProvider>
+        </Provider>
       )
     }
   }

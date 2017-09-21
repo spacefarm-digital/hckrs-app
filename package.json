@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "autosuggest-highlight": "^3.1.0",
-    "jss": "latest",
-    "jss-preset-default": "latest",
+    "jss": "next",
+    "jss-preset-default": "next",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-beta.10",
     "polished": "^1.7.0",
