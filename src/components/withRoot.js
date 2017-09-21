@@ -18,6 +18,7 @@ const styles = theme => ({
     },
     body: {
       margin: 0,
+      lineHeight: 1.5,
     },
     ul: {
       listStyle: 'none',

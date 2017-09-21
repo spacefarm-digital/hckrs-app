@@ -4,7 +4,7 @@ import Input from 'material-ui/Input'
 const Search = () => (
   <Input
     placeholder="🔍 Search"
-    width={500}
+    fullWidth
     inputProps={{
       'aria-label': 'Search',
     }}
