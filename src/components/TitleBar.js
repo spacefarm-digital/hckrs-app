@@ -5,6 +5,7 @@ import MediaQuery from 'react-responsive'
 import { Flex, Heading, Fixed } from 'rebass'
 
 import CleanLink from '../components/extended/CleanLink'
+import { NavLink } from 'react-router-dom'
 import DesktopTab from '../components/extended/DesktopTab'
 
 import AppBar from 'material-ui/AppBar'
@@ -48,6 +49,7 @@ class TitleBar extends Component {
                 <Tabs
                   value={value}
                   onChange={this.handleChange}
+                  component="nav"
                   showLabels
                   indicatorColor="#ffffff"
                   textColor="#fff"
@@ -55,31 +57,31 @@ class TitleBar extends Component {
                   <DesktopTab
                     icon={<HomeIcon />}
                     label="Home"
-                    component={CleanLink}
+                    component={NavLink}
                     to="/"
                   />
                   <DesktopTab
                     icon={<BusinessIcon />}
                     label="Challenges"
-                    component={CleanLink}
+                    component={NavLink}
                     to="/challenges"
                   />
                   <DesktopTab
                     icon={<GroupIcon />}
                     label="Hackers"
-                    component={CleanLink}
+                    component={NavLink}
                     to="/hackers"
                   />
                   <DesktopTab
                     icon={<FiberNewIcon />}
                     label="News"
-                    component={CleanLink}
+                    component={NavLink}
                     to="/news"
                   />
                   <DesktopTab
                     icon={<NotificationsIcon />}
                     label="Activity"
-                    component={CleanLink}
+                    component={NavLink}
                     to="/activity"
                   />
                 </Tabs>
