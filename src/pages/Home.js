@@ -6,17 +6,17 @@ import { Container, Box } from 'rebass'
 
 import ProfilePreview from '../components/ProfilePreview'
 import ChallengePreview from '../components/ChallengePreview'
+import PageTitle from '../components/PageTitle'
 
-class Home extends Component {
-  render() {
-    return (
-      <Container pt={3} is="main">
-        <Box mb={3}>
-          <ProfilePreview />
-        </Box>
-        <ChallengePreview />
-      </Container>
-    )
-  }
-}
+import HomeIcon from 'material-ui-icons/Home'
+
+const Home = props => (
+  <div>
+    <PageTitle title="Home">
+      <HomeIcon />
+    </PageTitle>
+    <Container is="main" />
+  </div>
+)
+
 export default Home

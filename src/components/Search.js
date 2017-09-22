@@ -9,24 +9,23 @@ import { Relative, Absolute } from 'rebass'
 const PrettyInput = styled(Input)`
   line-height: 1.25 !important;
   height: 38px;
-  padding-left: 2rem !important;
   input {
     padding: 0 !important;
     height: 100% !important;
+    padding-left: 2rem !important;
   }
 `
 
 const Search = () => (
   <Relative>
     <PrettyInput
-      pl={3}
       placeholder="Search..."
       fullWidth
       inputProps={{
         'aria-label': 'Search',
       }}
     />
-    <Absolute left top pt="2.5%">
+    <Absolute left top pt=".5em">
       <Icon color="primary">
         <SearchIcon />
       </Icon>

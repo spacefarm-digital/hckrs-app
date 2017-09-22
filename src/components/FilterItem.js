@@ -10,7 +10,7 @@ class FilterItem extends React.Component {
   state = {
     anchorEl: null,
     open: false,
-    selectedIndex: 2,
+    selectedIndex: 0,
   }
   button = undefined
   handleClickListItem = event => {

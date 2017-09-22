@@ -10,9 +10,13 @@ import Filter from '../components/Filter'
 import ChallengePreview from '../components/ChallengePreview'
 import PageTitle from '../components/PageTitle'
 
+import BusinessIcon from 'material-ui-icons/Business'
+
 const Challenges = () => (
   <div>
-    <PageTitle>Challenges</PageTitle>
+    <PageTitle title="Challenges">
+      <BusinessIcon />
+    </PageTitle>
     <Filter />
     <Container is="main">
       <Grid container>

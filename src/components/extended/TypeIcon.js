@@ -1,12 +1,16 @@
 import styled from 'styled-components'
-import BusinessIcon from 'material-ui-icons/Business'
+import Icon from 'material-ui/Icon'
 
-const TypeIcon = styled(BusinessIcon)`
-  display: block;
+const TypeIcon = styled(Icon)`
+  display: inline-block;
   width: 1em !important;
   height: 1em !important;
   margin-right: 0.2em;
-  vertical-align: -11.5%;
+  vertical-align: -13%;
+  svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
 `
 
 export default TypeIcon

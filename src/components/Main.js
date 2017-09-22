@@ -8,6 +8,7 @@ import { Switch, Route } from 'react-router-dom'
 // Import pages
 import Home from '../pages/Home'
 import Challenges from '../pages/Challenges'
+import Challenge from '../pages/Challenge'
 import Hackers from '../pages/Hackers'
 import News from '../pages/News'
 import Activity from '../pages/Activity'
@@ -23,6 +24,7 @@ class Main extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/challenges" component={Challenges} />
+          <Route path="/challenges/" component={Challenge} />
           <Route path="/hackers" component={Hackers} />
           <Route path="/news" component={News} />
           <Route path="/activity" component={Activity} />

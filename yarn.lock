@@ -953,7 +953,7 @@ babel-register@^6.24.1, babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@6.26.0, babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
+babel-runtime@6.26.0, babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -5532,6 +5532,13 @@ react-scrollbar-size@^2.0.0:
     babel-runtime "^6.23.0"
     prop-types "^15.5.10"
     react-event-listener "^0.4.5"
+
+react-social-icons@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-social-icons/-/react-social-icons-2.7.0.tgz#768db0a3e5d417146aaf6a83c566f743d9b4a269"
+  dependencies:
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
 
 react-themeable@^1.1.0:
   version "1.1.0"

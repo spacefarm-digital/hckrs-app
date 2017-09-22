@@ -34,33 +34,19 @@ const defaultProps = {
   logo: placeholder,
 }
 
-const ChallengePreview = props => {
+const HackPreview = props => {
   return (
     <div>
       <Card>
-        <BackgroundImage
-          src={props.image}
-          title="Contemplative Reptile"
-          ratio={1 / 2}
-        />
         <CardContent>
-          <Flex justify="space-between" mb={2}>
-            <Text>{props.categories}</Text>
-            <Text>{props.status}</Text>
-          </Flex>
-          <Flex align="center" mb={2}>
-            <Image src={props.logo} mr=".5em" w="2em" />
-            <Heading is="h3" f={2}>
-              {props.title}
-            </Heading>
-          </Flex>
+          <Heading is="h3" f={2}>
+            {props.title}
+          </Heading>
+          <Text>
+            In challenge <Link to="/">Challenge name</Link>
+          </Text>
           <Text mb={3}>{props.description}</Text>
           <Flex mx={-1} justify="flex-end" align="center">
-            <Box px={1}>
-              <Button color="primary" component={Link} to="/">
-                {props.numberOfHacks} joined
-              </Button>
-            </Box>
             <Box px={1}>
               <Button raised color="primary">
                 See more
@@ -73,7 +59,7 @@ const ChallengePreview = props => {
   )
 }
 
-ChallengePreview.propTypes = propTypes
-ChallengePreview.defaultProps = defaultProps
+HackPreview.propTypes = propTypes
+HackPreview.defaultProps = defaultProps
 
-export default ChallengePreview
+export default HackPreview

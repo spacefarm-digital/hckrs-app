@@ -7,12 +7,10 @@ import { Flex, Heading, Fixed } from 'rebass'
 import CleanLink from '../components/extended/CleanLink'
 import { NavLink } from 'react-router-dom'
 import DesktopTab from '../components/extended/DesktopTab'
+import ProfileMenu from '../components/ProfileMenu'
 
 import AppBar from 'material-ui/AppBar'
 import Toolbar from 'material-ui/Toolbar'
-import IconButton from 'material-ui/IconButton'
-import AccountCircleIcon from 'material-ui-icons/AccountCircle'
-
 import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
@@ -86,13 +84,7 @@ class TitleBar extends Component {
                   />
                 </Tabs>
               </MediaQuery>
-              <IconButton
-                aria-label="Profile"
-                component={CleanLink}
-                to="/profile"
-              >
-                <AccountCircleIcon color="#ffffff" />
-              </IconButton>
+              <ProfileMenu />
             </Flex>
           </Toolbar>
         </AppBar>

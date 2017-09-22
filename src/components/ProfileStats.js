@@ -8,6 +8,8 @@ import placeholder from '../assets/placeholder-avatar.jpg'
 import CleanLink from '../components/extended/CleanLink'
 import CategoryChip from '../components/CategoryChip'
 
+import { SocialIcon } from 'react-social-icons'
+
 const ProfileStats = () => (
   <Sticky top pt={2}>
     <Card>
@@ -22,20 +24,20 @@ const ProfileStats = () => (
             <Text bold mr={2}>
               Teams:
             </Text>
-            <Flex wrap mx={-2} is="ul">
-              <Box is="li" px={2}>
+            <Flex wrap mx={-1} align="center" is="ul">
+              <Box is="li" px={1}>
                 <CleanLink to="/">
-                  <Avatar src={placeholder} size="2em" />
+                  <Avatar src={placeholder} size="1.5em" />
                 </CleanLink>
               </Box>
-              <Box is="li" px={2}>
+              <Box is="li" px={1}>
                 <CleanLink to="/">
-                  <Avatar src={placeholder} size="2em" />
+                  <Avatar src={placeholder} size="1.5em" />
                 </CleanLink>
               </Box>
-              <Box is="li" px={2}>
+              <Box is="li" px={1}>
                 <CleanLink to="/">
-                  <Avatar src={placeholder} size="2em" />
+                  <Avatar src={placeholder} size="1.5em" />
                 </CleanLink>
               </Box>
             </Flex>
@@ -46,23 +48,55 @@ const ProfileStats = () => (
           Bio text. This will be a little bit longer, closer to a Twitter bio
         </Text>
         <Heading is="h2" f={1} mb={2}>
-          Categories:
+          Interested in:
         </Heading>
-        <Flex is="ul" mx={-1} wrap>
+        <Flex is="ul" mx={-1} mb={3} wrap>
           <Box is="li" px={1} mb={2}>
-            <CategoryChip color="#bcf5dd" to="/category">
-              👔 Fashion
-            </CategoryChip>
+            <CleanLink to="/">
+              <CategoryChip color="#bcf5dd" to="/category">
+                👔 Fashion
+              </CategoryChip>
+            </CleanLink>
           </Box>
           <Box is="li" px={1} mb={2}>
-            <CategoryChip color="#B6F5F4" to="/category">
-              ✈️ Aviation
-            </CategoryChip>
+            <CleanLink to="/">
+              <CategoryChip color="#B6F5F4" to="/category">
+                ✈️ Aviation
+              </CategoryChip>
+            </CleanLink>
           </Box>
           <Box is="li" px={1} mb={2}>
-            <CategoryChip color="#F0F59C" to="/category">
-              🍳 Cooking
-            </CategoryChip>
+            <CleanLink to="/">
+              <CategoryChip color="#F0F59C" to="/category">
+                🍳 Cooking
+              </CategoryChip>
+            </CleanLink>
+          </Box>
+        </Flex>
+        <Flex wrap mx={-1}>
+          <Box px={1} mb={2}>
+            <SocialIcon
+              url="http://twitter.com/demo"
+              style={{ height: 36, width: 36 }}
+            />
+          </Box>
+          <Box px={1} mb={2}>
+            <SocialIcon
+              url="http://facebook.com/demo"
+              style={{ height: 36, width: 36 }}
+            />
+          </Box>
+          <Box px={1} mb={2}>
+            <SocialIcon
+              url="http://github.com/demo"
+              style={{ height: 36, width: 36 }}
+            />
+          </Box>
+          <Box px={1} mb={2}>
+            <SocialIcon
+              url="mailto:demo@demo.com"
+              style={{ height: 36, width: 36 }}
+            />
           </Box>
         </Flex>
       </CardContent>

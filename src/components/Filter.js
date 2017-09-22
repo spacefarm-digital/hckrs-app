@@ -16,7 +16,7 @@ const Filter = () => (
             Showing
           </Text>
           <Box py={2} px={2}>
-            <FilterItem props={['Herro', '✅ Active', '🕐 Past']} />
+            <FilterItem options={['Herro', '✅ Active', '🕐 Past']} />
           </Box>
           <Text px={2} bold>
             events happening
@@ -31,7 +31,7 @@ const Filter = () => (
             <FilterItem />
           </Box>
         </Flex>
-        <Box px={2} w={[1, 1, '350px']} mb={[3, 3, 0]}>
+        <Box px={2} w={[1, 1, '200px', '300px']} mb={[3, 3, 0]}>
           <Search />
         </Box>
       </Flex>

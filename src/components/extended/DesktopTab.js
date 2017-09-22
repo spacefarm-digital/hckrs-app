@@ -6,6 +6,7 @@ const DesktopTab = styled(Tab)`
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   align-items: center !important;
+  min-width: 0 !important;
   div {
     padding-right: 0 !important;
     padding-left: 0.5rem;

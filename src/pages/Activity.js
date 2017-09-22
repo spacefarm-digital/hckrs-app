@@ -4,14 +4,19 @@ import React, { Component } from 'react'
 
 import { Container, Box } from 'rebass'
 
+import PageTitle from '../components/PageTitle'
+
+import NotificationsIcon from 'material-ui-icons/Notifications'
+
 class Activity extends Component {
   render() {
     return (
-      <Container pt={4} is="main">
-        <Box mb={3}>
-          <h1>Activity page</h1>
-        </Box>
-      </Container>
+      <div>
+        <PageTitle title="Activity">
+          <NotificationsIcon />
+        </PageTitle>
+        <Container pt={4} is="main" />
+      </div>
     )
   }
 }
