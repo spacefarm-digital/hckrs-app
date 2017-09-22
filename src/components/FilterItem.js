@@ -7,10 +7,14 @@ import Button from 'material-ui/Button'
 
 const options = ['⏳ Upcoming', '✅ Active', '🕐 Past']
 class FilterItem extends React.Component {
+  constructor(props) {
+    super(props)
+  }
   state = {
     anchorEl: null,
     open: false,
     selectedIndex: 0,
+    options: this.props.options,
   }
   button = undefined
   handleClickListItem = event => {

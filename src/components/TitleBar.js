@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
+import styled from 'styled-components'
 
 import { Flex, Heading, Fixed } from 'rebass'
 
@@ -24,9 +25,11 @@ import Tabs from 'material-ui/Tabs'
 
 const defaultProps = { title: 'Example title' }
 
+const StyledNavLink = styled(NavLink)`min-width: 0 !important;`
+
 class TitleBar extends Component {
   state = {
-    value: 0,
+    value: null,
   }
 
   handleChange = (event, value) => {
@@ -46,7 +49,6 @@ class TitleBar extends Component {
               <MediaQuery query="(min-width: 50em)">
                 <Tabs
                   value={value}
-                  onChange={this.handleChange}
                   component="nav"
                   showLabels
                   indicatorColor="#ffffff"
@@ -57,30 +59,36 @@ class TitleBar extends Component {
                     label="Home"
                     component={NavLink}
                     to="/"
+                    exact
+                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
                     icon={<BusinessIcon />}
                     label="Challenges"
                     component={NavLink}
                     to="/challenges"
+                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
                     icon={<GroupIcon />}
                     label="Hackers"
                     component={NavLink}
                     to="/hackers"
+                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
                     icon={<FiberNewIcon />}
                     label="News"
                     component={NavLink}
                     to="/news"
+                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
                     icon={<NotificationsIcon />}
                     label="Activity"
                     component={NavLink}
                     to="/activity"
+                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                 </Tabs>
               </MediaQuery>
@@ -90,40 +98,42 @@ class TitleBar extends Component {
         </AppBar>
         <MediaQuery query="(max-width: 50em)">
           <Fixed bottom w={1} z={999} is="nav">
-            <BottomNavigation
-              value={value}
-              onChange={this.handleChange}
-              showLabels
-            >
+            <BottomNavigation value={value} showLabels component="nav">
               <BottomNavigationButton
                 label="Home"
                 icon={<HomeIcon />}
-                component={CleanLink}
+                component={StyledNavLink}
                 to="/"
+                exact
+                activeStyle={{ color: 'orange' }}
               />
               <BottomNavigationButton
                 label="Challenges"
                 icon={<BusinessIcon />}
-                component={CleanLink}
+                component={StyledNavLink}
                 to="/challenges"
+                activeStyle={{ color: 'orange' }}
               />
               <BottomNavigationButton
                 label="Hackers"
                 icon={<GroupIcon />}
-                component={CleanLink}
+                component={StyledNavLink}
                 to="/hackers"
+                activeStyle={{ color: 'orange' }}
               />
               <BottomNavigationButton
                 label="News"
                 icon={<FiberNewIcon />}
-                component={CleanLink}
+                component={StyledNavLink}
                 to="/news"
+                activeStyle={{ color: 'orange' }}
               />
               <BottomNavigationButton
                 label="Activity"
                 icon={<NotificationsIcon />}
-                component={CleanLink}
+                component={StyledNavLink}
                 to="/activity"
+                activeStyle={{ color: 'orange' }}
               />
             </BottomNavigation>
           </Fixed>
