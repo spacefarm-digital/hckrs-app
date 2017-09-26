@@ -12,41 +12,45 @@ import { BackgroundImage, Flex, Box, Heading, Text, Image } from 'rebass'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  categories: PropTypes.arrayOf(PropTypes.string),
-  location: PropTypes.string.isRequired,
+  category: PropTypes.string,
+  author: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  numberOfHacks: PropTypes.number.isRequired,
-  status: PropTypes.oneOf(['Active', 'Upcoming', 'Past']).isRequired,
-  logo: PropTypes.string.isRequired,
 }
 
 const defaultProps = {
   title: 'Default title',
-  description:
+  excerpt:
     'Default description. It will actually be much, much, much longer. Not that much though.',
   image: placeholder,
-  location: 'The world',
+  category: '✈️ Aviation',
+  author: 'Author McAuthor',
   date: '01/01/2017',
-  numberOfHacks: 0,
-  status: 'Upcoming',
-  logo: placeholder,
 }
 
-const HackPreview = props => {
+const ChallengePreview = props => {
   return (
     <div>
       <Card>
+        <BackgroundImage
+          src={props.image}
+          title="Contemplative Reptile"
+          ratio={1 / 2}
+        />
         <CardContent>
+          <Flex justify="space-between" mb={2}>
+            <PrettyLink to="/">{props.category}</PrettyLink>
+            <Text>{props.date}</Text>
+          </Flex>
           <Heading is="h3" f={2} mb={2}>
             {props.title}
           </Heading>
-          <Text mb={1}>
-            In challenge <PrettyLink to="/">Challenge name</PrettyLink>
+          <Text mb={2}>
+            Published by <PrettyLink to="/">{props.author}</PrettyLink>
           </Text>
-          <Text mb={3}>{props.description}</Text>
-          <Flex mx={-1} justify="flex-end" align="center">
+          <Text mb={3}>{props.excerpt}</Text>
+          <Flex mx={-1} align="center">
             <Box px={1}>
               <Button raised color="primary">
                 See more
@@ -59,7 +63,7 @@ const HackPreview = props => {
   )
 }
 
-HackPreview.propTypes = propTypes
-HackPreview.defaultProps = defaultProps
+ChallengePreview.propTypes = propTypes
+ChallengePreview.defaultProps = defaultProps
 
-export default HackPreview
+export default ChallengePreview

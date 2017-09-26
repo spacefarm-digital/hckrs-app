@@ -6,7 +6,7 @@ import { Container, Box, Heading } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 
-import Filter from '../components/Filter'
+import HackerFilter from '../components/HackerFilter'
 import ProfilePreview from '../components/ProfilePreview'
 
 import PageTitle from '../components/PageTitle'
@@ -20,7 +20,7 @@ class Hackers extends Component {
         <PageTitle title="Hackers">
           <GroupIcon />
         </PageTitle>
-        <Filter />
+        <HackerFilter />
         <Container is="main">
           <Grid container>
             {[0, 1, 2].map(value => (

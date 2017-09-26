@@ -6,19 +6,19 @@ import { Avatar, Flex, Heading, Text, Box, Sticky } from 'rebass'
 import placeholder from '../assets/placeholder-avatar.jpg'
 
 import CleanLink from '../components/extended/CleanLink'
-import CategoryChip from '../components/CategoryChip'
+import CategoryPreview from '../components/CategoryPreview'
 
 import { SocialIcon } from 'react-social-icons'
 
-const ProfileStats = () => (
+const ProfileStats = props => (
   <Sticky top pt={2}>
     <Card>
       <CardContent>
         {/* Top */}
         <Flex align="center" column mb={3}>
           <Avatar src={placeholder} size={80} mb={2} />
-          <Heading f={3} is="h1" mb={2}>
-            Hacker name
+          <Heading f={3} is="h1" mb={2} center>
+            {props.name}
           </Heading>
           <Flex align="center" wrap>
             <Text bold mr={2}>
@@ -45,33 +45,19 @@ const ProfileStats = () => (
         </Flex>
         {/* Bio */}
         <Text is="p" mb={3}>
-          Bio text. This will be a little bit longer, closer to a Twitter bio
+          {props.bio}
         </Text>
         <Heading is="h2" f={1} mb={2}>
           Interested in:
         </Heading>
         <Flex is="ul" mx={-1} mb={3} wrap>
-          <Box is="li" px={1} mb={2}>
-            <CleanLink to="/">
-              <CategoryChip color="#bcf5dd" to="/category">
-                👔 Fashion
-              </CategoryChip>
-            </CleanLink>
-          </Box>
-          <Box is="li" px={1} mb={2}>
-            <CleanLink to="/">
-              <CategoryChip color="#B6F5F4" to="/category">
-                ✈️ Aviation
-              </CategoryChip>
-            </CleanLink>
-          </Box>
-          <Box is="li" px={1} mb={2}>
-            <CleanLink to="/">
-              <CategoryChip color="#F0F59C" to="/category">
-                🍳 Cooking
-              </CategoryChip>
-            </CleanLink>
-          </Box>
+          {props.categories.map((category, index) => (
+            <Box is="li" px={1} mb={2}>
+              <CleanLink to="/">
+                <CategoryPreview title={category} />
+              </CleanLink>
+            </Box>
+          ))}
         </Flex>
         <Flex wrap mx={-1}>
           <Box px={1} mb={2}>

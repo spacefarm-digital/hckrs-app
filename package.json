@@ -13,6 +13,7 @@
     "react": "latest",
     "react-autosuggest": "^9.3.2",
     "react-dom": "latest",
+    "react-ink": "^6.2.0",
     "react-jss": "latest",
     "react-responsive": "^1.3.4",
     "react-router": "^4.2.0",

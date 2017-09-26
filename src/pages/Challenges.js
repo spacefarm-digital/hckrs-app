@@ -6,7 +6,7 @@ import { Container } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 
-import Filter from '../components/Filter'
+import ChallengeFilter from '../components/ChallengeFilter'
 import ChallengePreview from '../components/ChallengePreview'
 import PageTitle from '../components/PageTitle'
 
@@ -17,7 +17,7 @@ const Challenges = () => (
     <PageTitle title="Challenges">
       <BusinessIcon />
     </PageTitle>
-    <Filter />
+    <ChallengeFilter />
     <Container is="main">
       <Grid container>
         {[0, 1, 2].map(value => (

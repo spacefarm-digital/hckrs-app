@@ -19,7 +19,28 @@ class Profile extends Component {
         <Box mb={3}>
           <Grid container spacing={24}>
             <Grid item xs={12} md={4} lg={4}>
-              <ProfileStats />
+              <ProfileStats
+                name="Hacker McHacker"
+                bio="Bio text. This will be a little bit longer, closer to a Twitter bio"
+                categories={[
+                  'Aerospace',
+                  'Agriculture',
+                  'Chemical',
+                  'Computer',
+                  'Construction',
+                  'Food & Drinks',
+                  'Education',
+                  'Energy',
+                  'Environment',
+                  'Health Care',
+                  'Finance',
+                  'Logistical',
+                  'Manifacturing',
+                  'Media',
+                  'Telecommunications',
+                  'Transport',
+                ]}
+              />,
             </Grid>
             <Grid item xs={12} md={8} lg={8}>
               <Box mb={4}>

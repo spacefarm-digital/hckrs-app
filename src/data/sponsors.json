@@ -1,0 +1,19 @@
+"sponsorsData": [
+    {
+      "name": "SponsorMcSponsor",
+      "externalUrl": "http://www.honeybadger.com",
+      "image":
+        "http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740"
+    },
+    {
+      "name": "SponsorMcSponsor 2",
+      "image":
+        "http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740"
+    },
+
+    {
+      "name": "SponsorMcSponsor 3",
+      "image":
+        "http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740"
+    }
+  ]

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List'
-import Paper from 'material-ui/Paper'
+import PrettyPaper from './extended/PrettyPaper'
 import Collapse from 'material-ui/transitions/Collapse'
 import DateRangeIcon from 'material-ui-icons/DateRange'
 import ExpandLess from 'material-ui-icons/ExpandLess'
@@ -13,7 +13,7 @@ import { withTheme } from 'material-ui/styles'
 
 import PrettyLink from '../components/extended/PrettyLink'
 
-class NestedList extends React.Component {
+class Agenda extends React.Component {
   state = { open: false }
 
   handleClick = () => {
@@ -22,7 +22,7 @@ class NestedList extends React.Component {
 
   render() {
     return (
-      <Paper>
+      <PrettyPaper mb={4}>
         <List
           subheader={
             <Heading is="h2" f={3} p={3}>
@@ -87,9 +87,9 @@ class NestedList extends React.Component {
             </ListItem>
           </Collapse>
         </List>
-      </Paper>
+      </PrettyPaper>
     )
   }
 }
 
-export default withTheme(NestedList)
+export default withTheme(Agenda)

@@ -5,7 +5,7 @@ const TypeIcon = styled(Icon)`
   display: inline-block;
   width: 1em !important;
   height: 1em !important;
-  margin-right: 0.2em;
+  margin-right: ${props => (props.margin ? props.margin : '.2em')};
   vertical-align: -13%;
   svg {
     width: 100% !important;

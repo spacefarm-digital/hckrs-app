@@ -7,14 +7,10 @@ import Button from 'material-ui/Button'
 
 const options = ['⏳ Upcoming', '✅ Active', '🕐 Past']
 class FilterItem extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   state = {
     anchorEl: null,
     open: false,
     selectedIndex: 0,
-    options: this.props.options,
   }
   button = undefined
   handleClickListItem = event => {
@@ -36,7 +32,7 @@ class FilterItem extends React.Component {
           onClick={this.handleClickListItem}
           raised
         >
-          {options[this.state.selectedIndex]}
+          {this.props.options[this.state.selectedIndex]}
         </Button>
 
         <Menu
@@ -45,7 +41,7 @@ class FilterItem extends React.Component {
           open={this.state.open}
           onRequestClose={this.handleRequestClose}
         >
-          {options.map((option, index) => (
+          {this.props.options.map((option, index) => (
             <MenuItem
               key={option}
               selected={index === this.state.selectedIndex}
