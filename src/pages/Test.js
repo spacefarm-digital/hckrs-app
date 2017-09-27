@@ -9,7 +9,7 @@ import ChallengePreview from "../components/ChallengePreview";
 
 import Button from "material-ui/Button";
 
-class Home extends Component {
+class Test extends Component {
   render() {
     return (
       <Container pt={4} is="main">
@@ -24,4 +24,4 @@ class Home extends Component {
     );
   }
 }
-export default Home;
+export default Test;
