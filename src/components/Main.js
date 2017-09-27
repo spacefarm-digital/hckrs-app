@@ -14,6 +14,7 @@ import News from '../pages/News'
 import Activity from '../pages/Activity'
 import Test from '../pages/Test'
 import Profile from '../pages/Profile'
+import NewChallenge from '../pages/NewChallenge'
 
 import { Box } from 'rebass'
 
@@ -30,6 +31,7 @@ class Main extends Component {
           <Route path="/activity" component={Activity} />
           <Route path="/test" component={Test} />
           <Route path="/profile" component={Profile} />
+          <Route path="/new-challenge" component={NewChallenge} />
         </Switch>
       </Box>
     )

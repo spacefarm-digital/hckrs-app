@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 import styled from 'styled-components'
@@ -15,11 +16,14 @@ import Toolbar from 'material-ui/Toolbar'
 import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
+import IconButton from 'material-ui/IconButton'
+
 import HomeIcon from 'material-ui-icons/Home'
 import NotificationsIcon from 'material-ui-icons/Notifications'
 import BusinessIcon from 'material-ui-icons/Business'
 import GroupIcon from 'material-ui-icons/Group'
 import FiberNewIcon from 'material-ui-icons/FiberNew'
+import AddCircleIcon from 'material-ui-icons/AddCircle'
 
 import Tabs from 'material-ui/Tabs'
 
@@ -92,7 +96,12 @@ class TitleBar extends Component {
                   />
                 </Tabs>
               </MediaQuery>
-              <ProfileMenu />
+              <Flex>
+                <IconButton component={Link} to="/new-challenge">
+                  <AddCircleIcon color="#fff" />
+                </IconButton>
+                <ProfileMenu />
+              </Flex>
             </Flex>
           </Toolbar>
         </AppBar>
