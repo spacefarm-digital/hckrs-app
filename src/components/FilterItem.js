@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import Menu, { MenuItem } from 'material-ui/Menu'
 import Button from 'material-ui/Button'
 
+import { Label } from 'rebass'
+
 const options = ['⏳ Upcoming', '✅ Active', '🕐 Past']
 class FilterItem extends React.Component {
   state = {
@@ -25,6 +27,7 @@ class FilterItem extends React.Component {
   render() {
     return (
       <div>
+        {this.props.label ? <Label mb={2}>{this.props.label}</Label> : null}
         <Button
           aria-haspopup="true"
           aria-controls="lock-menu"
@@ -34,7 +37,6 @@ class FilterItem extends React.Component {
         >
           {this.props.options[this.state.selectedIndex]}
         </Button>
-
         <Menu
           id="lock-menu"
           anchorEl={this.state.anchorEl}
