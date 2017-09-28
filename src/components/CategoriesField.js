@@ -8,7 +8,6 @@ import Select from 'material-ui/Select'
 import UploadOverlay from './UploadOverlay'
 
 const categories = [
-  'All categories',
   '✈️ Aerospace',
   '🌽 Agriculture',
   '⚗️ Chemical',
