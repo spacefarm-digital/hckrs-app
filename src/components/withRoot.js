@@ -1,8 +1,8 @@
 /* eslint-disable flowtype/require-valid-file-annotation */
 
 import React, { Component } from 'react'
+import baseStyles from './baseStyles'
 import { withStyles, MuiThemeProvider } from 'material-ui/styles'
-import reset from 'reset-css'
 import wrapDisplayName from 'recompose/wrapDisplayName'
 import createContext from '../styles/createContext'
 
@@ -43,6 +43,7 @@ function withRoot(BaseComponent) {
     }
 
     render() {
+      baseStyles()
       return (
         <Provider
           theme={{

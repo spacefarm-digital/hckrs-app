@@ -6330,6 +6330,10 @@ styled-components@^2.0.1, styled-components@^2.1.2:
     stylis "^3.2.1"
     supports-color "^3.2.3"
 
+styled-reset@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/styled-reset/-/styled-reset-0.1.2.tgz#478beba1f0faa9e8f27aec3e1d961477f195ec6e"
+
 styled-system@^1.0.0-12, styled-system@^1.0.0-13, styled-system@^1.0.0-9:
   version "1.0.0-13"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-1.0.0-13.tgz#c186461feea459b86c91303152aaebad92ef0ffc"
