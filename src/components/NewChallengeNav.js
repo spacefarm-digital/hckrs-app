@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import AppBar from 'material-ui/AppBar'
+import Button from 'material-ui/Button'
 import Tabs, { Tab } from 'material-ui/Tabs'
 
 import NewChallengeMain from './NewChallengeMain'
@@ -10,6 +11,8 @@ import NewChallengeSubchallenges from './NewChallengeSubchallenges'
 import NewChallengeAgenda from './NewChallengeAgenda'
 import NewChallengePrizes from './NewChallengePrizes'
 import NewChallengeAdvisors from './NewChallengeAdvisors'
+
+import { Flex } from 'rebass'
 
 import ArtTrackIcon from 'material-ui-icons/ArtTrack'
 import TextFieldsIcon from 'material-ui-icons/TextFields'
@@ -35,6 +38,13 @@ class NewChallengeNav extends React.Component {
     this.setState({ value })
   }
 
+  goToNext = event => {
+    if (this.state.value < 5)
+      this.setState({
+        value: this.state.value + 1,
+      })
+  }
+
   render() {
     const { value } = this.state
 
@@ -50,11 +60,11 @@ class NewChallengeNav extends React.Component {
             centered
           >
             <Tab label="1. General" icon={<ArtTrackIcon />} />
-            <Tab label="2. Description" icon={<TextFieldsIcon />} disabled />
-            <Tab label="3. Subchallenges" icon={<ViewListIcon />} disabled />
-            <Tab label="4. Agenda" icon={<TodayIcon />} disabled />
-            <Tab label="5. Prizes" icon={<EuroSymbolIcon />} disabled />
-            <Tab label="6. Advisors" icon={<PeopleIcon />} disabled />
+            <Tab label="2. Description" icon={<TextFieldsIcon />} />
+            <Tab label="3. Subchallenges" icon={<ViewListIcon />} />
+            <Tab label="4. Agenda" icon={<TodayIcon />} />
+            <Tab label="5. Prizes" icon={<EuroSymbolIcon />} />
+            <Tab label="6. Advisors" icon={<PeopleIcon />} />
           </Tabs>
         </AppBar>
         {value === 0 && (
@@ -87,6 +97,11 @@ class NewChallengeNav extends React.Component {
             <NewChallengeAdvisors />
           </TabContainer>
         )}
+        <Flex justify="flex-end" px={3} pb={4}>
+          <Button onClick={this.goToNext} raised color="primary">
+            Next
+          </Button>
+        </Flex>
       </div>
     )
   }
