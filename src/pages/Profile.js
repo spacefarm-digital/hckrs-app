@@ -29,16 +29,7 @@ class Profile extends Component {
                   'Computer',
                   'Construction',
                   'Food & Drinks',
-                  'Education',
-                  'Energy',
-                  'Environment',
-                  'Health Care',
-                  'Finance',
-                  'Logistical',
-                  'Manifacturing',
-                  'Media',
-                  'Telecommunications',
-                  'Transport',
+                  c,
                 ]}
               />,
             </Grid>
