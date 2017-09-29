@@ -6,6 +6,9 @@ const baseStyles = () => injectGlobal`
   * {
       box-sizing: border-box;
   }
+  ::selection {
+    background: #BCF5DD;
+  }
 `
 
 export default baseStyles
