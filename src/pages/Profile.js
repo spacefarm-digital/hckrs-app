@@ -29,7 +29,6 @@ class Profile extends Component {
                   'Computer',
                   'Construction',
                   'Food & Drinks',
-                  c,
                 ]}
               />,
             </Grid>

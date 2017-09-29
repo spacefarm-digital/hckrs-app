@@ -21,7 +21,7 @@ import { Box } from 'rebass'
 class Main extends Component {
   render() {
     return (
-      <Box pb="100px">
+      <Box>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/challenges" component={Challenges} />

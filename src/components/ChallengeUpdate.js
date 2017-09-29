@@ -38,7 +38,7 @@ const ChallengeUpdate = props => (
       {props.updates.map(update => (
         <li>
           <BlockLink to="#" component={Link}>
-            Hello there
+            {update}
           </BlockLink>
         </li>
       ))}

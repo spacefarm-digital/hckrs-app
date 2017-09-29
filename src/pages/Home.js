@@ -7,19 +7,21 @@ import { Container, Box } from 'rebass'
 import ProfilePreview from '../components/ProfilePreview'
 import ChallengePreview from '../components/ChallengePreview'
 import PageTitle from '../components/PageTitle'
-import ChallengeUpdate from '../components/ChallengeUpdate'
 import WhileYouWereAway from '../components/WhileYouWereAway'
+import SuggestedChallenges from '../components/SuggestedChallenges'
+import FeaturedNews from '../components/FeaturedNews'
+import Footer from '../components/Footer'
 
 import HomeIcon from 'material-ui-icons/Home'
 
 const Home = props => (
   <div>
-    <PageTitle title="Home">
-      <HomeIcon />
-    </PageTitle>
     <Container is="main">
       <WhileYouWereAway />
+      <SuggestedChallenges />
+      <FeaturedNews />
     </Container>
+    <Footer />
   </div>
 )
 
