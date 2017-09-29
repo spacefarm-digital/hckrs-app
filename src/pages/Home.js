@@ -10,7 +10,6 @@ import PageTitle from '../components/PageTitle'
 import WhileYouWereAway from '../components/WhileYouWereAway'
 import SuggestedChallenges from '../components/SuggestedChallenges'
 import FeaturedNews from '../components/FeaturedNews'
-import Footer from '../components/Footer'
 
 import HomeIcon from 'material-ui-icons/Home'
 
@@ -21,7 +20,6 @@ const Home = props => (
       <SuggestedChallenges />
       <FeaturedNews />
     </Container>
-    <Footer />
   </div>
 )
 

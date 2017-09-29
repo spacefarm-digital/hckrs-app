@@ -5,6 +5,7 @@ import withRoot from '../components/withRoot'
 
 import Main from '../components/Main'
 import TitleBar from '../components/TitleBar'
+import Footer from '../components/Footer'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <div>
         <TitleBar />
         <Main />
+        <Footer />
       </div>
     )
   }

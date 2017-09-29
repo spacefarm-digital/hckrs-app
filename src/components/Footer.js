@@ -20,7 +20,7 @@ import TextField from 'material-ui/TextField'
 const Footer = () => (
   <Box is="footer" bg="black" color="white" px={3} py={4}>
     <Box mb={4}>
-      <Heading mb={1}>hckrs</Heading>
+      <Heading mb={1}>hckrs (WIP)</Heading>
       <Text>Solving industry challenges one step at a time</Text>
     </Box>
     <Flex wrap mx={-2}>

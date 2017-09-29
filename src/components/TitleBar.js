@@ -27,6 +27,9 @@ import AddCircleIcon from 'material-ui-icons/AddCircle'
 
 import Tabs from 'material-ui/Tabs'
 
+// !!! Import theme
+import { withTheme } from 'material-ui/styles'
+
 const defaultProps = { title: 'Example title' }
 
 const StyledNavLink = styled(NavLink)`min-width: 0 !important;`
@@ -42,6 +45,9 @@ class TitleBar extends Component {
 
   render() {
     const { value } = this.state
+    // !!! Include theme
+    const { theme } = this.props
+    const primaryColor = theme.palette.primary[500]
     return (
       <div>
         <AppBar position="static">
@@ -114,35 +120,35 @@ class TitleBar extends Component {
                 component={StyledNavLink}
                 to="/"
                 exact
-                activeStyle={{ color: 'orange' }}
+                activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="Challenges"
                 icon={<BusinessIcon />}
                 component={StyledNavLink}
                 to="/challenges"
-                activeStyle={{ color: 'orange' }}
+                activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="Hackers"
                 icon={<GroupIcon />}
                 component={StyledNavLink}
                 to="/hackers"
-                activeStyle={{ color: 'orange' }}
+                activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="News"
                 icon={<FiberNewIcon />}
                 component={StyledNavLink}
                 to="/news"
-                activeStyle={{ color: 'orange' }}
+                activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="Activity"
                 icon={<NotificationsIcon />}
                 component={StyledNavLink}
                 to="/activity"
-                activeStyle={{ color: 'orange' }}
+                activeStyle={{ color: primaryColor }}
               />
             </BottomNavigation>
           </Fixed>
@@ -154,4 +160,5 @@ class TitleBar extends Component {
 
 TitleBar.defaultProps = defaultProps
 
-export default TitleBar
+// !!! Export with theme
+export default withTheme(TitleBar)

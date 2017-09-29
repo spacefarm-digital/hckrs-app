@@ -98,7 +98,7 @@ class NewChallengeNav extends React.Component {
           </TabContainer>
         )}
         <Flex justify="flex-end" px={3} pb={4}>
-          <Button onClick={this.goToNext} raised color="primary">
+          <Button onClick={this.goToNext} raised color="accent">
             Next
           </Button>
         </Flex>

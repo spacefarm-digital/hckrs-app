@@ -34,6 +34,7 @@ class FilterItem extends React.Component {
           aria-label="When device is locked"
           onClick={this.handleClickListItem}
           raised
+          color="grey"
         >
           {this.props.options[this.state.selectedIndex]}
         </Button>
