@@ -29,20 +29,20 @@ class Activity extends Component {
               </TypeIcon>Mark all as read
             </Button>
           </Flex>
-          {/* Divider */}
+          {/* Unread */}
           <Box mb={3}>
             <Heading f={1} mb={2}>
               Unread (2)
             </Heading>
           </Box>
           <Flex mb={3} column>
-            <Box mb={2}>
-              <Notification />
-            </Box>
-            <Box mb={2}>
-              <Notification />
-            </Box>
+            {[0, 1, 2].map(value => (
+              <Box mb={2}>
+                <Notification />
+              </Box>
+            ))}
           </Flex>
+          {/* Read */}
           <Box mb={3}>
             <Heading f={1} mb={2}>
               Read

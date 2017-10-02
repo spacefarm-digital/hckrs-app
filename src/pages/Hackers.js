@@ -25,11 +25,7 @@ class Hackers extends Component {
           <Grid container>
             {[0, 1, 2].map(value => (
               <Grid xs={12} sm={6} md={4} xl={3} key={value} item>
-                <ProfilePreview
-                  name="Hacker McHacker"
-                  numberOfHacks={5}
-                  location="🇳🇪 Niger"
-                />
+                <ProfilePreview />
               </Grid>
             ))}
           </Grid>
