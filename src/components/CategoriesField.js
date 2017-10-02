@@ -7,24 +7,8 @@ import Select from 'material-ui/Select'
 
 import UploadOverlay from './UploadOverlay'
 
-const categories = [
-  '✈️ Aerospace',
-  '🌽 Agriculture',
-  '⚗️ Chemical',
-  '💻 Computer',
-  '🏗 Construction',
-  '🍲 Food & Drinks',
-  '🎓 Education',
-  '⚡️ Energy',
-  '🏔 Environment',
-  '⚕ Health care',
-  '💰 Finance',
-  '🚛 Logistical',
-  '🏭 Manufacturing',
-  '📰 Media',
-  '📡 Telecommunications',
-  '🚍 Transport',
-]
+import categories from '../data/categories'
+
 class CategoriesField extends React.Component {
   state = {
     selectedCategories: [],

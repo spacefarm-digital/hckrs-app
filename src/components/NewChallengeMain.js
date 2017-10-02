@@ -6,6 +6,7 @@ import Grid from 'material-ui/Grid'
 import FilterItem from '../components/FilterItem'
 import ImageField from '../components/ImageField'
 import CategoriesField from '../components/CategoriesField'
+import RadioControl from '../components/RadioControl'
 
 import { Flex, Box } from 'rebass'
 
@@ -75,8 +76,8 @@ class NewChallengeMain extends React.Component {
         </Flex>
         {/* Challenge type */}
         <Flex mb={3}>
-          <FilterItem
-            options={['📢 Public', '✉️ Invite-only', '🕶 Unlisted']}
+          <RadioControl
+            items={['📢 Public', '✉️ Invite-only', '🕶 Unlisted']}
             label="Challenge Type"
           />
         </Flex>
