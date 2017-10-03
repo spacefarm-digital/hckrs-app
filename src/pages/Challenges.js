@@ -9,6 +9,7 @@ import Grid from 'material-ui/Grid'
 import ChallengeFilter from '../components/ChallengeFilter'
 import ChallengePreview from '../components/ChallengePreview'
 import PageTitle from '../components/PageTitle'
+import FeaturedChallenges from '../components/FeaturedChallenges'
 
 import BusinessIcon from 'material-ui-icons/Business'
 
@@ -17,6 +18,7 @@ const Challenges = () => (
     <PageTitle title="Challenges">
       <BusinessIcon />
     </PageTitle>
+    <FeaturedChallenges />
     <ChallengeFilter />
     <Container is="main">
       <Grid container>
