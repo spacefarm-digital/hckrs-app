@@ -7,7 +7,7 @@ import DateRangeIcon from 'material-ui-icons/DateRange'
 import ExpandLess from 'material-ui-icons/ExpandLess'
 import ExpandMore from 'material-ui-icons/ExpandMore'
 
-import { Flex, Heading } from 'rebass'
+import { Flex, Heading, Box } from 'rebass'
 
 import { withTheme } from 'material-ui/styles'
 
@@ -25,9 +25,11 @@ class Agenda extends React.Component {
       <PrettyPaper mb={4}>
         <List
           subheader={
-            <Heading is="h2" f={3} p={3}>
-              Agenda
-            </Heading>
+            <Box bg="p50" color="pA700">
+              <Heading is="h2" f={3} p={3}>
+                Agenda
+              </Heading>
+            </Box>
           }
         >
           <ListItem button onClick={this.handleClick}>
@@ -48,7 +50,7 @@ class Agenda extends React.Component {
           >
             <ListItem button>
               <Flex align="flex-start">
-                <Heading is="h4" f={[2, 3]} pt={1}>
+                <Heading is="h4" f={[2, 3]} pt={1} color="sA700">
                   10.00
                 </Heading>
                 <ListItemText
@@ -61,7 +63,7 @@ class Agenda extends React.Component {
             </ListItem>
             <ListItem button>
               <Flex align="flex-start">
-                <Heading is="h4" f={[2, 3]} pt={1}>
+                <Heading is="h4" f={[2, 3]} pt={1} color="sA700">
                   12.00
                 </Heading>
                 <ListItemText
@@ -74,7 +76,7 @@ class Agenda extends React.Component {
             </ListItem>
             <ListItem button>
               <Flex align="flex-start">
-                <Heading is="h4" f={[2, 3]} pt={1}>
+                <Heading is="h4" f={[2, 3]} pt={1} color="sA700">
                   14.00
                 </Heading>
                 <ListItemText

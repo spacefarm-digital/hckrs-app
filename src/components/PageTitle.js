@@ -14,7 +14,7 @@ const defaultProps = {
 const PageTitle = props => (
   <Container mx="auto">
     <Heading f={[3, 4]} is="h1" pt={4} mb={2}>
-      <TypeIcon>{props.children}</TypeIcon>
+      <TypeIcon primary>{props.children}</TypeIcon>
       {props.title}
     </Heading>
   </Container>

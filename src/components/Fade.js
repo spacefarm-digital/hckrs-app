@@ -10,8 +10,8 @@ const Fade = styled(Absolute)`
   left: 0;
   background: linear-gradient(
     to bottom,
-    rgba(24, 30, 38, 0),
-    rgba(24, 30, 38, 0.95)
+    rgba(24, 30, 38, 0) 60%,
+    rgba(24, 30, 38, 0.85)
   );
 `
 
