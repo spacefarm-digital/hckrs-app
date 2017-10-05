@@ -9,36 +9,29 @@ import ExpandMore from 'material-ui-icons/ExpandMore'
 
 import { Flex, Heading, Box } from 'rebass'
 
-import { withTheme } from 'material-ui/styles'
-
 import PrettyLink from '../components/extended/PrettyLink'
 import AgendaDay from '../components/AgendaDay'
 
-class Agenda extends React.Component {
-  render() {
-    return (
-      <PrettyPaper mb={4}>
-        <List
-          subheader={
-            <Box bg="p50" color="pA400">
-              <Heading is="h2" f={3} p={3}>
-                Agenda
-              </Heading>
-            </Box>
-          }
-        >
-          {this.props.agenda.map((agendaDay, value) => (
-            <AgendaDay
-              date={agendaDay.date}
-              items={agendaDay.items}
-              open={agendaDay.open}
-              key={agendaDay.value}
-            />
-          ))}
-        </List>
-      </PrettyPaper>
-    )
-  }
-}
-
-export default withTheme(Agenda)
+const Agenda = props => (
+  <PrettyPaper mb={4}>
+    <List
+      subheader={
+        <Box bg="p50" color="pA400">
+          <Heading is="h2" f={3} p={3}>
+            Agenda
+          </Heading>
+        </Box>
+      }
+    >
+      {props.agenda.map((agendaDay, value) => (
+        <AgendaDay
+          date={agendaDay.date}
+          items={agendaDay.items}
+          open={agendaDay.open}
+          key={agendaDay.value}
+        />
+      ))}
+    </List>
+  </PrettyPaper>
+)
+export default Agenda
