@@ -24,6 +24,7 @@ const propTypes = {
   numberOfHacks: PropTypes.number.isRequired,
   status: PropTypes.oneOf(['Active', 'Upcoming', 'Past']).isRequired,
   logo: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 const defaultProps = {
@@ -36,6 +37,7 @@ const defaultProps = {
   numberOfHacks: 0,
   status: 'Upcoming',
   logo: placeholder,
+  url: '#',
 }
 
 const ChallengePreview = props => {
@@ -70,7 +72,7 @@ const ChallengePreview = props => {
               </Button>
             </Box>
             <Box px={1}>
-              <Button raised color="primary">
+              <Button raised color="primary" component={Link} to={props.url}>
                 See more
               </Button>
             </Box>

@@ -10,7 +10,7 @@ import placeholder from '../assets/placeholder.jpg'
 const Description = props => (
   <Box mb={4}>
     <PrettyPaper p={3}>
-      <Heading is="h2" f={3} mb={2} color="pA700">
+      <Heading is="h2" f={3} mb={2} color="pA400">
         The story
       </Heading>
       <Box>

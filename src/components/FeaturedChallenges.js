@@ -20,6 +20,7 @@ const FeaturedChallenges = props => (
           title={props.challenges[0].title}
           image={props.challenges[0].image}
           logo={props.challenges[0].logo}
+          url={props.challenges[0].url}
         />
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -27,6 +28,7 @@ const FeaturedChallenges = props => (
           title={props.challenges[1].title}
           image={props.challenges[1].image}
           logo={props.challenges[1].logo}
+          url={props.challenges[1].url}
         />
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -34,6 +36,7 @@ const FeaturedChallenges = props => (
           title={props.challenges[2].title}
           image={props.challenges[2].image}
           logo={props.challenges[2].logo}
+          url={props.challenges[2].url}
         />
       </Grid>
     </Grid>

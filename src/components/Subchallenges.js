@@ -9,7 +9,7 @@ import Subchallenge from './Subchallenge'
 
 const Subchallenges = props => (
   <Box mb={4}>
-    <Heading is="h2" f={3} mb={2} color="pA700">
+    <Heading is="h2" f={3} mb={2} color="pA400">
       Subchallenges
     </Heading>
     {[0, 1, 2].map(category => <Subchallenge />)}

@@ -18,10 +18,10 @@ import nasaBG from '../assets/nasa-bg.png'
 const featuredChallengesData = [
   {
     title: 'Hack MTY',
-    url: 'http://www.honeybadger.com',
     image: 'http://www.edmundsumner.co.uk/photos/1136.jpg',
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/000/392/thumb/e722cf7c0b4d-hackmtyMLH_100x100.png?1467906270',
+    url: 'challenges/hack-mty',
   },
   {
     title: 'Boilermake',
@@ -46,6 +46,7 @@ const normalChallengesData = [
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/000/392/thumb/e722cf7c0b4d-hackmtyMLH_100x100.png?1467906270',
     numberOfHacks: 32,
+    url: 'challenges/hack-mty',
   },
   {
     title: 'Boilermake',
@@ -80,6 +81,7 @@ const Challenges = () => (
               image={challenge.image}
               logo={challenge.logo}
               numberOfHacks={challenge.numberOfHacks}
+              url={challenge.url}
             />
           </Grid>
         ))}

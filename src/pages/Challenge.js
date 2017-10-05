@@ -16,6 +16,9 @@ import Subchallenges from '../components/Subchallenges'
 import Agenda from '../components/Agenda'
 import Sponsors from '../components/Sponsors'
 
+// Fake data
+import agendaData from '../data/agendaData'
+
 class Challenge extends Component {
   render() {
     return (
@@ -43,7 +46,7 @@ class Challenge extends Component {
               </Box>
               {/* Agenda */}
               <Box>
-                <Agenda />
+                <Agenda agenda={agendaData} />
               </Box>
               {/* Sponsors */}
               <Box>

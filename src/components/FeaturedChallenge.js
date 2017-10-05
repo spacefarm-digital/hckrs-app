@@ -54,29 +54,31 @@ const FeaturedChallengeWrapper = styled(BackgroundImage)`
 
 const FeaturedChallenge = props => {
   return (
-    <Paper component={CleanLink} to="#">
-      <FeaturedChallengeWrapper
-        src={props.image}
-        title="Contemplative Reptile"
-        color="#fff"
-        big={props.big}
-      >
-        <Absolute bottom left w={1} p={3} z={2}>
-          <Relative z={2} pt={3}>
-            <Flex align="center">
-              <Box>
-                <ShadowAvatar src={props.logo} w="2em" mr={3} />
-              </Box>
-              <Heading is="h2" f={[3, 4]}>
-                {props.title}
-              </Heading>
-            </Flex>
-          </Relative>
-        </Absolute>
-        <Fade />
-        <Ink />
-      </FeaturedChallengeWrapper>
-    </Paper>
+    <CleanLink to={props.url}>
+      <Paper>
+        <FeaturedChallengeWrapper
+          src={props.image}
+          title="Contemplative Reptile"
+          color="#fff"
+          big={props.big}
+        >
+          <Absolute bottom left w={1} p={3} z={2}>
+            <Relative z={2} pt={3}>
+              <Flex align="center">
+                <Box>
+                  <ShadowAvatar src={props.logo} w="2em" mr={3} />
+                </Box>
+                <Heading is="h2" f={[3, 4]}>
+                  {props.title}
+                </Heading>
+              </Flex>
+            </Relative>
+          </Absolute>
+          <Fade />
+          <Ink />
+        </FeaturedChallengeWrapper>
+      </Paper>
+    </CleanLink>
   )
 }
 

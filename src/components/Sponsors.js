@@ -8,7 +8,7 @@ import Grid from 'material-ui/Grid'
 
 const Sponsors = props => (
   <Box mb={4}>
-    <Heading is="h2" f={3} mb={3} color="pA700">
+    <Heading is="h2" f={3} mb={3} color="pA400">
       Sponsors
     </Heading>
     <Grid container align="stretch">
