@@ -14,10 +14,12 @@ import ChallengeStats from '../components/ChallengeStats'
 import Description from '../components/Description'
 import Subchallenges from '../components/Subchallenges'
 import Agenda from '../components/Agenda'
+import Prizes from '../components/Prizes'
 import Sponsors from '../components/Sponsors'
 
 // Fake data
 import agendaData from '../data/agendaData'
+import prizesData from '../data/prizesData'
 
 class Challenge extends Component {
   render() {
@@ -36,6 +38,10 @@ class Challenge extends Component {
               />
             </Grid>
             <Grid item xs={12} md={8} lg={8}>
+              {/* Prizes */}
+              <Box>
+                <Prizes prizes={prizesData} />
+              </Box>
               {/* Description */}
               <Box pt={2}>
                 <Description />
