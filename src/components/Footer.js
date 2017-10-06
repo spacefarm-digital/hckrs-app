@@ -20,7 +20,7 @@ import TextField from 'material-ui/TextField'
 import FluidContainer from '../components/extended/FluidContainer'
 
 const Footer = () => (
-  <Box is="footer" bg="black" color="white" px={3} py={4}>
+  <Box is="footer" bg="black" color="white" py={4}>
     <FluidContainer>
       <Box mb={4}>
         <Heading mb={1} f={[4, 5]}>
