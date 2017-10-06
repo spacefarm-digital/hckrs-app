@@ -8,17 +8,30 @@ import { Heading, Text, Flex } from 'rebass'
 
 import Button from 'material-ui/Button'
 
+import TypeIcon from './extended/TypeIcon'
+
+import FlagIcon from 'material-ui-icons/Flag'
+
+const propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
+
+const defaultProps = {
+  title: 'Subchallenge title',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.',
+}
+
 const Subchallenge = props => (
-  <PrettyPaper p={3} mb={3}>
+  <PrettyPaper p={3}>
     <Heading f={2} mb={2}>
-      Subchallenge name
+      <TypeIcon color="primary">
+        <FlagIcon />
+      </TypeIcon>
+      {props.title}
     </Heading>
-    <Text>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea pariatur
-      velit commodi laudantium facilis officiis quo ullam laborum sunt,
-      perspiciatis quas tempora a atque, nemo dolor neque possimus, ducimus
-      eum?.
-    </Text>
+    <Text mb={3}>{props.description}</Text>
     <Flex justify="flex-end">
       <Button component={Link} to="#" raised color="accent">
         Submit hack
@@ -26,5 +39,8 @@ const Subchallenge = props => (
     </Flex>
   </PrettyPaper>
 )
+
+Subchallenge.PropTypes = propTypes
+Subchallenge.defaultProps = defaultProps
 
 export default Subchallenge

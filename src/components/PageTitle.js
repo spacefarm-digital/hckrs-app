@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Heading, Container } from 'rebass'
+import { Heading } from 'rebass'
 import TypeIcon from '../components/extended/TypeIcon'
 
 const propTypes = {
@@ -12,12 +12,10 @@ const defaultProps = {
 }
 
 const PageTitle = props => (
-  <Container mx="auto">
-    <Heading f={[3, 4]} is="h1" pt={4} mb={2}>
-      <TypeIcon primary>{props.children}</TypeIcon>
-      {props.title}
-    </Heading>
-  </Container>
+  <Heading f={[3, 4]} is="h1" pt={4} mb={2}>
+    <TypeIcon primary>{props.children}</TypeIcon>
+    {props.title}
+  </Heading>
 )
 
 PageTitle.PropTypes = propTypes

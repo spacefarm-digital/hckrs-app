@@ -1,11 +1,25 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import PrettyPaper from './extended/PrettyPaper'
 
+import { Flex } from 'rebass'
+
 import { Heading, Text } from 'rebass'
+const propTypes = {
+  svg: PropTypes.oneOf(1, 2, 3),
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  ammount: PropTypes.string,
+}
+
+const defaultProps = {
+  svg: 1,
+  title: 'Prize title',
+}
 
 const MoneyPrize = props => (
   <PrettyPaper p={3}>
+    {/* SVG */}
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -470,20 +484,19 @@ const MoneyPrize = props => (
             x="300.285"
             y="384"
           >
-            $5000
+            {props.prize}
           </text>
         </g>
       </svg>
     </div>
-    <Heading f={2} mb={2} color="s900">
-      1st prize
+    <Heading f={2} mb={2} color="s900" center>
+      {props.name}
     </Heading>
-    <Text>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi
-      ducimus cum esse nesciunt tempore! Officiis eum quidem necessitatibus
-      ipsam, architecto perspiciatis atque totam, tenetur cumque deserunt
-      aliquid et repellendus?
-    </Text>
+    <Flex justify="center">
+      <Text>{props.description}</Text>
+    </Flex>
   </PrettyPaper>
 )
+MoneyPrize.propTypes = propTypes
+MoneyPrize.defaultProps = defaultProps
 export default MoneyPrize

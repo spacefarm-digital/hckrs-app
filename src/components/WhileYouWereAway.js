@@ -14,7 +14,7 @@ class WhileYouWereAway extends React.Component {
           Since you were away...
         </Heading>
         <Grid container>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} xl={3}>
             <ChallengeUpdate
               name="Sparta Hackathon"
               avatar="http://www.spartahost.com/wp-content/themes/spartahost/images/sparta.png"
@@ -26,7 +26,7 @@ class WhileYouWereAway extends React.Component {
               ]}
             />
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} xl={3}>
             <ChallengeUpdate
               name="Sparta Hackathon"
               avatar="http://www.spartahost.com/wp-content/themes/spartahost/images/sparta.png"

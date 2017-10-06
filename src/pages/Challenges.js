@@ -2,14 +2,13 @@
 
 import React from 'react'
 
-import { Container } from 'rebass'
-
 import Grid from 'material-ui/Grid'
 
 import ChallengeFilter from '../components/ChallengeFilter'
 import ChallengePreview from '../components/ChallengePreview'
 import PageTitle from '../components/PageTitle'
 import FeaturedChallenges from '../components/FeaturedChallenges'
+import FluidContainer from '../components/extended/FluidContainer'
 
 import BusinessIcon from 'material-ui-icons/Business'
 
@@ -66,13 +65,15 @@ const normalChallengesData = [
 ]
 
 const Challenges = () => (
-  <div>
-    <PageTitle title="Challenges">
-      <BusinessIcon />
-    </PageTitle>
-    <FeaturedChallenges challenges={featuredChallengesData} />
+  <main>
+    <FluidContainer>
+      <PageTitle title="Challenges">
+        <BusinessIcon />
+      </PageTitle>
+      <FeaturedChallenges challenges={featuredChallengesData} />
+    </FluidContainer>
     <ChallengeFilter />
-    <Container is="main">
+    <FluidContainer>
       <Grid container>
         {normalChallengesData.map((challenge, value) => (
           <Grid xs={12} sm={6} lg={4} xl={3} key={value} item>
@@ -86,8 +87,8 @@ const Challenges = () => (
           </Grid>
         ))}
       </Grid>
-    </Container>
-  </div>
+    </FluidContainer>
+  </main>
 )
 
 export default Challenges

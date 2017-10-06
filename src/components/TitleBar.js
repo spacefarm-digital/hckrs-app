@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import { Flex, Heading, Fixed } from 'rebass'
 
 import CleanLink from '../components/extended/CleanLink'
+import FluidContainer from '../components/extended/FluidContainer'
 import { NavLink } from 'react-router-dom'
 import DesktopTab from '../components/extended/DesktopTab'
 import ProfileMenu from '../components/ProfileMenu'
@@ -51,7 +52,7 @@ class TitleBar extends Component {
     return (
       <div>
         <AppBar position="static">
-          <Toolbar>
+          <FluidContainer>
             <Flex w={1} justify="space-between" align="center" color="#fff">
               <Heading f={2} is={CleanLink} to="/" onClick={this.goHome}>
                 Hckrs
@@ -109,7 +110,7 @@ class TitleBar extends Component {
                 <ProfileMenu />
               </Flex>
             </Flex>
-          </Toolbar>
+          </FluidContainer>
         </AppBar>
         <MediaQuery query="(max-width: 50em)">
           <Fixed bottom w={1} z={999} is="nav">

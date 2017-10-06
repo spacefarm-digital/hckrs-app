@@ -2,12 +2,13 @@
 
 import React, { Component } from 'react'
 
-import { Container, Box, Heading } from 'rebass'
+import { Box, Heading } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 
 import HackerFilter from '../components/HackerFilter'
 import ProfilePreview from '../components/ProfilePreview'
+import FluidContainer from '../components/extended/FluidContainer'
 
 import PageTitle from '../components/PageTitle'
 
@@ -17,11 +18,13 @@ class Hackers extends Component {
   render() {
     return (
       <div>
-        <PageTitle title="Hackers">
-          <GroupIcon />
-        </PageTitle>
+        <FluidContainer>
+          <PageTitle title="Hackers">
+            <GroupIcon />
+          </PageTitle>
+        </FluidContainer>
         <HackerFilter />
-        <Container is="main">
+        <FluidContainer is="main">
           <Grid container>
             {[0, 1, 2].map(value => (
               <Grid xs={12} sm={6} md={4} xl={3} key={value} item>
@@ -29,7 +32,7 @@ class Hackers extends Component {
               </Grid>
             ))}
           </Grid>
-        </Container>
+        </FluidContainer>
       </div>
     )
   }

@@ -2,23 +2,24 @@
 
 import React from 'react'
 
-import { Container } from 'rebass'
-
 import Grid from 'material-ui/Grid'
 
 import NewsPreview from '../components/NewsPreview'
 import PageTitle from '../components/PageTitle'
 import NewsFilter from '../components/NewsFilter'
+import FluidContainer from '../components/extended/FluidContainer'
 
 import FiberNewIcon from 'material-ui-icons/FiberNew'
 
 const News = () => (
   <div>
-    <PageTitle title="News">
-      <FiberNewIcon />
-    </PageTitle>
+    <FluidContainer>
+      <PageTitle title="News">
+        <FiberNewIcon />
+      </PageTitle>
+    </FluidContainer>
     <NewsFilter />
-    <Container is="main">
+    <FluidContainer is="main">
       <Grid container>
         {[0, 1, 2].map(value => (
           <Grid xs={12} sm={6} lg={4} xl={3} key={value} item>
@@ -26,7 +27,7 @@ const News = () => (
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </FluidContainer>
   </div>
 )
 

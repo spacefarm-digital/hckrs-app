@@ -12,7 +12,7 @@ const propTypes = {
 }
 
 const FeaturedChallenges = props => (
-  <Box mb={4} px={3}>
+  <Box mb={4}>
     <Grid container>
       <Grid item xs={12}>
         <FeaturedChallenge

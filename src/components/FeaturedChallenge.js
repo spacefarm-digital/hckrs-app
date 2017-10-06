@@ -50,6 +50,9 @@ const FeaturedChallengeWrapper = styled(BackgroundImage)`
   @media (min-width: ${props => props.theme.breakpoints[0]}em) {
     padding-bottom: ${props => (props.big ? '40%' : '75%')};
   }
+  @media (min-width: ${props => props.theme.breakpoints[4]}em) {
+    padding-bottom: ${props => (props.big ? '20%' : '50%')};
+  }
 `
 
 const FeaturedChallenge = props => {

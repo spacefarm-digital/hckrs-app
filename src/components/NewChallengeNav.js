@@ -10,7 +10,7 @@ import NewChallengeDescription from './NewChallengeDescription'
 import NewChallengeSubchallenges from './NewChallengeSubchallenges'
 import NewChallengeAgenda from './NewChallengeAgenda'
 import NewChallengePrizes from './NewChallengePrizes'
-import NewChallengeAdvisors from './NewChallengeAdvisors'
+import NewChallengeSponsors from './NewChallengeSponsors'
 
 import { Flex } from 'rebass'
 
@@ -22,7 +22,7 @@ import EuroSymbolIcon from 'material-ui-icons/EuroSymbol'
 import PeopleIcon from 'material-ui-icons/People'
 
 function TabContainer(props) {
-  return <div style={{ padding: 20 }}>{props.children}</div>
+  return <div style={{ padding: '1rem' }}>{props.children}</div>
 }
 
 TabContainer.propTypes = {
@@ -58,13 +58,15 @@ class NewChallengeNav extends React.Component {
             indicatorColor="primary"
             textColor="primary"
             centered
+            scrollButtons="off"
+            fullWidth
           >
             <Tab label="1. General" icon={<ArtTrackIcon />} />
             <Tab label="2. Description" icon={<TextFieldsIcon />} />
             <Tab label="3. Subchallenges" icon={<ViewListIcon />} />
             <Tab label="4. Agenda" icon={<TodayIcon />} />
             <Tab label="5. Prizes" icon={<EuroSymbolIcon />} />
-            <Tab label="6. Advisors" icon={<PeopleIcon />} />
+            <Tab label="6. Sponsors" icon={<PeopleIcon />} />
           </Tabs>
         </AppBar>
         {value === 0 && (
@@ -94,7 +96,7 @@ class NewChallengeNav extends React.Component {
         )}
         {value === 5 && (
           <TabContainer>
-            <NewChallengeAdvisors />
+            <NewChallengeSponsors />
           </TabContainer>
         )}
         <Flex justify="flex-end" px={3} pb={4}>
