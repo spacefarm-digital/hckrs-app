@@ -6,6 +6,8 @@ import Grid from 'material-ui/Grid'
 import FilterItem from '../components/FilterItem'
 import ImageField from '../components/ImageField'
 import CategoriesField from '../components/CategoriesField'
+import RadioControl from '../components/RadioControl'
+import NameField from '../components/extended/NameField'
 
 import { Flex, Box } from 'rebass'
 
@@ -15,19 +17,29 @@ class NewChallengeMain extends React.Component {
   render() {
     return (
       <div>
-        {/* Upload avatar */}
-        <Flex justify="center" mb={3}>
-          <ImageField required id="challengeAvatar" />
-        </Flex>
-        {/* Challenge name */}
-        <Flex mb={3}>
-          <TextField
-            required
-            id="challengeName"
-            label="Challenge Name"
-            fullWidth
-          />
-        </Flex>
+        <Box mb={3} pt={2}>
+          <Grid container align="center">
+            {/* Upload avatar */}
+            <Grid item xs={12} sm={3} md={2}>
+              <Flex justify="center">
+                <ImageField required id="challengeAvatar" />
+              </Flex>
+            </Grid>
+            {/* Challenge name */}
+            <Grid item xs={12} sm={9} md={10}>
+              <NameField
+                required
+                id="challengeName"
+                fullWidth
+                f={[3, 3, 4]}
+                placeholder="Challenge name"
+                inputProps={{
+                  'aria-label': 'Challenge name',
+                }}
+              />
+            </Grid>
+          </Grid>
+        </Box>
         {/* Challenge categories */}
         <Flex mb={3}>
           <CategoriesField
@@ -75,8 +87,8 @@ class NewChallengeMain extends React.Component {
         </Flex>
         {/* Challenge type */}
         <Flex mb={3}>
-          <FilterItem
-            options={['📢 Public', '✉️ Invite-only', '🕶 Unlisted']}
+          <RadioControl
+            items={['📢 Public', '✉️ Invite-only', '🕶 Unlisted']}
             label="Challenge Type"
           />
         </Flex>

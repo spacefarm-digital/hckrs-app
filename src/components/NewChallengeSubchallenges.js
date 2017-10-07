@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 
-import TextField from 'material-ui/TextField'
+import { Heading } from 'rebass'
 
 class NewChallengeSubchallenges extends React.Component {
   render() {
-    return <TextField />
+    return (
+      <div>
+        <Heading f={3} is="h2">
+          Subchallenges
+        </Heading>
+      </div>
+    )
   }
 }
 

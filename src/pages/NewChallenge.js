@@ -6,7 +6,9 @@ import PageTitle from '../components/PageTitle'
 import NewChallengeNav from '../components/NewChallengeNav'
 import PrettyPaper from '../components/extended/PrettyPaper'
 
-import { Container, Box } from 'rebass'
+import { Box } from 'rebass'
+
+import FluidContainer from '../components/extended/FluidContainer'
 
 import Icon from 'material-ui/Icon'
 
@@ -15,18 +17,16 @@ import AddIcon from 'material-ui-icons/Add'
 class NewChallenge extends Component {
   render() {
     return (
-      <div>
-        <Box mb={3}>
+      <main>
+        <FluidContainer tight>
           <PageTitle title="New challenge">
             <AddIcon />
           </PageTitle>
-        </Box>
-        <Container>
           <PrettyPaper>
             <NewChallengeNav />
           </PrettyPaper>
-        </Container>
-      </div>
+        </FluidContainer>
+      </main>
     )
   }
 }

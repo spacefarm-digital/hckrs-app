@@ -26,12 +26,12 @@ class Main extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/challenges" component={Challenges} />
           <Route path="/challenges/" component={Challenge} />
-          <Route path="/hackers" component={Hackers} />
-          <Route path="/news" component={News} />
-          <Route path="/activity" component={Activity} />
-          <Route path="/test" component={Test} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/new-challenge" component={NewChallenge} />
+          <Route exact path="/hackers" component={Hackers} />
+          <Route exact path="/news" component={News} />
+          <Route exact path="/activity" component={Activity} />
+          <Route exact path="/test" component={Test} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/new-challenge" component={NewChallenge} />
         </Switch>
       </Box>
     )

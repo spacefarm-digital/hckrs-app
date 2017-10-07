@@ -13,6 +13,7 @@ const PrettyInput = styled(Input)`
     padding: 0 !important;
     height: 100% !important;
     padding-left: 2rem !important;
+    box-sizing: border-box !important;
   }
 `
 

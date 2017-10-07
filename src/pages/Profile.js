@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 
-import { Container, Box, Heading } from 'rebass'
+import { Box, Heading } from 'rebass'
 
 import Dialog from 'material-ui/Dialog'
 import Grid from 'material-ui/Grid'
@@ -11,14 +11,15 @@ import Paper from 'material-ui/Paper'
 import ChallengePreview from '../components/ChallengePreview'
 import HackPreview from '../components/HackPreview'
 import ProfileStats from '../components/ProfileStats'
+import FluidContainer from '../components/extended/FluidContainer'
 
 class Profile extends Component {
   render() {
     return (
-      <Container pt={3} is="main">
+      <FluidContainer pt={3} is="main">
         <Box mb={3}>
           <Grid container spacing={24}>
-            <Grid item xs={12} md={4} lg={4}>
+            <Grid item xs={12} md={4} lg={4} xl={3}>
               <ProfileStats
                 name="Hacker McHacker"
                 bio="Bio text. This will be a little bit longer, closer to a Twitter bio"
@@ -32,7 +33,7 @@ class Profile extends Component {
                 ]}
               />,
             </Grid>
-            <Grid item xs={12} md={8} lg={8}>
+            <Grid item xs={12} md={8} lg={8} xl={9}>
               <Box mb={4}>
                 <Heading f={3} is="h2" mb={3}>
                   Hacker's Challenges
@@ -40,7 +41,7 @@ class Profile extends Component {
                 {/* Challenges */}
                 <Grid container>
                   {[0, 1, 2].map(value => (
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} xl={4}>
                       <ChallengePreview />
                     </Grid>
                   ))}
@@ -53,7 +54,7 @@ class Profile extends Component {
                 {/* Hacks */}
                 <Grid container>
                   {[0, 1, 2].map(value => (
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} xl={4}>
                       <HackPreview />
                     </Grid>
                   ))}
@@ -62,7 +63,7 @@ class Profile extends Component {
             </Grid>
           </Grid>
         </Box>
-      </Container>
+      </FluidContainer>
     )
   }
 }

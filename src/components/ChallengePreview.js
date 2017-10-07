@@ -6,6 +6,10 @@ import Card, { CardContent } from 'material-ui/Card'
 import Button from 'material-ui/Button'
 import { Link } from 'react-router-dom'
 
+import CleanLink from './extended/CleanLink'
+
+import ShadowAvatar from './extended/ShadowAvatar'
+
 import placeholder from '../assets/placeholder.jpg'
 
 import { BackgroundImage, Flex, Box, Heading, Text, Image } from 'rebass'
@@ -20,6 +24,7 @@ const propTypes = {
   numberOfHacks: PropTypes.number.isRequired,
   status: PropTypes.oneOf(['Active', 'Upcoming', 'Past']).isRequired,
   logo: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 const defaultProps = {
@@ -32,24 +37,29 @@ const defaultProps = {
   numberOfHacks: 0,
   status: 'Upcoming',
   logo: placeholder,
+  url: '#',
 }
 
 const ChallengePreview = props => {
   return (
     <div>
       <Card>
-        <BackgroundImage
-          src={props.image}
-          title="Contemplative Reptile"
-          ratio={1 / 2}
-        />
+        <CleanLink to="#">
+          <BackgroundImage
+            src={props.image}
+            title="Contemplative Reptile"
+            ratio={1 / 2}
+          />
+        </CleanLink>
         <CardContent>
           <Flex justify="space-between" mb={2}>
             <Text>{props.categories}</Text>
-            <Text>{props.status}</Text>
+            <Text bold color="g600">
+              {props.status}
+            </Text>
           </Flex>
-          <Flex align="center" mb={2}>
-            <Image src={props.logo} mr=".5em" w="2em" />
+          <Flex align="center" mb={2} is={CleanLink} to="#">
+            <ShadowAvatar src={props.logo} mr=".5em" w="2em" />
             <Heading is="h3" f={2}>
               {props.title}
             </Heading>
@@ -57,12 +67,12 @@ const ChallengePreview = props => {
           <Text mb={3}>{props.description}</Text>
           <Flex mx={-1} justify="flex-end" align="center">
             <Box px={1}>
-              <Button color="primary" component={Link} to="/">
-                {props.numberOfHacks} joined
+              <Button color="primary" component={Link} to="#">
+                {props.numberOfHacks} hacks
               </Button>
             </Box>
             <Box px={1}>
-              <Button raised color="primary">
+              <Button raised color="primary" component={Link} to={props.url}>
                 See more
               </Button>
             </Box>

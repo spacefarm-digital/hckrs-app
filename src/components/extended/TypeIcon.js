@@ -7,6 +7,8 @@ const TypeIcon = styled(Icon)`
   height: 1em !important;
   margin-right: ${props => (props.margin ? props.margin : '.2em')};
   vertical-align: -13%;
+  color: ${props =>
+    props.primary ? props.theme.colors.pA400 : 'currentColor'};
   svg {
     width: 100% !important;
     height: 100% !important;
