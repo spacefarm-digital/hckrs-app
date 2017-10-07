@@ -11,7 +11,7 @@ class SuggestedChallenges extends React.Component {
     return (
       <Box mb={4} pt={4}>
         <Heading f={3} is="h2" mb={3}>
-          Suggested challenges
+          Recommended challenges
         </Heading>
         <Grid container>
           {[0, 1, 2].map(value => (

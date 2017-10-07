@@ -22,11 +22,11 @@ const ChallengeFilter = () => (
             <FilterItem options={['🕐 Upcoming', '✅ Active', '⌛️ Past']} />
           </Box>
           <Text px={2} bold>
-            events happening
+            challenges
           </Text>
           <Box py={2} px={2}>
             <FilterItem
-              options={['🗺 50km away', '🗺 100km away', '🗺 500km away']}
+              options={['🗺 within 50km', '🗺 within 100km', '🗺 within 500km']}
             />
           </Box>
           <Text px={2} bold>

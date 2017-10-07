@@ -19,7 +19,7 @@ class NewChallenge extends Component {
     return (
       <main>
         <FluidContainer tight>
-          <PageTitle title="New challenge">
+          <PageTitle title="Add challenge">
             <AddIcon />
           </PageTitle>
           <PrettyPaper>

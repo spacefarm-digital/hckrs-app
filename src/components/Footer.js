@@ -72,7 +72,7 @@ const Footer = () => (
         {/* Subscribe */}
         <Box w={[1, 1 / 2, 1 / 3]} mb={4} px={2}>
           <Text bold mb={2}>
-            Stay up to date with new challenges, upcoming events and news
+            Subscribe to our newsletter to get news, updates and special offers.
           </Text>
           <TextField placeholder="Your email here" />
           <Button w={1}>Subscribe</Button>

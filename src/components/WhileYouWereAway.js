@@ -11,7 +11,7 @@ class WhileYouWereAway extends React.Component {
     return (
       <Box mb={4} pt={4}>
         <Heading f={3} is="h2" mb={3}>
-          Since you were away...
+          While you were away
         </Heading>
         <Grid container>
           <Grid item xs={12} sm={6} md={4} xl={3}>

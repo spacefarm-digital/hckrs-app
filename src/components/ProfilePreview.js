@@ -39,7 +39,7 @@ const ProfilePreview = props => {
             </Heading>
             <Text mb={3}>
               <PrettyLink to="/" mb={3}>
-                {props.numberOfHacks} hacks
+                {props.numberOfHacks} submitted hacks
               </PrettyLink>, {'Located in'}{' '}
               <PrettyLink to="/">{props.location}</PrettyLink>
             </Text>

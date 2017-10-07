@@ -53,7 +53,7 @@ const ChallengePreview = props => {
           <Flex mx={-1} align="center">
             <Box px={1}>
               <Button raised color="primary">
-                See more
+                Continue reading
               </Button>
             </Box>
           </Flex>

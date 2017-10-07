@@ -23,7 +23,7 @@ const ChallengeStats = props => (
         </Heading>
         <Flex align="center" wrap>
           <Text bold mr={2}>
-            Hosted by:
+            Challenger:
           </Text>
           <Flex wrap mx={-1} align="center" is="ul">
             <Box is="li" px={1}>
@@ -39,7 +39,7 @@ const ChallengeStats = props => (
         {props.brief}
       </Text>
       <Heading is="h2" f={1} mb={2}>
-        Accepting hacks in:
+        Challenge categories:
       </Heading>
       <Flex is="ul" mx={-1} mb={3} wrap>
         {props.categories.map((category, index) => (

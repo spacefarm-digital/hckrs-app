@@ -68,7 +68,7 @@ const ChallengePreview = props => {
           <Flex mx={-1} justify="flex-end" align="center">
             <Box px={1}>
               <Button color="primary" component={Link} to="#">
-                {props.numberOfHacks} hacks
+                {props.numberOfHacks} submitted hacks
               </Button>
             </Box>
             <Box px={1}>
