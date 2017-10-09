@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 
 import PageTitle from '../components/PageTitle'
-import NewChallengeNav from '../components/NewChallengeNav'
+import NewChallengeForm from '../components/NewChallengeForm'
 import PrettyPaper from '../components/extended/PrettyPaper'
 
 import { Box } from 'rebass'
@@ -19,11 +19,13 @@ class NewChallenge extends Component {
     return (
       <main>
         <FluidContainer tight>
-          <PageTitle title="New challenge">
-            <AddIcon />
-          </PageTitle>
+          <Box mb={3}>
+            <PageTitle title="New challenge">
+              <AddIcon />
+            </PageTitle>
+          </Box>
           <PrettyPaper>
-            <NewChallengeNav />
+            <NewChallengeForm />
           </PrettyPaper>
         </FluidContainer>
       </main>

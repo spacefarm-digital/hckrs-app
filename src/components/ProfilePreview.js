@@ -2,10 +2,10 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Card, { CardContent } from 'material-ui/Card'
 import { Text, Heading, Flex, Box, Avatar } from 'rebass'
 
-import CategoryChip from '../components/CategoryChip'
+import CategoryPreview from '../components/CategoryPreview'
+import PrettyPaper from '../components/extended/PrettyPaper'
 import PrettyLink from '../components/extended/PrettyLink'
 
 import placeholder from '../assets/placeholder-avatar.jpg'
@@ -26,15 +26,29 @@ const defaultProps = {
 }
 
 const ProfilePreview = props => {
-  return (
-    <Card>
-      <CardContent>
+  {
+    if (props.compact) {
+      return (
+        <PrettyPaper p={3}>
+          <Flex column align="center">
+            <Box mb={2}>
+              <Avatar src={props.avatar} size="8rem" />
+            </Box>
+            <Heading f={1} is="p">
+              {props.name}
+            </Heading>
+          </Flex>
+        </PrettyPaper>
+      )
+    }
+    return (
+      <PrettyPaper p={3}>
         <Flex mh={-2} w={1}>
           <Box px={2}>
             <Avatar src={props.avatar} size="4rem" />
           </Box>
           <Box px={2} w={1}>
-            <Heading f={2} is="h2" mb={2}>
+            <Heading f={2} is="p" mb={2} aria-label="Hacker name">
               {props.name}
             </Heading>
             <Text mb={3}>
@@ -50,14 +64,12 @@ const ProfilePreview = props => {
         </Text>
         <Flex wrap w={1} is="ul" mx={-1} mb={-2}>
           <Box is="li" px={1} mb={2}>
-            <CategoryChip color="#bcf5dd" to="/category">
-              ✈️ Aviation
-            </CategoryChip>
+            <CategoryPreview title="Aerospace" to="#" />
           </Box>
         </Flex>
-      </CardContent>
-    </Card>
-  )
+      </PrettyPaper>
+    )
+  }
 }
 
 ProfilePreview.propTypes = propTypes

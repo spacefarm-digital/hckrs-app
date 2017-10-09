@@ -25,8 +25,9 @@ const UploadOverlayWrapper = styled.form`
   text-align: center;
   input {
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px 1px 1px 1px) !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    left: 0;
   }
   label {
     width: 100%;
@@ -39,8 +40,8 @@ const UploadOverlayWrapper = styled.form`
 `
 const UploadOverlay = props => (
   <UploadOverlayWrapper>
-    <input type="file" id="meno" />
-    <label htmlFor="meno">
+    <input type="file" id={props.name} />
+    <label htmlFor={props.name}>
       <span>Upload photo</span>
       <Ink />
     </label>

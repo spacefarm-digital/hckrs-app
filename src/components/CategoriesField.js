@@ -1,50 +1,42 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import Input, { InputLabel } from 'material-ui/Input'
-import { MenuItem } from 'material-ui/Menu'
-import { FormControl } from 'material-ui/Form'
-import Select from 'material-ui/Select'
-
-import UploadOverlay from './UploadOverlay'
+import React from 'react'
+import PropTypes from 'prop-types'
+import {
+  FormGroup,
+  FormControlLabel,
+  FormControl,
+  FormLabel,
+} from 'material-ui/Form'
+import Checkbox from 'material-ui/Checkbox'
 
 import categories from '../data/categories'
 
-class CategoriesField extends React.Component {
-  state = {
-    selectedCategories: [],
+import CategoryCheckbox from '../components/CategoryCheckbox'
+
+import { Flex, Box } from 'rebass'
+
+class Checkboxes extends React.Component {
+  state = {}
+
+  handleChange = name => event => {
+    this.setState({ [name]: event.target.checked })
   }
-  handleChange = event => {
-    this.setState({ selectedCategories: event.target.value })
-  }
+
   render() {
     return (
-      <div>
-        <FormControl>
-          <InputLabel htmlFor="name-multiple">Categories</InputLabel>
-          <Select
-            multiple
-            value={this.state.selectedCategories}
-            onChange={this.handleChange}
-            input={<Input id="category-multiple" />}
-          >
-            {categories.map(category => (
-              <MenuItem
-                key={category}
-                value={category}
-                style={{
-                  fontWeight:
-                    this.state.selectedCategories.indexOf(category) !== -1
-                      ? '500'
-                      : '400',
-                }}
-              >
-                {category}
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-      </div>
+      <FormControl component="fieldset">
+        <Box mb={3}>
+          <FormLabel component="legend">Pick categories</FormLabel>
+        </Box>
+        <Flex mx={-2} wrap>
+          {categories.map((category, value) => (
+            <Box px={2} mb={3}>
+              <CategoryCheckbox title={category} key={value} name={value} />
+            </Box>
+          ))}
+        </Flex>
+      </FormControl>
     )
   }
 }
-export default CategoriesField
+
+export default Checkboxes

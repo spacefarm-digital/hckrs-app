@@ -8,6 +8,7 @@ import ImageField from '../components/ImageField'
 import CategoriesField from '../components/CategoriesField'
 import RadioControl from '../components/RadioControl'
 import NameField from '../components/extended/NameField'
+import PrettyPaper from '../components/extended/PrettyPaper'
 
 import { Flex, Box } from 'rebass'
 
@@ -16,13 +17,14 @@ import { placeholder } from '../assets/placeholder.jpg'
 class NewChallengeMain extends React.Component {
   render() {
     return (
-      <div>
-        <Box mb={3} pt={2}>
+      <PrettyPaper p={3}>
+        {/* Avatar + name */}
+        <Box mb={4} pt={2}>
           <Grid container align="center">
             {/* Upload avatar */}
             <Grid item xs={12} sm={3} md={2}>
               <Flex justify="center">
-                <ImageField required id="challengeAvatar" />
+                <ImageField required name="upload-avatar" />
               </Flex>
             </Grid>
             {/* Challenge name */}
@@ -40,17 +42,8 @@ class NewChallengeMain extends React.Component {
             </Grid>
           </Grid>
         </Box>
-        {/* Challenge categories */}
-        <Flex mb={3}>
-          <CategoriesField
-            required
-            id="challengeCategories"
-            label="Categories"
-            fullWidth
-          />
-        </Flex>
         {/* Challenge time span */}
-        <Flex mb={3} mx={-2}>
+        <Flex mb={4} mx={-2}>
           <Box px={2} w={1 / 2}>
             <TextField
               id="challengeStartDate"
@@ -77,7 +70,7 @@ class NewChallengeMain extends React.Component {
           </Box>
         </Flex>
         {/* Challenge location */}
-        <Flex mb={3}>
+        <Flex mb={4}>
           <TextField
             required
             id="challengeLocation"
@@ -85,14 +78,18 @@ class NewChallengeMain extends React.Component {
             fullWidth
           />
         </Flex>
+        {/* Challenge categories */}
+        <Flex mb={4}>
+          <CategoriesField required id="challengeCategories" />
+        </Flex>
         {/* Challenge type */}
-        <Flex mb={3}>
+        <Flex mb={4}>
           <RadioControl
             items={['📢 Public', '✉️ Invite-only', '🕶 Unlisted']}
             label="Challenge Type"
           />
         </Flex>
-      </div>
+      </PrettyPaper>
     )
   }
 }

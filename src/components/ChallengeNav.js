@@ -13,18 +13,14 @@ import ViewListIcon from 'material-ui-icons/ViewList'
 import TodayIcon from 'material-ui-icons/Today'
 import EuroSymbolIcon from 'material-ui-icons/EuroSymbol'
 import PeopleIcon from 'material-ui-icons/People'
+import TagFacesIcon from 'material-ui-icons/TagFaces'
+import HelpIcon from 'material-ui-icons/Help'
 
 import PrettyPaper from './extended/PrettyPaper'
 
 const ChallengeNav = props => (
-  <PrettyPaper justify="center" component={Flex}>
-    <Tabs
-      scrollable
-      indicatorColor="primary"
-      textColor="primary"
-      scrollButtons="off"
-      centered
-    >
+  <PrettyPaper justify="center" component={Flex} mb={3}>
+    <Tabs scrollable indicatorColor="primary" textColor="primary" centered>
       <Tab
         label="Description"
         icon={<TextFieldsIcon />}
@@ -36,6 +32,12 @@ const ChallengeNav = props => (
         href="#challenge-subchallenges"
       />
       <Tab label="Agenda" icon={<TodayIcon />} href="#challenge-agenda" />
+      <Tab label="Advisors" icon={<HelpIcon />} href="#challenge-advisors" />
+      <Tab
+        label="Participants"
+        icon={<TagFacesIcon />}
+        href="#challenge-participants"
+      />
       <Tab label="Prizes" icon={<EuroSymbolIcon />} href="#challenge-prizes" />
       <Tab label="Sponsors" icon={<PeopleIcon />} href="#challenge-sponsors" />
     </Tabs>

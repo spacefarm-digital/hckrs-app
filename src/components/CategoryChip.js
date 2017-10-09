@@ -8,7 +8,7 @@ const CategoryChip = styled(Button)`
   color: ${props =>
     props.color
       ? saturate(2.5, darken(0.6, props.color))
-      : saturate(2.5, darken(0.6, 'pink'))}!important;
+      : props.theme.colors.g600}!important;
   font-weight: 500 !important;
   font-size: 14px !important;
   line-height: 1 !important;
@@ -18,6 +18,7 @@ const CategoryChip = styled(Button)`
   min-height: 0 !important;
   line-height: 1;
   overflow: hidden !important;
+  cursor: pointer;
 `
 
 export default CategoryChip
