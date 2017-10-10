@@ -14,13 +14,7 @@ import CategoryCheckbox from '../components/CategoryCheckbox'
 
 import { Flex, Box } from 'rebass'
 
-class Checkboxes extends React.Component {
-  state = {}
-
-  handleChange = name => event => {
-    this.setState({ [name]: event.target.checked })
-  }
-
+class CategoriesField extends React.Component {
   render() {
     return (
       <FormControl component="fieldset">
@@ -28,15 +22,21 @@ class Checkboxes extends React.Component {
           <FormLabel component="legend">Pick categories</FormLabel>
         </Box>
         <Flex mx={-2} wrap>
-          {categories.map((category, value) => (
-            <Box px={2} mb={3}>
-              <CategoryCheckbox title={category} key={value} name={value} />
-            </Box>
-          ))}
+          {categories.map((category, value) => {
+            return (
+              <Box px={2} mb={3}>
+                <CategoryCheckbox
+                  title={category}
+                  key={value}
+                  name={category}
+                />
+              </Box>
+            )
+          })}
         </Flex>
       </FormControl>
     )
   }
 }
 
-export default Checkboxes
+export default CategoriesField
