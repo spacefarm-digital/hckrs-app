@@ -9,6 +9,9 @@ const baseStyles = () => injectGlobal`
   ::selection {
     background: #BCF5DD;
   }
+  form, form div {
+    vertical-align: top;
+  }
 `
 
 export default baseStyles
