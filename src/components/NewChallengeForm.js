@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import TextField from 'material-ui/TextField'
 import Grid from 'material-ui/Grid'
+import Button from 'material-ui/Button'
 
 import FilterItem from '../components/FilterItem'
 import ImageField from '../components/ImageField'
@@ -88,6 +90,11 @@ class NewChallengeMain extends React.Component {
             items={['📢 Public', '✉️ Invite-only', '🕶 Unlisted']}
             label="Challenge Type"
           />
+        </Flex>
+        <Flex justify="flex-end">
+          <Button raised color="accent" component={Link} to="/draft-challenge">
+            Create challenge!
+          </Button>
         </Flex>
       </PrettyPaper>
     )
