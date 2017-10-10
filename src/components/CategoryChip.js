@@ -19,6 +19,7 @@ const CategoryChip = styled(Button)`
   line-height: 1;
   overflow: hidden !important;
   cursor: pointer;
+  user-select: none;
 `
 
 export default CategoryChip
