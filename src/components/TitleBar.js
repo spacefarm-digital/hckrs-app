@@ -18,6 +18,7 @@ import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
 import IconButton from 'material-ui/IconButton'
+import Badge from 'material-ui/Badge'
 
 import HomeIcon from 'material-ui-icons/Home'
 import NotificationsIcon from 'material-ui-icons/Notifications'
@@ -95,7 +96,11 @@ class TitleBar extends Component {
                     activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
-                    icon={<NotificationsIcon />}
+                    icon={
+                      <Badge badgeContent={3} color="accent">
+                        <NotificationsIcon />
+                      </Badge>
+                    }
                     label="Activity"
                     component={NavLink}
                     to="/activity"

@@ -8,7 +8,7 @@ import { Heading, Box } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 
-import NewSubchallenge from './NewSubchallenge'
+import EmptySubchallenge from './EmptySubchallenge'
 import NewBlock from './NewBlock'
 
 const AddSubchallenges = props => (
@@ -19,7 +19,7 @@ const AddSubchallenges = props => (
       </Heading>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <NewSubchallenge />
+          <EmptySubchallenge />
         </Grid>
         <Grid item xs={12} sm={6}>
           <NewBlock tall>Add another challenge</NewBlock>

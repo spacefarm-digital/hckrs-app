@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Flex, Box, Text, Container } from 'rebass'
+import { Flex, Box, Text } from 'rebass'
 
 import Paper from 'material-ui/Paper'
 
@@ -8,9 +8,11 @@ import FilterItem from './FilterItem'
 import Search from './Search'
 import CategoryFilter from './CategoryFilter'
 
+import FluidContainer from './extended/FluidContainer'
+
 const HackerFilter = () => (
   <Paper color="primary">
-    <Container mb={4} mx="auto">
+    <FluidContainer mb={4} mx="auto">
       <Flex wrap align="baseline" justify="space-between" f={1} py={2} mx={-2}>
         <Flex align="baseline" w={[1, 1, 'auto']} wrap mb={[3, 3, 0]}>
           <Text px={2} bold>
@@ -45,7 +47,7 @@ const HackerFilter = () => (
           <Search />
         </Box>
       </Flex>
-    </Container>
+    </FluidContainer>
   </Paper>
 )
 export default HackerFilter

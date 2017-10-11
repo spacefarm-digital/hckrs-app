@@ -12,7 +12,7 @@ import NewBlock from './NewBlock'
 const AddAdvisors = props => (
   <Box mb={4}>
     <Heading is="h2" f={3} mb={3} color="pA400">
-      Advisors
+      4.Add Advisors
     </Heading>
     <Grid container align="stretch">
       <Grid item xs={12} sm={6} lg={4} xl={3}>

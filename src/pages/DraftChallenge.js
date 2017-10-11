@@ -14,10 +14,9 @@ import DraftChallengeStats from '../components/DraftChallengeStats'
 import AddDescription from '../components/AddDescription'
 import AddSubchallenges from '../components/AddSubchallenges'
 import AddAgenda from '../components/AddAgenda'
-import Participants from '../components/Participants'
-import Prizes from '../components/Prizes'
 import AddAdvisors from '../components/AddAdvisors'
-import Sponsors from '../components/Sponsors'
+import AddPrizes from '../components/AddPrizes'
+import AddSponsors from '../components/AddSponsors'
 
 import ChallengeNav from '../components/ChallengeNav'
 
@@ -25,9 +24,6 @@ import FluidContainer from '../components/extended/FluidContainer'
 
 // Fake data
 import agendaData from '../data/agendaData'
-import prizesData from '../data/prizesData'
-import advisorsData from '../data/advisorsData'
-import participantsData from '../data/participantsData'
 
 class DraftChallenge extends Component {
   render() {
@@ -58,33 +54,10 @@ class DraftChallenge extends Component {
               <AddAgenda data={agendaData} />
               {/* Advisors */}
               <AddAdvisors />
-              {/* Participants */}
-              <Participants data={participantsData} />
               {/* Prizes */}
-              <Prizes data={prizesData} />
+              <AddPrizes />
               {/* Sponsors */}
-              <Box>
-                <Sponsors
-                  sponsors={[
-                    {
-                      name: 'Sponsor McSponsor',
-                      externalUrl: ['http://www.honeybadger.com'],
-                      image:
-                        'http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740',
-                    },
-                    {
-                      name: 'Sponsor McSponsor',
-                      image:
-                        'http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740',
-                    },
-                    {
-                      name: 'Sponsor McSponsor',
-                      image:
-                        'http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740',
-                    },
-                  ]}
-                />
-              </Box>
+              <AddSponsors />
             </Grid>
           </Grid>
         </Box>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import PrettyPaper from './extended/PrettyPaper'
 
-import { Heading, Text, Flex, Box } from 'rebass'
+import { Text, Flex, Box } from 'rebass'
 
 import Button from 'material-ui/Button'
 import TextField from 'material-ui/TextField'
@@ -26,14 +26,20 @@ const defaultProps = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.',
 }
 
-const NewSubchallenge = props => (
+const EmptySubchallenge = props => (
   <PrettyPaper p={3}>
-    <Heading f={2} mb={2}>
-      <TypeIcon color="primary">
-        <FlagIcon />
-      </TypeIcon>
-      <NameField placeholder="Subchallenge name">{props.title}</NameField>
-    </Heading>
+    <Flex f={2} mb={2} w={1}>
+      <Box mr={2}>
+        <TypeIcon color="primary">
+          <FlagIcon />
+        </TypeIcon>
+      </Box>
+      <Box w={1}>
+        <NameField placeholder="Subchallenge name" fullWidth>
+          {props.title}
+        </NameField>
+      </Box>
+    </Flex>
     <Box mb={3}>
       <TextField label="Description" rowsMax={4} multiline fullWidth />
     </Box>
@@ -45,7 +51,7 @@ const NewSubchallenge = props => (
   </PrettyPaper>
 )
 
-NewSubchallenge.PropTypes = propTypes
-NewSubchallenge.defaultProps = defaultProps
+EmptySubchallenge.PropTypes = propTypes
+EmptySubchallenge.defaultProps = defaultProps
 
-export default NewSubchallenge
+export default EmptySubchallenge

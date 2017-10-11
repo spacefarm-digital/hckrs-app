@@ -55,6 +55,9 @@ const CategoryInput = styled(HiddenInput)`
       color: inherit !important;
     }
   }
+  &:focus + label:after {
+    opacity: 0.25;
+  }
 `
 
 class CategoryCheckbox extends React.Component {

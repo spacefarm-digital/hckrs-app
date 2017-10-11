@@ -7,6 +7,9 @@ const CleanLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   position: relative;
+  &:focus {
+    outline: 2px solid ${props => props.theme.colors.p200};
+  }
 `
 
 export default CleanLink

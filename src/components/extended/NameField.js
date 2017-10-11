@@ -7,6 +7,9 @@ const NameField = styled(Input)`
   div {
     display: block !important;
   }
+  input {
+    text-align: ${props => (props.center ? 'center' : 'left')}!important;
+  }
 `
 
 export default NameField
