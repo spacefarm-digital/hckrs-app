@@ -12,6 +12,9 @@ const baseStyles = () => injectGlobal`
   form, form div {
     vertical-align: top;
   }
+  svg {
+    position: relative;
+  }
 `
 
 export default baseStyles

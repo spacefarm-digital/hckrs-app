@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { Container } from 'rebass'
 
 const FluidContainer = styled(Container)`
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: ${props => (props.gutterless ? 0 : '1rem')};
+  padding-right: ${props => (props.gutterless ? 0 : '1rem')};
   width: 100%;
   margin-left: auto;
   margin-right: auto;

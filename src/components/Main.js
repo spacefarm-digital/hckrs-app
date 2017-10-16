@@ -16,6 +16,8 @@ import Test from '../pages/Test'
 import Profile from '../pages/Profile'
 import NewChallenge from '../pages/NewChallenge'
 import DraftChallenge from '../pages/DraftChallenge'
+// Marketing
+import MHome from '../pages/MHome'
 
 import { Box } from 'rebass'
 
@@ -34,6 +36,9 @@ class Main extends Component {
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/new-challenge" component={NewChallenge} />
           <Route exact path="/draft-challenge" component={DraftChallenge} />
+          <Route exact path="/" component={DraftChallenge} />
+          {/* Marketing */}
+          <Route exact path="/mHome" component={MHome} />
         </Switch>
       </Box>
     )
