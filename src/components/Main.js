@@ -40,7 +40,7 @@ class Main extends Component {
           <Route exact path="/" component={DraftChallenge} />
           {/* Marketing */}
           <Route exact path="/mHome" component={MHome} />
-          <Route exact path="/benefits" component={Benefits} />
+          <Route path="/benefits" component={Benefits} />
         </Switch>
       </Box>
     )

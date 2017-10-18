@@ -79,7 +79,7 @@ class TitleBar extends Component {
                 <Heading
                   f={2}
                   is={CleanLink}
-                  to="MHome"
+                  to="/MHome"
                   onClick={this.goHome}
                   py={3}
                 >
@@ -181,7 +181,6 @@ class TitleBar extends Component {
                   icon={<StarsIcon />}
                   component={StyledNavLink}
                   to="/benefits"
-                  exact
                   activeStyle={{ color: primaryColor }}
                 />
               )}

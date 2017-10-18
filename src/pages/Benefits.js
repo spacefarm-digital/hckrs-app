@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Isvg from 'react-inlinesvg'
 
@@ -9,6 +9,7 @@ import BenefitsNav from '../components/BenefitsNav'
 import FluidContainer from '../components/extended/FluidContainer'
 
 import FeaturedChallenge from '../components/FeaturedChallenge'
+import ChallengePreview from '../components/ChallengePreview'
 
 import StarsIcon from 'material-ui-icons/Stars'
 
@@ -17,19 +18,27 @@ import { Heading, Box, Text } from 'rebass'
 
 import designersSVG from '../assets/testSVG/designers.svg'
 
-const Benefits = () => (
-  <main>
-    <FluidContainer>
-      <PageTitle title="Benefits">
-        <StarsIcon />
-      </PageTitle>
-      <BenefitsNav />
-      <Switch>
-        <Route path="#hackers" component={FeaturedChallenge} />
-        <Route path="#challengers" component={<Heading>Hello</Heading>} />
-      </Switch>
-    </FluidContainer>
-  </main>
-)
+class Benefits extends React.Component {
+  render() {
+    return (
+      <main>
+        <FluidContainer>
+          <PageTitle title="Benefits">
+            <StarsIcon />
+          </PageTitle>
+          <BenefitsNav />
+          <Switch>
+            <Route path="/benefits" exact component={FeaturedChallenge} />
+            <Route
+              path="/benefits/challengers"
+              exact
+              component={ChallengePreview}
+            />
+          </Switch>
+        </FluidContainer>
+      </main>
+    )
+  }
+}
 
 export default Benefits
