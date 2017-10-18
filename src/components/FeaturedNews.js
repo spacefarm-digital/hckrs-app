@@ -10,7 +10,7 @@ class FeaturedNews extends React.Component {
   render() {
     return (
       <Box mb={4} pt={4}>
-        <Heading f={3} is="h2" mb={3}>
+        <Heading f={3} is="h2" mb={3} color="p500">
           Latest news
         </Heading>
         <Grid container>

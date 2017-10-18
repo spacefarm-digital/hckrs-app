@@ -27,6 +27,7 @@ import BusinessIcon from 'material-ui-icons/Business'
 import GroupIcon from 'material-ui-icons/Group'
 import FiberNewIcon from 'material-ui-icons/FiberNew'
 import AddCircleIcon from 'material-ui-icons/AddCircle'
+import StarsIcon from 'material-ui-icons/Stars'
 
 import Tabs from 'material-ui/Tabs'
 
@@ -72,7 +73,7 @@ class TitleBar extends Component {
                   onClick={this.goHome}
                   py={3}
                 >
-                  Hckrs
+                  hckrs
                 </Heading>
               ) : (
                 <Heading
@@ -82,7 +83,7 @@ class TitleBar extends Component {
                   onClick={this.goHome}
                   py={3}
                 >
-                  Hckrs
+                  hckrs
                 </Heading>
               )}
               <MediaQuery query="(min-width: 50em)">
@@ -103,6 +104,15 @@ class TitleBar extends Component {
                       activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                     />
                   ) : null}
+                  {this.state.loggedIn ? null : (
+                    <DesktopTab
+                      icon={<StarsIcon />}
+                      label="Benefits"
+                      component={NavLink}
+                      to="/benefits"
+                      activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
+                    />
+                  )}
                   <DesktopTab
                     icon={<BusinessIcon />}
                     label="Challenges"
@@ -167,10 +177,10 @@ class TitleBar extends Component {
                 />
               ) : (
                 <BottomNavigationButton
-                  label="Home"
-                  icon={<HomeIcon />}
+                  label="Benefits"
+                  icon={<StarsIcon />}
                   component={StyledNavLink}
-                  to="/MHome"
+                  to="/benefits"
                   exact
                   activeStyle={{ color: primaryColor }}
                 />

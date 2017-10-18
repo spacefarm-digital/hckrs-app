@@ -6,6 +6,8 @@ import FluidContainer from '../components/extended/FluidContainer'
 
 import MHero from '../components/MHero'
 import MFeaturedBenefits from '../components/MFeaturedBenefits'
+import MFeaturedChallenges from '../components/MFeaturedChallenges'
+import MFeaturedHackers from '../components/MFeaturedHackers'
 
 const MHome = props => (
   <div>
@@ -14,7 +16,9 @@ const MHome = props => (
     {/* How can Hckrs help you */}
     <MFeaturedBenefits />
     {/* Fieatued challenges */}
+    <MFeaturedChallenges />
     {/* Fieatued hackers */}
+    <MFeaturedHackers />
     {/* Fieatued news */}
     <FluidContainer>
       <FeaturedNews />

@@ -23,6 +23,7 @@ const defaultProps = {
   numberOfHacks: 0,
   avatar: placeholder,
   location: 'The world',
+  categories: ['Aerospace'],
 }
 
 const ProfilePreview = props => {
@@ -34,9 +35,16 @@ const ProfilePreview = props => {
             <Box mb={2}>
               <Avatar src={props.avatar} size="8rem" />
             </Box>
-            <Heading f={1} is="p">
+            <Heading f={1} is="p" mb={2}>
               {props.name}
             </Heading>
+            <Flex wrap w={1} is="ul" mx={-1} mb={-2} justify="center">
+              {props.categories.map((category, value) => (
+                <Box is="li" px={1} mb={2}>
+                  <CategoryPreview title={category} to="#" compact />
+                </Box>
+              ))}
+            </Flex>
           </Flex>
         </PrettyPaper>
       )
@@ -63,9 +71,11 @@ const ProfilePreview = props => {
           Interested in: {props.categories}
         </Text>
         <Flex wrap w={1} is="ul" mx={-1} mb={-2}>
-          <Box is="li" px={1} mb={2}>
-            <CategoryPreview title="Aerospace" to="#" />
-          </Box>
+          {props.categories.map((category, value) => (
+            <Box is="li" px={1} mb={2}>
+              <CategoryPreview title={category} to="#" />
+            </Box>
+          ))}
         </Flex>
       </PrettyPaper>
     )

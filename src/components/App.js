@@ -10,9 +10,18 @@ import Footer from '../components/Footer'
 class App extends Component {
   render() {
     return (
-      <div>
-        <TitleBar />
-        <Main />
+      <div
+        style={{
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div>
+          <TitleBar />
+          <Main />
+        </div>
         <Footer />
       </div>
     )

@@ -14,7 +14,7 @@ import Button from 'material-ui/Button'
 const MHero = props => (
   <Box bg="p50" py={5} is="section">
     <Container>
-      <Heading is="h2" f={3} mb={4} center>
+      <Heading is="h2" f={3} mb={4} center color="p500">
         See how Hckrs can help you
       </Heading>
       <Grid container>

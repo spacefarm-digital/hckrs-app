@@ -318,7 +318,7 @@ const MoneyPrize = props => (
           fontSize="90"
           fill="#0e8754"
         >
-          {props.prize}
+          {props.ammount}
         </text>
         <path
           id="strip"

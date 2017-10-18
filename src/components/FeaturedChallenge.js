@@ -72,7 +72,7 @@ const FeaturedChallenge = props => {
                 <Box>
                   <ShadowAvatar src={props.logo} w="2em" mr={3} />
                 </Box>
-                <Heading is="h2" f={[3, 4]}>
+                <Heading is="h2" f={props.big ? 4 : 2}>
                   {props.title}
                 </Heading>
               </Flex>

@@ -5,6 +5,8 @@ import Ink from 'react-ink'
 
 const CategoryPreview = props => (
   <CategoryChip
+    aria-label={props.title}
+    compact={props.compact}
     color={(() => {
       switch (props.title) {
         case 'Aerospace':
@@ -85,7 +87,7 @@ const CategoryPreview = props => (
           }
         })()}
       </Emoji>
-      {props.title}
+      {props.compact ? null : props.title}
     </span>
     <Ink background />
   </CategoryChip>
