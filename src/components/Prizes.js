@@ -18,21 +18,21 @@ const Prizes = props => (
       <Grid container>
         <Grid item xs={12} sm={4}>
           <MoneyPrize
-            prize="$50 000"
+            ammount="$50 000"
             name="1st prize"
             description="This is a sample description."
           />
         </Grid>
         <Grid item xs={12} sm={4}>
           <MoneyPrize
-            prize="$2500"
+            ammount="$2500"
             name="2nd prize"
             description="This is a sample description"
           />
         </Grid>
         <Grid item xs={12} sm={4}>
           <MoneyPrize
-            prize="$100"
+            ammount="$100"
             name="3rd prize"
             description="This is a sample description"
           />
