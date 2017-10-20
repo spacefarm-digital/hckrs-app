@@ -1,6 +1,7 @@
 // @flow weak
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Card, { CardContent } from 'material-ui/Card'
 import { Text, Heading, Flex, Box, Avatar } from 'rebass'
@@ -23,6 +24,7 @@ const propTypes = {
 const defaultProps = {
   name: 'Default name',
   avatar: placeholder,
+  categories: ['Chemical'],
 }
 
 const Advisor = props => {
@@ -41,7 +43,7 @@ const Advisor = props => {
       <Text bold mb={2}>
         Knowledgable about:
       </Text>
-      <Flex wrap w={1} is="ul" mx={-1} mb={3}>
+      <Flex wrap w={1} is="ul" mx={-1} mb={props.bookingAllowed ? 3 : 0}>
         {props.categories.map((category, index) => (
           <Box is="li" px={1} mb={2}>
             <CleanLink to="/" key={index}>
@@ -51,11 +53,13 @@ const Advisor = props => {
         ))}
       </Flex>
       {/* Book timeslot */}
-      <Flex justify="flex-end">
-        <Button raised color="accent">
-          Book timeslot
-        </Button>
-      </Flex>
+      {props.bookingAllowed ? (
+        <Flex justify="flex-end">
+          <Button raised color="accent" component={Link} to="/book-time-slot">
+            Book timeslot
+          </Button>
+        </Flex>
+      ) : null}
     </PrettyPaper>
   )
 }

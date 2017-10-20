@@ -25,6 +25,7 @@ const Advisors = props => (
               name={advisor.name}
               avatar={advisor.avatar}
               categories={advisor.categories}
+              bookingAllowed
             />
           </Grid>
         ))}
