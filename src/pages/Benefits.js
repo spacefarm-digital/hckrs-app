@@ -11,28 +11,32 @@ import FluidContainer from '../components/extended/FluidContainer'
 import FeaturedChallenge from '../components/FeaturedChallenge'
 import ChallengePreview from '../components/ChallengePreview'
 
-import StarsIcon from 'material-ui-icons/Stars'
+import PlaylistAddCheckIcon from 'material-ui-icons/PlaylistAddCheck'
 
 import PrettyPaper from '../components/extended/PrettyPaper'
 import { Heading, Box, Text } from 'rebass'
 
 import designersSVG from '../assets/testSVG/designers.svg'
 
+// Views
+import BenefitsForHackers from '../components/BenefitsForHackers'
+import BenefitsForChallengers from '../components/BenefitsForChallengers'
+
 class Benefits extends React.Component {
   render() {
     return (
       <main>
-        <FluidContainer>
+        <FluidContainer tight>
           <PageTitle title="Benefits">
-            <StarsIcon />
+            <PlaylistAddCheckIcon />
           </PageTitle>
           <BenefitsNav />
           <Switch>
-            <Route path="/benefits" exact component={FeaturedChallenge} />
+            <Route path="/benefits" exact component={BenefitsForHackers} />
             <Route
               path="/benefits/challengers"
               exact
-              component={ChallengePreview}
+              component={BenefitsForChallengers}
             />
           </Switch>
         </FluidContainer>
