@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { transparentize } from 'polished'
+
 import Ink from 'react-ink'
 
 const UploadOverlayWrapper = styled.form`
@@ -14,7 +16,7 @@ const UploadOverlayWrapper = styled.form`
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: ${props => transparentize(0.15, props.theme.colors.p500)};
   display: block;
   color: white;
   border-radius: 50%;
