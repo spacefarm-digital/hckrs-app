@@ -1,15 +1,17 @@
 import React from 'react'
+import Isvg from 'react-inlinesvg'
 
 import {
   Flex,
   Avatar,
-  Button,
   Box,
   Text,
   Heading,
   ButtonCircle,
   BackgroundImage,
 } from 'rebass'
+
+import Button from 'material-ui/Button'
 
 import PrettyPaper from '../components/extended/PrettyPaper'
 import PrettyLink from '../components/extended/PrettyLink'
@@ -20,6 +22,8 @@ import TextField from 'material-ui/TextField'
 
 import FluidContainer from '../components/extended/FluidContainer'
 import PrettySocialIcon from '../components/extended/PrettySocialIcon'
+
+import footerSVG from '../assets/testSVG/footer.svg'
 
 const Footer = () => (
   <Box is="footer" bg="g900" color="white" py={4}>
@@ -86,20 +90,32 @@ const Footer = () => (
             <Text bold mb={2}>
               Stay up to date with new challenges, upcoming events and news
             </Text>
-            <Box mb={2}>
-              <TextField
-                fullWidth
-                placeholder="Your email here"
-                label="Email"
-              />
-            </Box>
-            <Button w={1}>Subscribe</Button>
+            <Flex column align="center">
+              <Box mb={2} w={1}>
+                <TextField
+                  fullWidth
+                  placeholder="Your email here"
+                  label="Email"
+                />
+              </Box>
+              <Button raised color="primary">
+                Subscribe
+              </Button>
+            </Flex>
           </PrettyPaper>
         </Box>
         {/* Illustration */}
-        <Box w={[1, 1, 4 / 12]} mb={4} px={2}>
-          <BackgroundImage src={placeholder} ratio={1 / 2} />
-        </Box>
+        <Flex w={[1, 1, 4 / 12]} mb={4} px={2} align="flex-end">
+          <Isvg
+            src={footerSVG}
+            style={{
+              width: '80%',
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          />
+        </Flex>
       </Flex>
       <Text f={0} bold center color="g700">
         All rights reserved to Hckrs
