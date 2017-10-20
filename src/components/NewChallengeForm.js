@@ -71,14 +71,25 @@ class NewChallengeMain extends React.Component {
             />
           </Box>
         </Flex>
-        {/* Challenge location */}
-        <Flex mb={4}>
-          <TextField
-            required
-            id="challengeLocation"
-            label="🌎 Location"
-            fullWidth
-          />
+        <Flex wrap mx={-2}>
+          {/* Challenge location */}
+          <Box mb={4} px={2} w={[1, 1, 1 / 2]}>
+            <TextField
+              required
+              id="challengeLocation"
+              label="🌎 Location"
+              fullWidth
+            />
+          </Box>
+          {/* Description */}
+          <Box mb={4} px={2} w={[1, 1, 1 / 2]}>
+            <TextField
+              required
+              id="challengeDescription"
+              label="📖 Short challenge info"
+              fullWidth
+            />
+          </Box>
         </Flex>
         {/* Challenge categories */}
         <Flex mb={4}>
