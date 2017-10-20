@@ -16,7 +16,7 @@ const MHero = props => (
         <Grid item xs={12} xl={5}>
           <Flex column align="center">
             <Box mb={[4, 4, 5]} px={3}>
-              <Heading f={[4, 4, 4, 5]} mb={2} color="p600">
+              <Heading f={[4, 4, 4, 5]} mb={2} color="p600" center>
                 Welcome to Hckrs
               </Heading>
               <Measure mb={3}>
