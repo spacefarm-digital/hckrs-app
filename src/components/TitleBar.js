@@ -11,6 +11,7 @@ import FluidContainer from '../components/extended/FluidContainer'
 import { NavLink } from 'react-router-dom'
 import DesktopTab from '../components/extended/DesktopTab'
 import ProfileMenu from '../components/ProfileMenu'
+import PrettyBadge from '../components/PrettyBadge'
 
 import AppBar from 'material-ui/AppBar'
 import Toolbar from 'material-ui/Toolbar'
@@ -18,16 +19,15 @@ import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
 import IconButton from 'material-ui/IconButton'
-import Badge from 'material-ui/Badge'
 import Button from 'material-ui/Button'
 
-import HomeIcon from 'material-ui-icons/Home'
+import DashboardIcon from 'material-ui-icons/Dashboard'
 import NotificationsIcon from 'material-ui-icons/Notifications'
-import BusinessIcon from 'material-ui-icons/Business'
-import GroupIcon from 'material-ui-icons/Group'
-import FiberNewIcon from 'material-ui-icons/FiberNew'
+import DvrIcon from 'material-ui-icons/Dvr'
+import PeopleIcon from 'material-ui-icons/People'
+import ArtTrackIcon from 'material-ui-icons/ArtTrack'
 import AddCircleIcon from 'material-ui-icons/AddCircle'
-import StarsIcon from 'material-ui-icons/Stars'
+import PlaylistAddCheckIcon from 'material-ui-icons/PlaylistAddCheck'
 
 import Tabs from 'material-ui/Tabs'
 
@@ -40,7 +40,7 @@ const StyledNavLink = styled(NavLink)`min-width: 0 !important;`
 
 class TitleBar extends Component {
   state = {
-    loggedIn: false,
+    loggedIn: true,
   }
 
   toggleLoggedin = (event, value) => {
@@ -96,7 +96,7 @@ class TitleBar extends Component {
                 >
                   {this.state.loggedIn ? (
                     <DesktopTab
-                      icon={<HomeIcon />}
+                      icon={<DashboardIcon />}
                       label="Dashboard"
                       component={NavLink}
                       to="/"
@@ -106,7 +106,7 @@ class TitleBar extends Component {
                   ) : null}
                   {this.state.loggedIn ? null : (
                     <DesktopTab
-                      icon={<StarsIcon />}
+                      icon={<PlaylistAddCheckIcon />}
                       label="Benefits"
                       component={NavLink}
                       to="/benefits"
@@ -114,21 +114,21 @@ class TitleBar extends Component {
                     />
                   )}
                   <DesktopTab
-                    icon={<BusinessIcon />}
+                    icon={<DvrIcon />}
                     label="Challenges"
                     component={NavLink}
                     to="/challenges"
                     activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
-                    icon={<GroupIcon />}
+                    icon={<PeopleIcon />}
                     label="Hackers"
                     component={NavLink}
                     to="/hackers"
                     activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
-                    icon={<FiberNewIcon />}
+                    icon={<ArtTrackIcon />}
                     label="News"
                     component={NavLink}
                     to="/news"
@@ -138,9 +138,9 @@ class TitleBar extends Component {
                   {this.state.loggedIn ? (
                     <DesktopTab
                       icon={
-                        <Badge badgeContent={3} color="accent">
+                        <PrettyBadge>
                           <NotificationsIcon />
-                        </Badge>
+                        </PrettyBadge>
                       }
                       label="Activity"
                       component={NavLink}
@@ -169,7 +169,7 @@ class TitleBar extends Component {
               {this.state.loggedIn ? (
                 <BottomNavigationButton
                   label="Dashboard"
-                  icon={<HomeIcon />}
+                  icon={<DashboardIcon />}
                   component={StyledNavLink}
                   to="/"
                   exact
@@ -178,7 +178,7 @@ class TitleBar extends Component {
               ) : (
                 <BottomNavigationButton
                   label="Benefits"
-                  icon={<StarsIcon />}
+                  icon={<PlaylistAddCheckIcon />}
                   component={StyledNavLink}
                   to="/benefits"
                   activeStyle={{ color: primaryColor }}
@@ -186,21 +186,21 @@ class TitleBar extends Component {
               )}
               <BottomNavigationButton
                 label="Challenges"
-                icon={<BusinessIcon />}
+                icon={<DvrIcon />}
                 component={StyledNavLink}
                 to="/challenges"
                 activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="Hackers"
-                icon={<GroupIcon />}
+                icon={<PeopleIcon />}
                 component={StyledNavLink}
                 to="/hackers"
                 activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="News"
-                icon={<FiberNewIcon />}
+                icon={<ArtTrackIcon />}
                 component={StyledNavLink}
                 to="/news"
                 activeStyle={{ color: primaryColor }}
@@ -208,7 +208,11 @@ class TitleBar extends Component {
               {this.state.loggedIn ? (
                 <BottomNavigationButton
                   label="Activity"
-                  icon={<NotificationsIcon />}
+                  icon={
+                    <PrettyBadge>
+                      <NotificationsIcon />
+                    </PrettyBadge>
+                  }
                   component={StyledNavLink}
                   to="/activity"
                   activeStyle={{ color: primaryColor }}
