@@ -18,4 +18,6 @@ The current state of the **master** branch is reflected <a href="http://hckrs-ap
 
 ## Switch between Logged-in and Logged-out views
 
-By default, the app is loaded in a Logged-in view. Due to the lack of a back-end stack, the process has to be simulated. Use the little checkbox at the top right hand side of the titlebar to "switch".
+By default, the app is loaded in a Logged-out view. Due to the lack of a back-end stack, the process has to be simulated. Use the little checkbox at the top right hand side of the titlebar to "switch".
+
+![Demo](/demo.gif)

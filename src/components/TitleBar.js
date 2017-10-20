@@ -40,7 +40,7 @@ const StyledNavLink = styled(NavLink)`min-width: 0 !important;`
 
 class TitleBar extends Component {
   state = {
-    loggedIn: true,
+    loggedIn: false,
   }
 
   toggleLoggedin = (event, value) => {

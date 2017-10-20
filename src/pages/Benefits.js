@@ -16,8 +16,6 @@ import PlaylistAddCheckIcon from 'material-ui-icons/PlaylistAddCheck'
 import PrettyPaper from '../components/extended/PrettyPaper'
 import { Heading, Box, Text } from 'rebass'
 
-import designersSVG from '../assets/testSVG/designers.svg'
-
 // Views
 import BenefitsForHackers from '../components/BenefitsForHackers'
 import BenefitsForChallengers from '../components/BenefitsForChallengers'
