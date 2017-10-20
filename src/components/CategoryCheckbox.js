@@ -56,7 +56,7 @@ const CategoryInput = styled(HiddenInput)`
     }
   }
   &:focus + label:after {
-    opacity: 0.25;
+    transform: scale(1.1);
   }
 `
 
