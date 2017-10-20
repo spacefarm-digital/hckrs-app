@@ -16,6 +16,10 @@ import Test from '../pages/Test'
 import Profile from '../pages/Profile'
 import NewChallenge from '../pages/NewChallenge'
 import DraftChallenge from '../pages/DraftChallenge'
+import ConfigureTimeSlots from '../pages/ConfigureTimeSlots'
+import BookTimeSlot from '../pages/BookTimeSlot'
+import NotFound from '../pages/NotFound'
+
 // Marketing
 import MHome from '../pages/MHome'
 import Benefits from '../pages/Benefits'
@@ -41,6 +45,10 @@ class Main extends Component {
           {/* Marketing */}
           <Route exact path="/mHome" component={MHome} />
           <Route path="/benefits" component={Benefits} />
+          <Route path="/configure-time-slots" component={ConfigureTimeSlots} />
+          <Route path="/book-time-slot" component={BookTimeSlot} />
+          {/* 404 */}
+          <Route component={NotFound} />
         </Switch>
       </Box>
     )
