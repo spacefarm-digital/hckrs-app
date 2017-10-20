@@ -13,7 +13,7 @@ import FancyHackersPreview from '../components/FancyHackersPreview'
 
 import PageTitle from '../components/PageTitle'
 
-import GroupIcon from 'material-ui-icons/Group'
+import PeopleIcon from 'material-ui-icons/People'
 
 class Hackers extends Component {
   render() {
@@ -21,7 +21,7 @@ class Hackers extends Component {
       <div>
         <FluidContainer>
           <PageTitle title="Hackers">
-            <GroupIcon />
+            <PeopleIcon />
           </PageTitle>
         </FluidContainer>
         <FancyHackersPreview />

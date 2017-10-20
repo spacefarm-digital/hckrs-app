@@ -9,13 +9,13 @@ import PageTitle from '../components/PageTitle'
 import NewsFilter from '../components/NewsFilter'
 import FluidContainer from '../components/extended/FluidContainer'
 
-import FiberNewIcon from 'material-ui-icons/FiberNew'
+import ArtTrackIcon from 'material-ui-icons/ArtTrack'
 
 const News = () => (
   <div>
     <FluidContainer>
       <PageTitle title="News">
-        <FiberNewIcon />
+        <ArtTrackIcon />
       </PageTitle>
     </FluidContainer>
     <NewsFilter />

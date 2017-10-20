@@ -12,7 +12,7 @@ const defaultProps = {
 }
 
 const PageTitle = props => (
-  <Heading f={[3, 4]} is="h1" pt={4} mb={2}>
+  <Heading f={[3, 4]} is="h1" pt={4} mb={3}>
     <TypeIcon primary>{props.children}</TypeIcon>
     {props.title}
   </Heading>
