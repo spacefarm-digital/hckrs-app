@@ -11,6 +11,7 @@ import FluidContainer from '../components/extended/FluidContainer'
 import { NavLink } from 'react-router-dom'
 import DesktopTab from '../components/extended/DesktopTab'
 import ProfileMenu from '../components/ProfileMenu'
+import PrettyBadge from '../components/PrettyBadge'
 
 import AppBar from 'material-ui/AppBar'
 import Toolbar from 'material-ui/Toolbar'
@@ -18,13 +19,15 @@ import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
 import IconButton from 'material-ui/IconButton'
+import Button from 'material-ui/Button'
 
-import HomeIcon from 'material-ui-icons/Home'
+import DashboardIcon from 'material-ui-icons/Dashboard'
 import NotificationsIcon from 'material-ui-icons/Notifications'
-import BusinessIcon from 'material-ui-icons/Business'
-import GroupIcon from 'material-ui-icons/Group'
-import FiberNewIcon from 'material-ui-icons/FiberNew'
+import DvrIcon from 'material-ui-icons/Dvr'
+import PeopleIcon from 'material-ui-icons/People'
+import ArtTrackIcon from 'material-ui-icons/ArtTrack'
 import AddCircleIcon from 'material-ui-icons/AddCircle'
+import PlaylistAddCheckIcon from 'material-ui-icons/PlaylistAddCheck'
 
 import Tabs from 'material-ui/Tabs'
 
@@ -37,11 +40,13 @@ const StyledNavLink = styled(NavLink)`min-width: 0 !important;`
 
 class TitleBar extends Component {
   state = {
-    value: null,
+    loggedIn: false,
   }
 
-  handleChange = (event, value) => {
-    this.setState({ value })
+  toggleLoggedin = (event, value) => {
+    this.setState({
+      loggedIn: event.target.checked,
+    })
   }
 
   render() {
@@ -52,11 +57,35 @@ class TitleBar extends Component {
     return (
       <div>
         <AppBar position="static">
+          <input
+            type="checkbox"
+            onChange={this.toggleLoggedin}
+            checked={this.state.isChecked}
+            style={{ position: 'absolute', top: 0, right: 0 }}
+          />
           <FluidContainer>
             <Flex w={1} justify="space-between" align="center" color="#fff">
-              <Heading f={2} is={CleanLink} to="/" onClick={this.goHome}>
-                Hckrs
-              </Heading>
+              {this.state.loggedIn ? (
+                <Heading
+                  f={2}
+                  is={CleanLink}
+                  to="/"
+                  onClick={this.goHome}
+                  py={3}
+                >
+                  hckrs
+                </Heading>
+              ) : (
+                <Heading
+                  f={2}
+                  is={CleanLink}
+                  to="/MHome"
+                  onClick={this.goHome}
+                  py={3}
+                >
+                  hckrs
+                </Heading>
+              )}
               <MediaQuery query="(min-width: 50em)">
                 <Tabs
                   value={value}
@@ -65,92 +94,132 @@ class TitleBar extends Component {
                   indicatorColor="#ffffff"
                   textColor="#fff"
                 >
+                  {this.state.loggedIn ? (
+                    <DesktopTab
+                      icon={<DashboardIcon />}
+                      label="Dashboard"
+                      component={NavLink}
+                      to="/"
+                      exact
+                      activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
+                    />
+                  ) : null}
+                  {this.state.loggedIn ? null : (
+                    <DesktopTab
+                      icon={<PlaylistAddCheckIcon />}
+                      label="Benefits"
+                      component={NavLink}
+                      to="/benefits"
+                      activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
+                    />
+                  )}
                   <DesktopTab
-                    icon={<HomeIcon />}
-                    label="Home"
-                    component={NavLink}
-                    to="/"
-                    exact
-                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
-                  />
-                  <DesktopTab
-                    icon={<BusinessIcon />}
+                    icon={<DvrIcon />}
                     label="Challenges"
                     component={NavLink}
                     to="/challenges"
                     activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
-                    icon={<GroupIcon />}
+                    icon={<PeopleIcon />}
                     label="Hackers"
                     component={NavLink}
                     to="/hackers"
                     activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
                   <DesktopTab
-                    icon={<FiberNewIcon />}
+                    icon={<ArtTrackIcon />}
                     label="News"
                     component={NavLink}
                     to="/news"
                     activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                   />
-                  <DesktopTab
-                    icon={<NotificationsIcon />}
-                    label="Activity"
-                    component={NavLink}
-                    to="/activity"
-                    activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
-                  />
+                  {/* Conditional rendering */}
+                  {this.state.loggedIn ? (
+                    <DesktopTab
+                      icon={
+                        <PrettyBadge>
+                          <NotificationsIcon />
+                        </PrettyBadge>
+                      }
+                      label="Activity"
+                      component={NavLink}
+                      to="/activity"
+                      activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
+                    />
+                  ) : null}
                 </Tabs>
               </MediaQuery>
-              <Flex>
-                <IconButton component={Link} to="/new-challenge">
-                  <AddCircleIcon color="#fff" />
-                </IconButton>
-                <ProfileMenu />
-              </Flex>
+              {this.state.loggedIn ? (
+                <Flex>
+                  <IconButton component={Link} to="/new-challenge">
+                    <AddCircleIcon color="#fff" />
+                  </IconButton>
+                  <ProfileMenu />
+                </Flex>
+              ) : (
+                <Button color="contrast">Get started</Button>
+              )}
             </Flex>
           </FluidContainer>
         </AppBar>
         <MediaQuery query="(max-width: 50em)">
           <Fixed bottom w={1} z={999} is="nav">
             <BottomNavigation value={value} showLabels component="nav">
-              <BottomNavigationButton
-                label="Home"
-                icon={<HomeIcon />}
-                component={StyledNavLink}
-                to="/"
-                exact
-                activeStyle={{ color: primaryColor }}
-              />
+              {this.state.loggedIn ? (
+                <BottomNavigationButton
+                  label="Dashboard"
+                  icon={<DashboardIcon />}
+                  component={StyledNavLink}
+                  to="/"
+                  exact
+                  activeStyle={{ color: primaryColor }}
+                />
+              ) : (
+                <BottomNavigationButton
+                  label="Benefits"
+                  icon={<PlaylistAddCheckIcon />}
+                  component={StyledNavLink}
+                  to="/benefits"
+                  activeStyle={{ color: primaryColor }}
+                />
+              )}
               <BottomNavigationButton
                 label="Challenges"
-                icon={<BusinessIcon />}
+                icon={<DvrIcon />}
                 component={StyledNavLink}
                 to="/challenges"
                 activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="Hackers"
-                icon={<GroupIcon />}
+                icon={<PeopleIcon />}
                 component={StyledNavLink}
                 to="/hackers"
                 activeStyle={{ color: primaryColor }}
               />
               <BottomNavigationButton
                 label="News"
-                icon={<FiberNewIcon />}
+                icon={<ArtTrackIcon />}
                 component={StyledNavLink}
                 to="/news"
                 activeStyle={{ color: primaryColor }}
               />
-              <BottomNavigationButton
-                label="Activity"
-                icon={<NotificationsIcon />}
-                component={StyledNavLink}
-                to="/activity"
-                activeStyle={{ color: primaryColor }}
-              />
+              {this.state.loggedIn ? (
+                <BottomNavigationButton
+                  label="Activity"
+                  icon={
+                    <PrettyBadge>
+                      <NotificationsIcon />
+                    </PrettyBadge>
+                  }
+                  component={StyledNavLink}
+                  to="/activity"
+                  activeStyle={{ color: primaryColor }}
+                />
+              ) : (
+                <div />
+              )}
             </BottomNavigation>
           </Fixed>
         </MediaQuery>

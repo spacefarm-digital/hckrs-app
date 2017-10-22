@@ -44,7 +44,8 @@ const FeaturedChallengeWrapper = styled(BackgroundImage)`
   overflow: hidden;
   padding-bottom: 125%;
   transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.9;
   }
   @media (min-width: ${props => props.theme.breakpoints[0]}em) {
@@ -71,7 +72,7 @@ const FeaturedChallenge = props => {
                 <Box>
                   <ShadowAvatar src={props.logo} w="2em" mr={3} />
                 </Box>
-                <Heading is="h2" f={[3, 4]}>
+                <Heading is="h2" f={props.big ? 4 : 2}>
                   {props.title}
                 </Heading>
               </Flex>

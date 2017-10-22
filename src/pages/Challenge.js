@@ -14,7 +14,9 @@ import ChallengeStats from '../components/ChallengeStats'
 import Description from '../components/Description'
 import Subchallenges from '../components/Subchallenges'
 import Agenda from '../components/Agenda'
+import Participants from '../components/Participants'
 import Prizes from '../components/Prizes'
+import Advisors from '../components/Advisors'
 import Sponsors from '../components/Sponsors'
 
 import ChallengeNav from '../components/ChallengeNav'
@@ -24,6 +26,8 @@ import FluidContainer from '../components/extended/FluidContainer'
 // Fake data
 import agendaData from '../data/agendaData'
 import prizesData from '../data/prizesData'
+import advisorsData from '../data/advisorsData'
+import participantsData from '../data/participantsData'
 
 class Challenge extends Component {
   render() {
@@ -45,35 +49,37 @@ class Challenge extends Component {
             </Grid>
             <Grid item xs={12} md={8} lg={8} xl={9}>
               {/* Description */}
-              <Sticky mb={2} top z={2}>
-                <ChallengeNav />
-              </Sticky>
+              <ChallengeNav />
               <Box>
                 <Description />
               </Box>
               {/* Subchallenges */}
               <Subchallenges />
               {/* Agenda */}
-              <Agenda agenda={agendaData} />
+              <Agenda data={agendaData} />
+              {/* Advisors */}
+              <Advisors data={advisorsData} />
+              {/* Participants */}
+              <Participants data={participantsData} />
               {/* Prizes */}
-              <Prizes prizes={prizesData} />
+              <Prizes data={prizesData} />
               {/* Sponsors */}
               <Box>
                 <Sponsors
                   sponsors={[
                     {
-                      name: 'SponsorMcSponsor',
+                      name: 'Sponsor McSponsor',
                       externalUrl: ['http://www.honeybadger.com'],
                       image:
                         'http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740',
                     },
                     {
-                      name: 'SponsorMcSponsor',
+                      name: 'Sponsor McSponsor',
                       image:
                         'http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740',
                     },
                     {
-                      name: 'SponsorMcSponsor',
+                      name: 'Sponsor McSponsor',
                       image:
                         'http://images.mentalfloss.com/sites/default/files/istock-498886489.jpg?resize=1100x740',
                     },

@@ -25,7 +25,7 @@ const Agenda = props => (
           </Box>
         }
       >
-        {props.agenda.map((agendaDay, value) => (
+        {props.data.map((agendaDay, value) => (
           <AgendaDay
             date={agendaDay.date}
             items={agendaDay.items}

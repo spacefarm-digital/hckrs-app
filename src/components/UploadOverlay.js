@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { transparentize } from 'polished'
+
 import Ink from 'react-ink'
 
 const UploadOverlayWrapper = styled.form`
@@ -14,7 +16,7 @@ const UploadOverlayWrapper = styled.form`
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: ${props => transparentize(0.15, props.theme.colors.p500)};
   display: block;
   color: white;
   border-radius: 50%;
@@ -23,10 +25,18 @@ const UploadOverlayWrapper = styled.form`
   display: block;
   padding: 0.5rem;
   text-align: center;
+  transition: all 250ms ease-out;
+  &:hover {
+    opacity: .9;
+  }
   input {
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px 1px 1px 1px) !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    left: 0;
+    &:focus + label {
+      background-color: rgba(255, 255, 255, .25);
+    }
   }
   label {
     width: 100%;
@@ -35,12 +45,13 @@ const UploadOverlayWrapper = styled.form`
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
+    border-radius: 500px;
+    transition: all 250ms ease-out;
 `
 const UploadOverlay = props => (
   <UploadOverlayWrapper>
-    <input type="file" id="meno" />
-    <label htmlFor="meno">
+    <input type="file" id={props.name} />
+    <label htmlFor={props.name}>
       <span>Upload photo</span>
       <Ink />
     </label>

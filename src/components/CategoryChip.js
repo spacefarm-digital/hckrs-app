@@ -8,16 +8,21 @@ const CategoryChip = styled(Button)`
   color: ${props =>
     props.color
       ? saturate(2.5, darken(0.6, props.color))
-      : saturate(2.5, darken(0.6, 'pink'))}!important;
+      : props.theme.colors.g600}!important;
   font-weight: 500 !important;
   font-size: 14px !important;
   line-height: 1 !important;
   display: block !important;
-  padding: 9px 16px !important;
+  padding: ${props => (props.compact ? '9px' : '9px 16px')} !important;
   border-radius: 24px !important;
   min-height: 0 !important;
   line-height: 1;
   overflow: hidden !important;
+  cursor: pointer;
+  user-select: none;
+  min-width: 0 !important;
+  width: ${props => (props.compact ? '32px' : 'auto')};
+  height: ${props => (props.compact ? '32px' : 'auto')};
 `
 
 export default CategoryChip

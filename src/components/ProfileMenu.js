@@ -1,10 +1,9 @@
 /* eslint-disable flowtype/require-valid-file-annotation */
 
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import { Box, Text } from 'rebass'
-
-import CleanLink from '../components/extended/CleanLink'
 
 import Menu, { MenuItem } from 'material-ui/Menu'
 
@@ -38,7 +37,7 @@ class ProfileMenu extends Component {
           onRequestClose={this.handleRequestClose}
         >
           <MenuItem
-            component={CleanLink}
+            component={Link}
             to="/profile"
             onClick={this.handleRequestClose}
           >

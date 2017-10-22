@@ -13,7 +13,7 @@ class ImageField extends React.Component {
     return (
       <Relative>
         <BlockAvatar src={placeholder} size="6rem" />
-        <UploadOverlay />
+        <UploadOverlay name={this.props.name} />
       </Relative>
     )
   }

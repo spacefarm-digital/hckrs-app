@@ -15,6 +15,14 @@ import Activity from '../pages/Activity'
 import Test from '../pages/Test'
 import Profile from '../pages/Profile'
 import NewChallenge from '../pages/NewChallenge'
+import DraftChallenge from '../pages/DraftChallenge'
+import ConfigureTimeSlots from '../pages/ConfigureTimeSlots'
+import BookTimeSlot from '../pages/BookTimeSlot'
+import NotFound from '../pages/NotFound'
+
+// Marketing
+import MHome from '../pages/MHome'
+import Benefits from '../pages/Benefits'
 
 import { Box } from 'rebass'
 
@@ -32,6 +40,15 @@ class Main extends Component {
           <Route exact path="/test" component={Test} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/new-challenge" component={NewChallenge} />
+          <Route exact path="/draft-challenge" component={DraftChallenge} />
+          <Route exact path="/" component={DraftChallenge} />
+          {/* Marketing */}
+          <Route exact path="/mHome" component={MHome} />
+          <Route path="/benefits" component={Benefits} />
+          <Route path="/configure-time-slots" component={ConfigureTimeSlots} />
+          <Route path="/book-time-slot" component={BookTimeSlot} />
+          {/* 404 */}
+          <Route component={NotFound} />
         </Switch>
       </Box>
     )

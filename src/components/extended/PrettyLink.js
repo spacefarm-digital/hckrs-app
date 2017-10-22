@@ -12,6 +12,10 @@ const PrettyLink = styled(Link)`
     color: ${props => props.theme.colors.pA700};
     background-color: ${props => props.theme.colors.p50};
   }
+  &:focus {
+    background-color: ${props => props.theme.colors.p50};
+    outline: 0;
+  }
 `
 
 export default PrettyLink

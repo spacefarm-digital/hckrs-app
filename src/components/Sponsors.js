@@ -15,7 +15,7 @@ const Sponsors = props => (
       </Heading>
       <Grid container align="stretch">
         {props.sponsors.map((sponsor, index) => (
-          <Grid item xs={6} sm={4}>
+          <Grid item xs={6} sm={4} lg={3} xl={2}>
             <Sponsor
               name={sponsor.name}
               externalUrl={sponsor.externalUrl}

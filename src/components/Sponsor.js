@@ -26,7 +26,9 @@ const Sponsor = props => {
       <PrettyPaper component={CleanA} href={props.externalUrl} target="_blank">
         <BackgroundImage src={props.image} ratio={1} />
         <Box px={3} py={2} center>
-          <Text bold>{props.name}</Text>
+          <Text bold center>
+            {props.name}
+          </Text>
         </Box>
         <Ink />
       </PrettyPaper>
@@ -36,7 +38,9 @@ const Sponsor = props => {
     <PrettyPaper>
       <BackgroundImage src={props.image} ratio={1} />
       <Box px={3} py={2} center>
-        <Text bold>{props.name}</Text>
+        <Text bold center>
+          {props.name}
+        </Text>
       </Box>
     </PrettyPaper>
   )

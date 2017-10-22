@@ -10,7 +10,7 @@ import PageTitle from '../components/PageTitle'
 import FeaturedChallenges from '../components/FeaturedChallenges'
 import FluidContainer from '../components/extended/FluidContainer'
 
-import BusinessIcon from 'material-ui-icons/Business'
+import DvrIcon from 'material-ui-icons/Dvr'
 
 import nasaBG from '../assets/nasa-bg.png'
 
@@ -68,7 +68,7 @@ const Challenges = () => (
   <main>
     <FluidContainer>
       <PageTitle title="Challenges">
-        <BusinessIcon />
+        <DvrIcon />
       </PageTitle>
       <FeaturedChallenges challenges={featuredChallengesData} />
     </FluidContainer>

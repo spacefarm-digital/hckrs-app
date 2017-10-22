@@ -31,11 +31,11 @@ class Profile extends Component {
                   'Construction',
                   'Food & Drinks',
                 ]}
-              />,
+              />
             </Grid>
             <Grid item xs={12} md={8} lg={8} xl={9}>
               <Box mb={4}>
-                <Heading f={3} is="h2" mb={3}>
+                <Heading f={3} is="h2" mb={3} color="pA400">
                   Hacker's Challenges
                 </Heading>
                 {/* Challenges */}
@@ -48,7 +48,7 @@ class Profile extends Component {
                 </Grid>
               </Box>
               <Box mb={4}>
-                <Heading f={3} is="h2" mb={3}>
+                <Heading f={3} is="h2" mb={3} color="pA400">
                   Hacker's hacks
                 </Heading>
                 {/* Hacks */}
