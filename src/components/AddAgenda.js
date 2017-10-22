@@ -15,7 +15,7 @@ import EmptyAgendaDay from '../components/EmptyAgendaDay'
 const Agenda = props => (
   <Box mb={4}>
     <Heading is="h2" f={3} mb={3} color="pA400">
-      3. Add agenda
+      3. Add Agenda
     </Heading>
     <ul>
       {props.data.map((agendaDay, value) => (

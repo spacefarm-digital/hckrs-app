@@ -71,7 +71,7 @@ const MFeaturedChallenges = props => (
     <FluidContainer>
       <Box mb={4}>
         <Heading f={3} is="h2" mb={3} center color="p500">
-          Featured challenges
+          Explore challenges
         </Heading>
         <Grid container>
           {normalChallengesData.map((challenge, value) => (
@@ -91,10 +91,7 @@ const MFeaturedChallenges = props => (
 
       <Measure mx="auto">
         <Text mb={4}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-          harum officia molestiae neque, cupiditate maxime sequi nobis
-          voluptatum molestias explicabo, id asperiores fugit alias est fugiat
-          ad sapiente nemo expedita.
+        Still wondering what a challenge exactly is? Explore the most active and trending challenges right now.
         </Text>
       </Measure>
       <CardTilt>
@@ -110,10 +107,7 @@ const MFeaturedChallenges = props => (
       </CardTilt>
       <Measure mx="auto">
         <Text mb={4}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-          harum officia molestiae neque, cupiditate maxime sequi nobis
-          voluptatum molestias explicabo, id asperiores fugit alias est fugiat
-          ad sapiente nemo expedita.
+          None of your solutions go unrewarded. Each challenge offers an unique set of prizes — from cash to experiences, software licenses, service subscriptions and many more.  
         </Text>
       </Measure>
     </FluidContainer>

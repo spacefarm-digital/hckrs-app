@@ -22,13 +22,10 @@ const BenefitsForChallengers = props => (
               <Isvg src={hackathonOrganizerSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              I'm a hackathon organizer
+            Expand your reach.
             </Heading>
             <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              assumenda nam error praesentium soluta sequi vitae quia excepturi
-              culpa eum deleniti modi voluptas animi a, nobis debitis illo quam
-              architecto?
+            Struggling to find the right people for your hackathon event? We're here to to help. Create a challenge to get your event noticed among designers, engineers, and technology experts.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -38,13 +35,10 @@ const BenefitsForChallengers = props => (
               <Isvg src={companyExternalSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Company external
+              Extra brainpower.
             </Heading>
             <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              assumenda nam error praesentium soluta sequi vitae quia excepturi
-              culpa eum deleniti modi voluptas animi a, nobis debitis illo quam
-              architecto?
+            Your company is on the verge of a breakthrough, but you need more brainpower to make it happen? We might have the right hackers to help you propel your business forward.   
             </Text>
           </PrettyPaper>
         </Grid>
@@ -54,13 +48,10 @@ const BenefitsForChallengers = props => (
               <Isvg src={companyInternalSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Company Internal
+              Nurture ideas.
             </Heading>
             <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              assumenda nam error praesentium soluta sequi vitae quia excepturi
-              culpa eum deleniti modi voluptas animi a, nobis debitis illo quam
-              architecto?
+            Get the most out of your company employees by creating exciting challenges, designed especially for them and their profile. Nurture their potential and grow your business.  
             </Text>
           </PrettyPaper>
         </Grid>
@@ -68,12 +59,10 @@ const BenefitsForChallengers = props => (
     </Box>
     <Measure mx="auto">
       <Heading is="h2" f={3} mb={1}>
-        One more heading
+       One more thing
       </Heading>
       <Text mb={3}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam vero
-        maxime non, libero maiores mollitia quo recusandae porro odio a ipsam,
-        asperiores accusamus, delectus perspiciatis quos earum tempore expedita.
+       Remember that every breakthrough idea starts with solving a common problem. 
       </Text>
       <Heading is="h2" f={3} mb={1}>
         One more heading
@@ -85,10 +74,10 @@ const BenefitsForChallengers = props => (
       </Text>
       <Flex justify="center" wrap>
         <Heading is="h2" f={4} mb={3} center w={1}>
-          Let's give it a go!
+          Sign up to create a challenge!
         </Heading>
         <Button raised color="primary">
-          Get started
+          Sign up
         </Button>
       </Flex>
     </Measure>

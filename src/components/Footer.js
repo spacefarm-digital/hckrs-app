@@ -88,14 +88,14 @@ const Footer = () => (
               📩 Subscribe to our newsletter
             </Heading>
             <Text bold mb={2}>
-              Stay up to date with new challenges, upcoming events and news
+              Stay up to date with the hottest challenges, upcoming events and latest news.
             </Text>
             <Flex column align="center">
               <Box mb={2} w={1}>
                 <TextField
                   fullWidth
-                  placeholder="Your email here"
-                  label="Email"
+                  placeholder="Your email adress goes here"
+                  label="Enter your email adress"
                 />
               </Box>
               <Button raised color="primary">

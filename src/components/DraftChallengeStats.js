@@ -35,7 +35,7 @@ const DraftChallengeStats = props => (
       {props.brief}
     </Text>
     <Heading is="h2" f={1} mb={2}>
-      Accepting hacks in:
+      Challenge categories:
     </Heading>
     <Flex is="ul" mx={-1} mb={3} wrap>
       {props.categories.map((category, index) => (

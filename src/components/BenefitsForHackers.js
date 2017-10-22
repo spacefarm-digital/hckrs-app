@@ -22,13 +22,10 @@ const BenefitsForHackers = props => (
               <Isvg src={designersSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              I'm a designer
+              Design solutions.
             </Heading>
             <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              assumenda nam error praesentium soluta sequi vitae quia excepturi
-              culpa eum deleniti modi voluptas animi a, nobis debitis illo quam
-              architecto?
+            If you're one of those people with too many ideas and little place to put them, look no further - challengers across the world are eager to hear you out.            
             </Text>
           </PrettyPaper>
         </Grid>
@@ -38,13 +35,10 @@ const BenefitsForHackers = props => (
               <Isvg src={devsSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              I'm a developer
+              Develop products.
             </Heading>
             <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              assumenda nam error praesentium soluta sequi vitae quia excepturi
-              culpa eum deleniti modi voluptas animi a, nobis debitis illo quam
-              architecto?
+            Are you capable of turning people's ideas into working, easy to use products? Both challengers and fellow hackers would love to talk to you.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -54,13 +48,10 @@ const BenefitsForHackers = props => (
               <Isvg src={businessSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              I'm a business person
+              Pitch ideas.
             </Heading>
             <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              assumenda nam error praesentium soluta sequi vitae quia excepturi
-              culpa eum deleniti modi voluptas animi a, nobis debitis illo quam
-              architecto?
+            Often a well-thought-out solution isnt't going to cut it. That's where your marketing genius comes to shine, saving the day one great idea at a time.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -68,12 +59,10 @@ const BenefitsForHackers = props => (
     </Box>
     <Measure mx="auto">
       <Heading is="h2" f={3} mb={1}>
-        One more heading
+       What are you waiting for?
       </Heading>
       <Text mb={3}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam vero
-        maxime non, libero maiores mollitia quo recusandae porro odio a ipsam,
-        asperiores accusamus, delectus perspiciatis quos earum tempore expedita.
+       Stay in Wonderland and we'll show you how deep the rabbit hole goes.
       </Text>
       <Heading is="h2" f={3} mb={1}>
         One more heading
@@ -85,10 +74,10 @@ const BenefitsForHackers = props => (
       </Text>
       <Flex justify="center" wrap>
         <Heading is="h2" f={4} mb={3} center w={1}>
-          Let's give it a go!
+         Sign up to get challenged
         </Heading>
         <Button raised color="primary">
-          Get started
+          Sign up
         </Button>
       </Flex>
     </Measure>

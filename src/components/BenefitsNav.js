@@ -50,7 +50,7 @@ const BenefitsNav = props => (
         title: "I'm a hacker",
       }}
     >
-      <span>👩‍💻</span> I'm a hacker
+      <span>👩‍💻</span> For hackers
     </NavLink>
     <NavLink
       to="/benefits/challengers"
@@ -62,7 +62,7 @@ const BenefitsNav = props => (
         title: "I'm a challenge",
       }}
     >
-      <span>👔</span> I'm a challenger
+      <span>👔</span> For challengers
     </NavLink>
   </BenefitsNavWrapper>
 )

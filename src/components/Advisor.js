@@ -41,7 +41,7 @@ const Advisor = props => {
         </Box>
       </Flex>
       <Text bold mb={2}>
-        Knowledgable about:
+        Expert in:
       </Text>
       <Flex wrap w={1} is="ul" mx={-1} mb={props.bookingAllowed ? 3 : 0}>
         {props.categories.map((category, index) => (

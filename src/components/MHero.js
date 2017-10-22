@@ -17,17 +17,14 @@ const MHero = props => (
           <Flex column align="center">
             <Box mb={[4, 4, 5]} px={3}>
               <Heading f={[4, 4, 4, 5]} mb={2} color="p600" center>
-                Welcome to Hckrs
+              Welcome to Hckrs
               </Heading>
               <Measure mb={3}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                commodi distinctio facilis atque magnam ut reprehenderit, porro
-                eius iure nemo est tenetur sed officia officiis eaque eum
-                deserunt rerum itaque!
+              Where your industry's challenges are solved by a bunch of talented designers, engineers, and a variety of tech experts we like to call hackers. 
               </Measure>
               <Flex justify="center">
                 <Button raised color="accent" href="/signup">
-                  Let's get started!
+                  Sign up
                 </Button>
               </Flex>
             </Box>

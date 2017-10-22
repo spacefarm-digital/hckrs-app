@@ -16,7 +16,7 @@ const MHero = props => (
   <Box bg="p50" py={5} is="section">
     <Container>
       <Heading is="h2" f={3} mb={4} center color="p500">
-        See how Hckrs can help you
+        Who's this for?
       </Heading>
       <Grid container>
         <Grid item xs={12} sm={6}>
@@ -25,15 +25,14 @@ const MHero = props => (
               <Isvg src={devsSVG} />
             </Box>
             <Heading f={2} is="h3" mb={2}>
-              I'm a challenger
+              Challengers
             </Heading>
             <Text mb={3}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              consectetur, consequatur minus facere sed dolor
+            Create thought-provoking challenges and sub-challenges. Invite hackers of your own choice or let them join freely to get swarmed with ideas.
             </Text>
             <Flex justify="center">
               <Button raised color="primary" href="benefits">
-                I'm a challenger
+                Find out more
               </Button>
             </Flex>
           </PrettyPaper>
@@ -44,15 +43,14 @@ const MHero = props => (
               <Isvg src={businessSVG} />
             </Box>
             <Heading f={2} is="h3" mb={2}>
-              I'm a hacker
+              Hackers
             </Heading>
             <Text mb={3}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              consectetur, consequatur minus facere sed dolor
+            Join challenges and submit killer hacks to earn unique prizes. Start hacking your way through a challenge alone or together with a team.            
             </Text>
             <Flex justify="center">
               <Button raised color="primary" href="benefits/challengers">
-                I'm a hacker
+                Find out more
               </Button>
             </Flex>
           </PrettyPaper>

@@ -15,7 +15,7 @@ const AddSubchallenges = props => (
   <ScrollableAnchor id="challenge-subchallenges">
     <Box mb={4}>
       <Heading is="h2" f={3} mb={3} color="pA400">
-        2. Add Subchallenges
+        2. Add Sub-challenges
       </Heading>
       <Grid container>
         <Grid item xs={12} sm={6}>

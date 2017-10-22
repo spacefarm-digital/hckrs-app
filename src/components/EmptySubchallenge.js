@@ -21,7 +21,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-  title: 'Subchallenge title',
+  title: 'Subchallenge Title',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.',
 }
@@ -35,7 +35,7 @@ const EmptySubchallenge = props => (
         </TypeIcon>
       </Box>
       <Box w={1}>
-        <NameField placeholder="Subchallenge name" fullWidth>
+        <NameField placeholder="Enter Sub-challenge Name" fullWidth>
           {props.title}
         </NameField>
       </Box>
