@@ -43,7 +43,7 @@ const HackPreview = props => {
             {props.title}
           </Heading>
           <Text mb={1}>
-            In challenge <PrettyLink to="/">Challenge name</PrettyLink>
+            Submitted in <PrettyLink to="/">Challenge name</PrettyLink>
           </Text>
           <Text mb={3}>{props.description}</Text>
           <Flex mx={-1} justify="flex-end" align="center">

@@ -22,10 +22,10 @@ const BenefitsForChallengers = props => (
               <Isvg src={hackathonOrganizerSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-            Expand your reach.
+            Expand your reach
             </Heading>
             <Text>
-            Struggling to find the right people for your hackathon event? We're here to to help. Create a challenge to get your event noticed among designers, engineers, and technology experts.
+            Struggling to find killer people for your event? Hckrs come to the rescue. Create a challenge and get your event noticed among a bunch of the best designers, engineers, and technology experts. 
             </Text>
           </PrettyPaper>
         </Grid>
@@ -35,10 +35,10 @@ const BenefitsForChallengers = props => (
               <Isvg src={companyExternalSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Extra brainpower.
+              Extra brainpower
             </Heading>
             <Text>
-            Your company is on the verge of a breakthrough, but you need more brainpower to make it happen? We might have the right hackers to help you propel your business forward.   
+            You are a company on the verge of an amazing breakthrough, but you need an extra bit of brainpower? We have the right hackers to make that happen. Pinky promise.    
             </Text>
           </PrettyPaper>
         </Grid>
@@ -48,10 +48,10 @@ const BenefitsForChallengers = props => (
               <Isvg src={companyInternalSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Nurture ideas.
+              Nurture ideas
             </Heading>
             <Text>
-            Get the most out of your company employees by creating exciting challenges, designed especially for them and their profile. Nurture their potential and grow your business.  
+            Get the most out of your wondrous employees by creating exciting challenges, designed exclusively for them and their profile. Nurture their true potential and burst your business forth.  
             </Text>
           </PrettyPaper>
         </Grid>
@@ -59,7 +59,7 @@ const BenefitsForChallengers = props => (
     </Box>
     <Measure mx="auto">
       <Heading is="h2" f={3} mb={1}>
-       One more thing
+       One last thing
       </Heading>
       <Text mb={3}>
        Remember that every breakthrough idea starts with solving a common problem. 

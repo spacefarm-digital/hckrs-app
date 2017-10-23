@@ -20,7 +20,7 @@ class NewChallenge extends Component {
       <main>
         <FluidContainer tight>
           <Box mb={3}>
-            <PageTitle title="New challenge">
+            <PageTitle title="Add new challenge">
               <AddIcon />
             </PageTitle>
           </Box>

@@ -22,10 +22,10 @@ const BenefitsForHackers = props => (
               <Isvg src={designersSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Design solutions.
+              Design solutions
             </Heading>
             <Text>
-            If you're one of those people with too many ideas and little place to put them, look no further - challengers across the world are eager to hear you out.            
+            So, you're one of those people who have too many ideas and little place to put them? You've come to the right place - challengers across the world are dying to hear you out.            
             </Text>
           </PrettyPaper>
         </Grid>
@@ -35,10 +35,10 @@ const BenefitsForHackers = props => (
               <Isvg src={devsSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Develop products.
+              Develop products
             </Heading>
             <Text>
-            Are you capable of turning people's ideas into working, easy to use products? Both challengers and fellow hackers would love to talk to you.
+            You're capable of turning people's ideas into working, easy to use products? Both challengers and fellow hackers would love to talk to you. Seriously.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -48,10 +48,10 @@ const BenefitsForHackers = props => (
               <Isvg src={businessSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-              Pitch ideas.
+              Pitch ideas
             </Heading>
             <Text>
-            Often a well-thought-out solution isnt't going to cut it. That's where your marketing genius comes to shine, saving the day one great idea at a time.
+            Often a well-thought-out solution isnt't going to cut it. That's where your marketing genius comes to shine. Save the day one great idea at a time.
             </Text>
           </PrettyPaper>
         </Grid>

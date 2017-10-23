@@ -22,7 +22,7 @@ const ProfileStats = props => (
           </Heading>
           <Flex align="center" wrap>
             <Text bold mr={2}>
-              Teams:
+              Member of:
             </Text>
             <Flex wrap mx={-1} align="center" is="ul">
               <Box is="li" px={1}>

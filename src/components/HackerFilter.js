@@ -22,7 +22,7 @@ const HackerFilter = () => (
             <FilterItem
               options={[
                 'All hackers',
-                '✅ Recently Active',
+                '✅ Recently active',
                 '😎 Rockstars',
                 '👶 Rising talent',
               ]}

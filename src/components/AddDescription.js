@@ -13,7 +13,7 @@ const AddDescription = props => (
   <Box mb={4}>
     <PrettyPaper p={3}>
       <Heading is="h2" f={3} mb={2} color="pA400">
-        1. Add Challenge Description
+        1. Add description
       </Heading>
       <Box>
         <Box bg="lightGrey" p={6}>

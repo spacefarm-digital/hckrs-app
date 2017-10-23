@@ -36,7 +36,7 @@ class NewChallengeMain extends React.Component {
                 id="challengeName"
                 fullWidth
                 f={[3, 3, 4]}
-                placeholder="Enter challenge name"
+                placeholder="Challenge name"
                 inputProps={{
                   'aria-label': 'Challenge name',
                 }}
@@ -86,7 +86,7 @@ class NewChallengeMain extends React.Component {
             <TextField
               required
               id="challengeDescription"
-              label="📖 Enter short challenge info"
+              label="📖 Short challenge info"
               fullWidth
             />
           </Box>
@@ -104,7 +104,7 @@ class NewChallengeMain extends React.Component {
         </Flex>
         <Flex justify="flex-end">
           <Button raised color="accent" component={Link} to="/draft-challenge">
-            Create challenge!
+            Create challenge
           </Button>
         </Flex>
       </PrettyPaper>

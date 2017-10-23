@@ -27,7 +27,7 @@ const ChallengeNav = props => (
         href="#challenge-description"
       />
       <Tab
-        label="Subchallenges"
+        label="Sub-challenges"
         icon={<ListIcon />}
         href="#challenge-subchallenges"
       />

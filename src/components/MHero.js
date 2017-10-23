@@ -20,7 +20,7 @@ const MHero = props => (
               Welcome to Hckrs
               </Heading>
               <Measure mb={3}>
-              Where your industry's challenges are solved by a bunch of talented designers, engineers, and a variety of tech experts we like to call hackers. 
+              Where your industry's challenges are solved by a wild bunch of talented designers, engineers, and tech experts we like to call hackers. 
               </Measure>
               <Flex justify="center">
                 <Button raised color="accent" href="/signup">

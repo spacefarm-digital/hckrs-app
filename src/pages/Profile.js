@@ -36,7 +36,7 @@ class Profile extends Component {
             <Grid item xs={12} md={8} lg={8} xl={9}>
               <Box mb={4}>
                 <Heading f={3} is="h2" mb={3} color="pA400">
-                  Hacker's Challenges
+                  Challenges
                 </Heading>
                 {/* Challenges */}
                 <Grid container>
@@ -49,7 +49,7 @@ class Profile extends Component {
               </Box>
               <Box mb={4}>
                 <Heading f={3} is="h2" mb={3} color="pA400">
-                  Hacker's hacks
+                  Hacks
                 </Heading>
                 {/* Hacks */}
                 <Grid container>
