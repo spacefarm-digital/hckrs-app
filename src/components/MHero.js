@@ -1,6 +1,6 @@
 import React from 'react'
 import Isvg from 'react-inlinesvg'
-import heroSVG from '../assets/testSVG/what-is-hckrs.svg'
+import heroSVG from '../assets/what-is-hckrs.svg'
 
 import { Heading, Text, Measure, Image, Flex, Box } from 'rebass'
 
@@ -17,10 +17,12 @@ const MHero = props => (
           <Flex column align="center">
             <Box mb={[4, 4, 5]} px={3}>
               <Heading f={[4, 4, 4, 5]} mb={2} color="p600" center>
-              Welcome to Hckrs
+                Welcome to Hckrs
               </Heading>
               <Measure mb={3}>
-              Where your industry's challenges are solved by a wild bunch of talented designers, engineers, and tech experts we like to call hackers. 
+                Where your industry's challenges are solved by a wild bunch of
+                talented designers, engineers, and tech experts we like to call
+                hackers.
               </Measure>
               <Flex justify="center">
                 <Button raised color="accent" href="/signup">

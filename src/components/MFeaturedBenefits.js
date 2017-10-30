@@ -9,8 +9,8 @@ import CleanLink from '../components/extended/CleanLink'
 import Grid from 'material-ui/Grid'
 import Button from 'material-ui/Button'
 
-import businessSVG from '../assets/testSVG/devs.svg'
-import devsSVG from '../assets/testSVG/company-external.svg'
+import businessSVG from '../assets/devs.svg'
+import devsSVG from '../assets/company-external.svg'
 
 const MHero = props => (
   <Box bg="p50" py={5} is="section">
@@ -28,7 +28,9 @@ const MHero = props => (
               Challengers
             </Heading>
             <Text mb={3}>
-            Create thought-provoking challenges and sub-challenges. Invite hackers of your own choice or let them join freely to get swarmed with ideas.
+              Create thought-provoking challenges and sub-challenges. Invite
+              hackers of your own choice or let them join freely to get swarmed
+              with ideas.
             </Text>
             <Flex justify="center">
               <Button raised color="primary" href="benefits">
@@ -46,7 +48,9 @@ const MHero = props => (
               Hackers
             </Heading>
             <Text mb={3}>
-            Join challenges and submit killer hacks to earn unique prizes. Start hacking your way through a challenge alone or together with a team.            
+              Join challenges and submit killer hacks to earn unique prizes.
+              Start hacking your way through a challenge alone or together with
+              a team.
             </Text>
             <Flex justify="center">
               <Button raised color="primary" href="benefits/challengers">

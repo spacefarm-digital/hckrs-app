@@ -6,9 +6,9 @@ import Button from 'material-ui/Button'
 
 import PrettyPaper from './extended/PrettyPaper'
 
-import designersSVG from '../assets/testSVG/designers.svg'
-import devsSVG from '../assets/testSVG/devs.svg'
-import businessSVG from '../assets/testSVG/business-people.svg'
+import designersSVG from '../assets/designers.svg'
+import devsSVG from '../assets/devs.svg'
+import businessSVG from '../assets/business-people.svg'
 
 import { Heading, Flex, Box, Container, Text, Measure } from 'rebass'
 
@@ -25,7 +25,9 @@ const BenefitsForHackers = props => (
               Design solutions
             </Heading>
             <Text>
-            So, you're one of those people who have too many ideas and little place to put them? You've come to the right place - challengers across the world are dying to hear you out.            
+              So, you're one of those people who have too many ideas and little
+              place to put them? You've come to the right place - challengers
+              across the world are dying to hear you out.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -38,7 +40,9 @@ const BenefitsForHackers = props => (
               Develop products
             </Heading>
             <Text>
-            You're capable of turning people's ideas into working, easy to use products? Both challengers and fellow hackers would love to talk to you. Seriously.
+              You're capable of turning people's ideas into working, easy to use
+              products? Both challengers and fellow hackers would love to talk
+              to you. Seriously.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -51,7 +55,9 @@ const BenefitsForHackers = props => (
               Pitch ideas
             </Heading>
             <Text>
-            Often a well-thought-out solution isnt't going to cut it. That's where your marketing genius comes to shine. Save the day one great idea at a time.
+              Often a well-thought-out solution isnt't going to cut it. That's
+              where your marketing genius comes to shine. Save the day one great
+              idea at a time.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -59,10 +65,10 @@ const BenefitsForHackers = props => (
     </Box>
     <Measure mx="auto">
       <Heading is="h2" f={3} mb={1}>
-       What are you waiting for?
+        What are you waiting for?
       </Heading>
       <Text mb={3}>
-       Stay in Wonderland and we'll show you how deep the rabbit hole goes.
+        Stay in Wonderland and we'll show you how deep the rabbit hole goes.
       </Text>
       <Heading is="h2" f={3} mb={1}>
         One more heading
@@ -74,7 +80,7 @@ const BenefitsForHackers = props => (
       </Text>
       <Flex justify="center" wrap>
         <Heading is="h2" f={4} mb={3} center w={1}>
-         Sign up to get challenged
+          Sign up to get challenged
         </Heading>
         <Button raised color="primary">
           Sign up

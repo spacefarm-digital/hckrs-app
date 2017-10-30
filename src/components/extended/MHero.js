@@ -1,6 +1,6 @@
 import React from 'react'
 import Isvg from 'react-inlinesvg'
-import heroSVG from '../assets/testSVG/welcome.svg'
+import heroSVG from '../assets/welcome.svg'
 
 import { Heading, Text, Measure, Image, Flex, Box } from 'rebass'
 

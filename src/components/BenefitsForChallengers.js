@@ -6,9 +6,9 @@ import Button from 'material-ui/Button'
 
 import PrettyPaper from './extended/PrettyPaper'
 
-import hackathonOrganizerSVG from '../assets/testSVG/event-organizers.svg'
-import companyExternalSVG from '../assets/testSVG/company-external.svg'
-import companyInternalSVG from '../assets/testSVG/company-internal.svg'
+import hackathonOrganizerSVG from '../assets/event-organizers.svg'
+import companyExternalSVG from '../assets/company-external.svg'
+import companyInternalSVG from '../assets/company-internal.svg'
 
 import { Heading, Flex, Box, Container, Text, Measure } from 'rebass'
 
@@ -22,10 +22,12 @@ const BenefitsForChallengers = props => (
               <Isvg src={hackathonOrganizerSVG} />
             </Box>
             <Heading f={2} mb={1} center>
-            Expand your reach
+              Expand your reach
             </Heading>
             <Text>
-            Struggling to find killer people for your event? Hckrs come to the rescue. Create a challenge and get your event noticed among a bunch of the best designers, engineers, and technology experts. 
+              Struggling to find killer people for your event? Hckrs come to the
+              rescue. Create a challenge and get your event noticed among a
+              bunch of the best designers, engineers, and technology experts.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -38,7 +40,9 @@ const BenefitsForChallengers = props => (
               Extra brainpower
             </Heading>
             <Text>
-            You are a company on the verge of an amazing breakthrough, but you need an extra bit of brainpower? We have the right hackers to make that happen. Pinky promise.    
+              You are a company on the verge of an amazing breakthrough, but you
+              need an extra bit of brainpower? We have the right hackers to make
+              that happen. Pinky promise.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -51,7 +55,9 @@ const BenefitsForChallengers = props => (
               Nurture ideas
             </Heading>
             <Text>
-            Get the most out of your wondrous employees by creating exciting challenges, designed exclusively for them and their profile. Nurture their true potential and burst your business forth.  
+              Get the most out of your wondrous employees by creating exciting
+              challenges, designed exclusively for them and their profile.
+              Nurture their true potential and burst your business forth.
             </Text>
           </PrettyPaper>
         </Grid>
@@ -59,10 +65,11 @@ const BenefitsForChallengers = props => (
     </Box>
     <Measure mx="auto">
       <Heading is="h2" f={3} mb={1}>
-       One last thing
+        One last thing
       </Heading>
       <Text mb={3}>
-       Remember that every breakthrough idea starts with solving a common problem. 
+        Remember that every breakthrough idea starts with solving a common
+        problem.
       </Text>
       <Heading is="h2" f={3} mb={1}>
         One more heading
