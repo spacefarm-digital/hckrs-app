@@ -23,7 +23,7 @@ import TextField from 'material-ui/TextField'
 import FluidContainer from '../components/extended/FluidContainer'
 import PrettySocialIcon from '../components/extended/PrettySocialIcon'
 
-import footerSVG from '../assets/testSVG/footer.svg'
+import footerSVG from '../assets/footer.svg'
 
 const Footer = () => (
   <Box is="footer" bg="g900" color="white" py={4}>
@@ -88,7 +88,8 @@ const Footer = () => (
               📩 Subscribe to our newsletter
             </Heading>
             <Text bold mb={2}>
-              Stay up to date with the hottest challenges, upcoming events and latest news.
+              Stay up to date with the hottest challenges, upcoming events and
+              latest news.
             </Text>
             <Flex column align="center">
               <Box mb={2} w={1}>
