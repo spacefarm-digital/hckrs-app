@@ -77,5 +77,9 @@ const FeaturedHackers = [
     name: 'Meredithe Orpen',
     avatar: 'https://robohash.org/maioresomnisut.jpg?size=250x250&set=set1',
   },
+  {
+    name: 'Meredithe Orpen',
+    avatar: 'https://robohash.org/maioresomnisut.jpg?size=250x250&set=set1',
+  },
 ]
 export default FeaturedHackers

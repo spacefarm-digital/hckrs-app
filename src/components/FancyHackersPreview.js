@@ -40,22 +40,104 @@ const ExplodedLayout = styled(Box)`
   // First row
   > ${Flex}:nth-child(1) {
     position: relative;
-    // Example child
+    > ${Box}:nth-child(1) {
+      position: relative;
+      top: 6px;
+      left: 12px;
+    }
+    > ${Box}:nth-child(2) {
+      position: relative;
+      top: -6px;
+      left: 5px;
+    }
+    > ${Box}:nth-child(3) {
+      position: relative;
+      top: 9px;
+      left: 0px;
+    }
+    > ${Box}:nth-child(4) {
+      position: relative;
+      top: -10px;
+      left: 8px;
+    }
+    > ${Box}:nth-child(5) {
+      position: relative;
+      top: 6px;
+      left: 5px;
+    }
+    > ${Box}:nth-child(6) {
+      position: relative;
+      top: -9px;
+      left: 0px;
+    }
     > ${Box}:nth-child(7) {
       position: relative;
-      // Max nudge distance is 12px
-      top: -12px;
+      top: 5px;
+      left: -3px;
+    }
+    > ${Box}:nth-child(8) {
+      position: relative;
+      top: -8px;
       left: 10px;
+    }
+    > ${Box}:nth-child(9) {
+      position: relative;
+      top: -12px;
+      left: 8px;
+    }
+    > ${Box}:nth-child(10) {
+      position: relative;
+      top: -0px;
+      left: 0px;
     }
   }
   // Second row
   > ${Flex}:nth-child(2) {
     position: relative;
-    transform: translateX(125px);
-    > ${Box}:nth-child(7) {
+    > ${Box}:nth-child(1) {
+      position: relative;
+      top: 7px;
+      left: 2px;
+    }
+    > ${Box}:nth-child(2) {
+      position: relative;
+      top: -3px;
+      left: 0px;
+    }
+    > ${Box}:nth-child(3) {
       position: relative;
       top: 12px;
-      left: -8px;
+      left: 0px;
+    }
+    > ${Box}:nth-child(4) {
+      position: relative;
+      top: 0px;
+      left: 4px;
+    }
+    > ${Box}:nth-child(5) {
+      position: relative;
+      top: 9px;
+      left: 6px;
+    }
+    > ${Box}:nth-child(6) {
+      position: relative;
+      top: -7px;
+      left: 8px;
+    }
+    > ${Box}:nth-child(7) {
+      position: relative;
+      top: 8px;
+      left: 0px;
+    }
+    > ${Box}:nth-child(8) {
+      position: relative;
+      top: -10px;
+      left: 0px;
+    }
+    > ${Box}:nth-child(9) {
+      position: relative;
+      top: -4px;
+      left: 6px;
     }
   }
 `
