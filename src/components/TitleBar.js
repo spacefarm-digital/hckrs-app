@@ -69,7 +69,7 @@ class TitleBar extends Component {
                 <Heading
                   f={2}
                   is={CleanLink}
-                  to="/"
+                  to="/dashboard"
                   onClick={this.goHome}
                   py={3}
                 >
@@ -79,7 +79,7 @@ class TitleBar extends Component {
                 <Heading
                   f={2}
                   is={CleanLink}
-                  to="/MHome"
+                  to="/"
                   onClick={this.goHome}
                   py={3}
                 >
@@ -99,7 +99,7 @@ class TitleBar extends Component {
                       icon={<DashboardIcon />}
                       label="Dashboard"
                       component={NavLink}
-                      to="/"
+                      to="/dashboard"
                       exact
                       activeStyle={{ boxShadow: '0 -4px 0 0 white inset' }}
                     />
