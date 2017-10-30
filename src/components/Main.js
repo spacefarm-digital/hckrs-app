@@ -31,7 +31,8 @@ class Main extends Component {
     return (
       <Box pb={4}>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={MHome} />
+          <Route exact path="/dashboard" component={Home} />
           <Route exact path="/challenges" component={Challenges} />
           <Route path="/challenges/" component={Challenge} />
           <Route exact path="/hackers" component={Hackers} />
@@ -43,7 +44,6 @@ class Main extends Component {
           <Route exact path="/draft-challenge" component={DraftChallenge} />
           <Route exact path="/" component={DraftChallenge} />
           {/* Marketing */}
-          <Route exact path="/mHome" component={MHome} />
           <Route path="/benefits" component={Benefits} />
           <Route path="/configure-time-slots" component={ConfigureTimeSlots} />
           <Route path="/book-time-slot" component={BookTimeSlot} />
