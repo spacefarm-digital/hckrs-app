@@ -10,7 +10,7 @@ import hackathonOrganizerSVG from '../assets/event-organizers.svg'
 import companyExternalSVG from '../assets/company-external.svg'
 import companyInternalSVG from '../assets/company-internal.svg'
 
-import { Heading, Flex, Box, Container, Text, Measure } from 'rebass'
+import { Heading, Flex, Box, Text, Measure } from 'rebass'
 
 const BenefitsForChallengers = props => (
   <Box>

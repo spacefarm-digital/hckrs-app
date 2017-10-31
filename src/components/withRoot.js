@@ -79,7 +79,7 @@ const rebassTheme = {
     g800: '#333E50',
     g900: '#181E26',
   },
-  radius: '2px',
+  radius: 2,
   monospace: '"SF Mono", "Roboto Mono", Menlo, monospace',
   shadows: [
     'none',

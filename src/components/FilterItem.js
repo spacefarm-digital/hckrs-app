@@ -1,13 +1,9 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React from 'react'
-import PropTypes from 'prop-types'
 import Menu, { MenuItem } from 'material-ui/Menu'
 import Button from 'material-ui/Button'
 
 import { Label } from 'rebass'
 
-const options = ['⏳ Upcoming', '✅ Active', '🕐 Past']
 class FilterItem extends React.Component {
   state = {
     anchorEl: null,

@@ -1,22 +1,12 @@
 import React from 'react'
 import Isvg from 'react-inlinesvg'
 
-import {
-  Flex,
-  Avatar,
-  Box,
-  Text,
-  Heading,
-  ButtonCircle,
-  BackgroundImage,
-} from 'rebass'
+import { Flex, Box, Text, Heading } from 'rebass'
 
 import Button from 'material-ui/Button'
 
 import PrettyPaper from '../components/extended/PrettyPaper'
 import PrettyLink from '../components/extended/PrettyLink'
-
-import placeholder from '../assets/placeholder.jpg'
 
 import TextField from 'material-ui/TextField'
 
@@ -24,6 +14,8 @@ import FluidContainer from '../components/extended/FluidContainer'
 import PrettySocialIcon from '../components/extended/PrettySocialIcon'
 
 import footerSVG from '../assets/footer.svg'
+
+import Emoji from '../components/Emoji'
 
 const Footer = () => (
   <Box is="footer" bg="g900" color="white" py={4}>
@@ -85,7 +77,8 @@ const Footer = () => (
         <Box w={[1, 1 / 2, 5 / 12]} mb={4} px={2}>
           <PrettyPaper p={3} pt={4} color="g900">
             <Heading f={3} center mb={3}>
-              📩 Subscribe to our newsletter
+              <Emoji accessibleName="newsletter">📩</Emoji>
+              Subscribe to our newsletter
             </Heading>
             <Text bold mb={2}>
               Stay up to date with the hottest challenges, upcoming events and

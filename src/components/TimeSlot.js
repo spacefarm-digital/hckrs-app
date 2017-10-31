@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
-import Emoji from './Emoji'
+import React from 'react'
 import Ink from 'react-ink'
 
-import styled, { withComponent } from 'styled-components'
-import Button from 'material-ui/Button'
+import styled from 'styled-components'
 
 import HiddenInput from './extended/HiddenInput'
 

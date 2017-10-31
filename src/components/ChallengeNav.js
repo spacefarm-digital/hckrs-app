@@ -1,13 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from 'material-ui/styles'
-import AppBar from 'material-ui/AppBar'
-import Button from 'material-ui/Button'
 import Tabs, { Tab } from 'material-ui/Tabs'
 
 import { Flex } from 'rebass'
 
-import ArtTrackIcon from 'material-ui-icons/ArtTrack'
 import TextFieldsIcon from 'material-ui-icons/TextFields'
 import ListIcon from 'material-ui-icons/List'
 import DateRangeIcon from 'material-ui-icons/DateRange'

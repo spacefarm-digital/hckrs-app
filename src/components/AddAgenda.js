@@ -1,15 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import ScrollableAnchor from 'react-scrollable-anchor'
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List'
-import Collapse from 'material-ui/transitions/Collapse'
-import DateRangeIcon from 'material-ui-icons/DateRange'
-import ExpandLess from 'material-ui-icons/ExpandLess'
-import ExpandMore from 'material-ui-icons/ExpandMore'
 
-import { Flex, Heading, Box } from 'rebass'
+import { Heading, Box } from 'rebass'
 
-import PrettyLink from '../components/extended/PrettyLink'
 import EmptyAgendaDay from '../components/EmptyAgendaDay'
 
 const Agenda = props => (

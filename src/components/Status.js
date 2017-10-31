@@ -21,6 +21,8 @@ const Status = props => (
             return '⏳'
           case 'Past':
             return '⌛️'
+          default:
+            return '❓'
         }
       })()}
     </Emoji>

@@ -1,8 +1,6 @@
 import React from 'react'
-import { ListItem, ListItemText } from 'material-ui/List'
-import PrettyPaper from './extended/PrettyPaper'
 
-import { Flex, Heading, Box, Text } from 'rebass'
+import { Flex, Box } from 'rebass'
 
 import NameField from './extended/NameField'
 

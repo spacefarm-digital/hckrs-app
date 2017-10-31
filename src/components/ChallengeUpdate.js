@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-import { Flex, Box, Heading, Image } from 'rebass'
+import { Flex, Box } from 'rebass'
 
 import PrettyPaper from './extended/PrettyPaper'
 import BlockLink from './extended/BlockLink'

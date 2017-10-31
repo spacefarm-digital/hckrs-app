@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import TextField from 'material-ui/TextField'
 import Grid from 'material-ui/Grid'
 import Button from 'material-ui/Button'
 
-import FilterItem from '../components/FilterItem'
 import ImageField from '../components/ImageField'
 import CategoriesField from '../components/CategoriesField'
 import RadioControl from '../components/RadioControl'
@@ -13,8 +12,6 @@ import NameField from '../components/extended/NameField'
 import PrettyPaper from '../components/extended/PrettyPaper'
 
 import { Flex, Box } from 'rebass'
-
-import { placeholder } from '../assets/placeholder.jpg'
 
 class NewChallengeMain extends React.Component {
   render() {

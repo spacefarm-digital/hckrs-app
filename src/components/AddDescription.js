@@ -1,13 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import PrettyPaper from './extended/PrettyPaper'
 
-import { Heading, Box, BackgroundImage, Text } from 'rebass'
-
-import TextField from 'material-ui/TextField'
-
-import placeholder from '../assets/placeholder.jpg'
+import { Heading, Box, Text } from 'rebass'
 
 const AddDescription = props => (
   <Box mb={4}>

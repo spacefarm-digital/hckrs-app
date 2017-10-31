@@ -1,13 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Ink from 'react-ink'
 
 import PrettyPaper from './extended/PrettyPaper'
-import CleanA from './extended/CleanA'
 
-import placeholder from '../assets/placeholder.jpg'
-
-import { BackgroundImage, Text, Flex, Box } from 'rebass'
+import { Flex, Box } from 'rebass'
 
 import TextField from 'material-ui/TextField'
 

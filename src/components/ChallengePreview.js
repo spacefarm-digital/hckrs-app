@@ -12,7 +12,7 @@ import ShadowAvatar from './extended/ShadowAvatar'
 
 import placeholder from '../assets/placeholder.jpg'
 
-import { BackgroundImage, Flex, Box, Heading, Text, Image } from 'rebass'
+import { BackgroundImage, Flex, Box, Heading, Text } from 'rebass'
 
 const propTypes = {
   title: PropTypes.string.isRequired,

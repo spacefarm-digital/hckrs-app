@@ -1,10 +1,9 @@
 import React from 'react'
 import Isvg from 'react-inlinesvg'
 
-import { Container, Heading, Text, Measure, Image, Flex, Box } from 'rebass'
+import { Container, Heading, Text, Flex, Box } from 'rebass'
 
 import PrettyPaper from '../components/extended/PrettyPaper'
-import CleanLink from '../components/extended/CleanLink'
 
 import Grid from 'material-ui/Grid'
 import Button from 'material-ui/Button'

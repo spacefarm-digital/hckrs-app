@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import PrettyPaper from '../components/extended/PrettyPaper'
-
 import { Flex, Box, Text } from 'rebass'
 
 import Button from 'material-ui/Button'

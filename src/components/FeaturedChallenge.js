@@ -2,25 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import Ink from 'react-ink'
 import PropTypes from 'prop-types'
-import Button from 'material-ui/Button'
 import Paper from 'material-ui/Paper'
 import CleanLink from '../components/extended/CleanLink'
 import ShadowAvatar from '../components/extended/ShadowAvatar'
-import RoundLink from '../components/extended/RoundLink'
 
 import placeholder from '../assets/mv.jpg'
 import placeholderLogo from '../assets/mv-icon.jpg'
 
-import {
-  BackgroundImage,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Relative,
-  Absolute,
-  Measure,
-} from 'rebass'
+import { BackgroundImage, Flex, Box, Heading, Relative, Absolute } from 'rebass'
 
 import Fade from '../components/Fade'
 

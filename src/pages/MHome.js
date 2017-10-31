@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import { Box } from 'rebass'
 import FeaturedNews from '../components/FeaturedNews'
 import FluidContainer from '../components/extended/FluidContainer'
 
@@ -13,7 +12,7 @@ const MHome = props => (
   <div>
     {/* Hero */}
     <MHero />
-    {/* How can Hckrs help you */}
+    {/* How Hckrs can help you */}
     <MFeaturedBenefits />
     {/* Fieatued challenges */}
     <MFeaturedChallenges />

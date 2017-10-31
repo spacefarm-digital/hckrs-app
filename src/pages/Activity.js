@@ -1,8 +1,6 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React, { Component } from 'react'
 
-import { Container, Flex, Box, Heading, Text, Measure } from 'rebass'
+import { Flex, Box, Heading, Measure } from 'rebass'
 
 import PageTitle from '../components/PageTitle'
 import TypeIcon from '../components/extended/TypeIcon'
@@ -10,7 +8,6 @@ import Notification from '../components/Notification'
 
 import NotificationsIcon from 'material-ui-icons/Notifications'
 import DoneAllIcon from 'material-ui-icons/DoneAll'
-import Card, { CardContent } from 'material-ui/Card'
 import Button from 'material-ui/Button'
 
 class Activity extends Component {

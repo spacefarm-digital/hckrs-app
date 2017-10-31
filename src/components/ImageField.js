@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React from 'react'
 import placeholder from '../assets/placeholder.jpg'
 
-import { Relative, Absolute } from 'rebass'
+import { Relative } from 'rebass'
 
 import BlockAvatar from '../components/extended/BlockAvatar'
 

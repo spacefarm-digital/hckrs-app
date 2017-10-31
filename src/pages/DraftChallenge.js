@@ -1,15 +1,9 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React, { Component } from 'react'
 
-import { Box, Heading, Sticky, Relative } from 'rebass'
+import { Box, Sticky } from 'rebass'
 
-import Dialog from 'material-ui/Dialog'
 import Grid from 'material-ui/Grid'
-import Paper from 'material-ui/Paper'
 
-import ChallengePreview from '../components/ChallengePreview'
-import HackPreview from '../components/HackPreview'
 import DraftChallengeStats from '../components/DraftChallengeStats'
 import AddDescription from '../components/AddDescription'
 import AddSubchallenges from '../components/AddSubchallenges'
@@ -17,8 +11,6 @@ import AddAgenda from '../components/AddAgenda'
 import AddAdvisors from '../components/AddAdvisors'
 import AddPrizes from '../components/AddPrizes'
 import AddSponsors from '../components/AddSponsors'
-
-import ChallengeNav from '../components/ChallengeNav'
 
 import FluidContainer from '../components/extended/FluidContainer'
 

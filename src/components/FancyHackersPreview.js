@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ProfilePreview from '../components/ProfilePreview'
 
-import { Flex, Box, Heading } from 'rebass'
+import { Flex, Box } from 'rebass'
 
 // Data
 import FeaturedHackers from '../data/featuredHackers'

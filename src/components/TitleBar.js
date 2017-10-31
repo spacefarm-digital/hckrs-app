@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 import styled from 'styled-components'
 
@@ -14,7 +13,6 @@ import ProfileMenu from '../components/ProfileMenu'
 import PrettyBadge from '../components/PrettyBadge'
 
 import AppBar from 'material-ui/AppBar'
-import Toolbar from 'material-ui/Toolbar'
 import BottomNavigation, {
   BottomNavigationButton,
 } from 'material-ui/BottomNavigation'
@@ -171,7 +169,7 @@ class TitleBar extends Component {
                   label="Dashboard"
                   icon={<DashboardIcon />}
                   component={StyledNavLink}
-                  to="/"
+                  to="/dashboard"
                   exact
                   activeStyle={{ color: primaryColor }}
                 />

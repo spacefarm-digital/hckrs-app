@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List'
-import PrettyPaper from './extended/PrettyPaper'
+import { ListItem, ListItemIcon } from 'material-ui/List'
 import Collapse from 'material-ui/transitions/Collapse'
 import DateRangeIcon from 'material-ui-icons/DateRange'
 import ExpandLess from 'material-ui-icons/ExpandLess'
@@ -9,7 +8,7 @@ import ExpandMore from 'material-ui-icons/ExpandMore'
 
 import AgendaItem from './AgendaItem'
 
-import { Flex, Heading, Box } from 'rebass'
+import { Flex, Heading } from 'rebass'
 
 const propTypes = {
   date: PropTypes.string.isRequired,

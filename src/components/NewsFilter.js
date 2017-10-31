@@ -4,7 +4,6 @@ import { Flex, Box, Text } from 'rebass'
 
 import Paper from 'material-ui/Paper'
 
-import FilterItem from './FilterItem'
 import Search from './Search'
 import CategoryFilter from './CategoryFilter'
 

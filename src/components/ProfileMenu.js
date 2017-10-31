@@ -1,9 +1,7 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Box, Text } from 'rebass'
+import { Text } from 'rebass'
 
 import Menu, { MenuItem } from 'material-ui/Menu'
 

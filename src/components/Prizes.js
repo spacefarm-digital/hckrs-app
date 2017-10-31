@@ -1,9 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import ScrollableAnchor from 'react-scrollable-anchor'
-import PrettyPaper from './extended/PrettyPaper'
 
-import { Flex, Heading, Box } from 'rebass'
+import { Heading, Box } from 'rebass'
 
 import MoneyPrize from './MoneyPrize'
 

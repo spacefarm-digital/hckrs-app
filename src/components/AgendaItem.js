@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List'
-import PrettyPaper from './extended/PrettyPaper'
+import { ListItem, ListItemText } from 'material-ui/List'
 
-import { Flex, Heading, Box } from 'rebass'
+import { Flex, Heading } from 'rebass'
 
 const propTypes = {
   startTime: PropTypes.string.isRequired,

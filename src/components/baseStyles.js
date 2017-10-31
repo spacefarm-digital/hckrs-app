@@ -14,6 +14,7 @@ const baseStyles = () => injectGlobal`
   }
   svg {
     position: relative;
+    display: block;
   }
 `
 

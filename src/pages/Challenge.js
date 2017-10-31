@@ -2,14 +2,10 @@
 
 import React, { Component } from 'react'
 
-import { Box, Heading, Sticky, Relative } from 'rebass'
+import { Box, Sticky } from 'rebass'
 
-import Dialog from 'material-ui/Dialog'
 import Grid from 'material-ui/Grid'
-import Paper from 'material-ui/Paper'
 
-import ChallengePreview from '../components/ChallengePreview'
-import HackPreview from '../components/HackPreview'
 import ChallengeStats from '../components/ChallengeStats'
 import Description from '../components/Description'
 import Subchallenges from '../components/Subchallenges'

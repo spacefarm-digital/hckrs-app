@@ -2,7 +2,7 @@ import React from 'react'
 import Isvg from 'react-inlinesvg'
 import heroSVG from '../assets/welcome.svg'
 
-import { Heading, Text, Measure, Image, Flex, Box } from 'rebass'
+import { Heading, Measure, Flex, Box } from 'rebass'
 
 import FluidContainer from '../components/extended/FluidContainer'
 

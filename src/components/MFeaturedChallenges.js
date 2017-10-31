@@ -20,7 +20,6 @@ const normalChallengesData = [
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/000/392/thumb/e722cf7c0b4d-hackmtyMLH_100x100.png?1467906270',
     numberOfHacks: 32,
-    url: 'challenges/hack-mty',
   },
   {
     title: 'Boilermake',
@@ -91,7 +90,8 @@ const MFeaturedChallenges = props => (
 
       <Measure mx="auto">
         <Text mb={4}>
-        Still wondering what a challenge exactly is? Explore the most active and trending challenges right now.
+          Still wondering what a challenge exactly is? Explore the most active
+          and trending challenges right now.
         </Text>
       </Measure>
       <CardTilt>
@@ -107,7 +107,9 @@ const MFeaturedChallenges = props => (
       </CardTilt>
       <Measure mx="auto">
         <Text mb={4}>
-          None of your solutions go unrewarded. Each challenge offers an unique set of prizes — from cash to experiences, software licenses, service subscriptions and many more.  
+          None of your solutions go unrewarded. Each challenge offers an unique
+          set of prizes — from cash to experiences, software licenses, service
+          subscriptions and many more.
         </Text>
       </Measure>
     </FluidContainer>

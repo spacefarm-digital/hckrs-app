@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ListItemIcon, ListItemText } from 'material-ui/List'
+import { ListItemIcon } from 'material-ui/List'
 import PrettyPaper from './extended/PrettyPaper'
 import DateRangeIcon from 'material-ui-icons/DateRange'
 

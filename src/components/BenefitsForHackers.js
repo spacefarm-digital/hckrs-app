@@ -10,7 +10,7 @@ import designersSVG from '../assets/designers.svg'
 import devsSVG from '../assets/devs.svg'
 import businessSVG from '../assets/business-people.svg'
 
-import { Heading, Flex, Box, Container, Text, Measure } from 'rebass'
+import { Heading, Flex, Box, Text, Measure } from 'rebass'
 
 const BenefitsForHackers = props => (
   <Box>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PrettyPaper from './extended/PrettyPaper'
 
-import { Flex, Box, Relative } from 'rebass'
+import { Flex, Relative } from 'rebass'
 
 import { Heading, Text } from 'rebass'
 const propTypes = {

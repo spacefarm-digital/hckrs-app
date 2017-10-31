@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import PrettyPaper from './extended/PrettyPaper'

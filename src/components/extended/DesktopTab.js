@@ -12,6 +12,24 @@ const DesktopTab = styled(Tab)`
     padding-right: 0 !important;
     padding-left: 0.5rem;
   }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    opacity: 0;
+    transition: all 200ms ease;
+  }
+  &:hover:after {
+    opacity: 1;
+  }
+  &:focus {
+    box-shadow: 0 -4px 0 0 white inset;
+  }
 `
 
 export default DesktopTab

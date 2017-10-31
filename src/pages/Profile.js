@@ -1,12 +1,8 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React, { Component } from 'react'
 
 import { Box, Heading } from 'rebass'
 
-import Dialog from 'material-ui/Dialog'
 import Grid from 'material-ui/Grid'
-import Paper from 'material-ui/Paper'
 
 import ChallengePreview from '../components/ChallengePreview'
 import HackPreview from '../components/HackPreview'

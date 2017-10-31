@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
 
 import FluidContainer from '../components/extended/FluidContainer'
-import PrettyPaper from '../components/extended/PrettyPaper'
-import TimeSlot from '../components/TimeSlot'
 import TimeSlotDay from '../components/TimeSlotDay'
 import Advisor from '../components/Advisor'
 
-import Grid from 'material-ui/Grid'
-import Button from 'material-ui/Button'
-
-import { Flex, Box, Heading, Text, Measure } from 'rebass'
+import { Box } from 'rebass'
 
 import timeSlotData from '../data/timeSlotData'
 

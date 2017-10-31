@@ -8,7 +8,6 @@ import Emoji from '../components/Emoji'
 
 import { Flex, Box, Heading, Text } from 'rebass'
 
-import Paper from 'material-ui/Paper'
 import Icon from 'material-ui/Icon'
 import KeyboardArrowRightIcon from 'material-ui-icons/KeyboardArrowRight'
 

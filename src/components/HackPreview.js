@@ -8,7 +8,7 @@ import PrettyLink from '../components/extended/PrettyLink'
 
 import placeholder from '../assets/placeholder.jpg'
 
-import { BackgroundImage, Flex, Box, Heading, Text, Image } from 'rebass'
+import { Flex, Box, Heading, Text } from 'rebass'
 
 const propTypes = {
   title: PropTypes.string.isRequired,

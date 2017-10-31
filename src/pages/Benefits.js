@@ -1,20 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Isvg from 'react-inlinesvg'
-
-import Grid from 'material-ui/Grid'
 
 import PageTitle from '../components/PageTitle'
 import BenefitsNav from '../components/BenefitsNav'
 import FluidContainer from '../components/extended/FluidContainer'
 
-import FeaturedChallenge from '../components/FeaturedChallenge'
-import ChallengePreview from '../components/ChallengePreview'
-
 import PlaylistAddCheckIcon from 'material-ui-icons/PlaylistAddCheck'
-
-import PrettyPaper from '../components/extended/PrettyPaper'
-import { Heading, Box, Text } from 'rebass'
 
 // Views
 import BenefitsForHackers from '../components/BenefitsForHackers'

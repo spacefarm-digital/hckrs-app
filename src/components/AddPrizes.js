@@ -1,16 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import ScrollableAnchor from 'react-scrollable-anchor'
-import PrettyPaper from './extended/PrettyPaper'
 
-import { Flex, Heading, Box } from 'rebass'
-
-import MoneyPrize from './MoneyPrize'
-
-import NewBlock from './NewBlock'
+import { Heading, Box } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 
+import NewBlock from './NewBlock'
 import EmptyPrize from './EmptyPrize'
 
 const AddPrizes = props => (

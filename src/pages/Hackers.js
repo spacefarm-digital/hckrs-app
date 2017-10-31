@@ -1,8 +1,4 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React, { Component } from 'react'
-
-import { Box, Heading } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 

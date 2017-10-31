@@ -1,12 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {
-  FormGroup,
-  FormControlLabel,
-  FormControl,
-  FormLabel,
-} from 'material-ui/Form'
-import Checkbox from 'material-ui/Checkbox'
+import { FormControl, FormLabel } from 'material-ui/Form'
 
 import categories from '../data/categories'
 

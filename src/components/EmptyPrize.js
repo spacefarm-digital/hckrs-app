@@ -1,21 +1,15 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
 import PrettyPaper from './extended/PrettyPaper'
 import NameField from './extended/NameField'
 import ImageField from './ImageField'
 
-import { Flex, Box, Heading, Text } from 'rebass'
+import { Flex, Box } from 'rebass'
 
 import TextField from 'material-ui/TextField'
 
 import Radio, { RadioGroup } from 'material-ui/Radio'
 
-import {
-  FormLabel,
-  FormControl,
-  FormControlLabel,
-  FormHelperText,
-} from 'material-ui/Form'
+import { FormLabel, FormControl, FormControlLabel } from 'material-ui/Form'
 
 class EmptyPrize extends React.Component {
   state = {
@@ -51,7 +45,7 @@ class EmptyPrize extends React.Component {
             </RadioGroup>
           </FormControl>
         </Box>
-        {this.state.value == 'Money' ? (
+        {this.state.value === 'Money' ? (
           <Box mb={2} f={2}>
             <NameField placeholder="Ammount" fullWidth center />
           </Box>
