@@ -7,10 +7,10 @@ import Button from 'material-ui/Button'
 import { Link } from 'react-router-dom'
 
 import CleanLink from './extended/CleanLink'
-
 import ShadowAvatar from './extended/ShadowAvatar'
-
 import placeholder from '../assets/placeholder.jpg'
+
+import Status from '../components/Status'
 
 import { BackgroundImage, Flex, Box, Heading, Text } from 'rebass'
 
@@ -44,7 +44,7 @@ const ChallengePreview = props => {
   return (
     <div>
       <Card>
-        <CleanLink to="#">
+        <CleanLink to={props.url}>
           <BackgroundImage
             src={props.image}
             title="Contemplative Reptile"
@@ -54,11 +54,9 @@ const ChallengePreview = props => {
         <CardContent>
           <Flex justify="space-between" mb={2}>
             <Text>{props.categories}</Text>
-            <Text bold color="g600">
-              {props.status}
-            </Text>
+            <Status>{props.status}</Status>
           </Flex>
-          <Flex align="center" mb={2} is={CleanLink} to="#">
+          <Flex align="center" mb={2} is={CleanLink} to={props.url}>
             <ShadowAvatar src={props.logo} mr=".5em" w="2em" />
             <Heading is="h3" f={2}>
               {props.title}
@@ -67,7 +65,7 @@ const ChallengePreview = props => {
           <Text mb={3}>{props.description}</Text>
           <Flex mx={-1} justify="flex-end" align="center">
             <Box px={1}>
-              <Button color="primary" component={Link} to="#">
+              <Button color="primary" component={Link} to={props.url}>
                 {props.numberOfHacks} submitted hacks
               </Button>
             </Box>

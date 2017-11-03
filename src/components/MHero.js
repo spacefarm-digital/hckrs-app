@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Isvg from 'react-inlinesvg'
 import heroSVG from '../assets/what-is-hckrs.svg'
 
@@ -25,7 +26,7 @@ const MHero = props => (
                 hackers.
               </Measure>
               <Flex justify="center">
-                <Button raised color="accent" href="/signup">
+                <Button raised color="accent" to="/signup" component={Link}>
                   Sign up
                 </Button>
               </Flex>

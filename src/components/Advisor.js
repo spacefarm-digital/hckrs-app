@@ -42,7 +42,8 @@ const Advisor = props => {
       <Flex wrap w={1} is="ul" mx={-1} mb={props.bookingAllowed ? 3 : 0}>
         {props.categories.map((category, index) => (
           <Box is="li" px={1} mb={2}>
-            <CleanLink to="/" key={index}>
+            {/* This link should open a page with a listing of all challenges listed in the category */}
+            <CleanLink to={category} key={index}>
               <CategoryPreview title={category} />
             </CleanLink>
           </Box>
@@ -51,6 +52,7 @@ const Advisor = props => {
       {/* Book timeslot */}
       {props.bookingAllowed ? (
         <Flex justify="flex-end">
+          {/* This button should link to booking a time-slot for the specific advisor */}
           <Button raised color="accent" component={Link} to="/book-time-slot">
             Book timeslot
           </Button>

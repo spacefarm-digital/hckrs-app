@@ -37,14 +37,19 @@ const ChallengeUpdate = props => (
     <Box is="ul" mb={2}>
       {props.updates.map(update => (
         <li>
-          <BlockLink to="#" component={Link}>
+          <BlockLink to={`challenges/${props.name}`} component={Link}>
             {update}
           </BlockLink>
         </li>
       ))}
     </Box>
     <Flex justify="center" px={3} pb={3}>
-      <Button raised color="primary">
+      <Button
+        raised
+        color="primary"
+        component={Link}
+        to={`challenges/${props.name}`}
+      >
         See more
       </Button>
     </Flex>

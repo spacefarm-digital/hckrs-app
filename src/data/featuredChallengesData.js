@@ -10,13 +10,13 @@ const featuredChallengesData = [
   },
   {
     title: 'Boilermake',
-    url: 'http://www.honeybadger.com',
+    url: 'challenges/boilermake',
     image: nasaBG,
     logo: 'https://boilermake.org/static/media/hammers.d3f13b1a.svg',
   },
   {
     title: 'BigRed//Hacks',
-    url: 'http://www.honeybadger.com',
+    url: 'challenges/big-red-hacks',
     image: 'https://bigredhacks.com/img/f2017/header.png',
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/000/684/thumb/bigred_logo.png?1500042878',

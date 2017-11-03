@@ -12,7 +12,10 @@ const AddDescription = props => (
       </Heading>
       <Box>
         <Box bg="lightGrey" p={6}>
-          <Text center>Rich text editor goes here</Text>
+          <Text center>
+            Rich text editor goes here. Refer to RichTextEditor.js for an
+            initial RTE setup proposal, but feel free to use whatever you like.
+          </Text>
         </Box>
       </Box>
     </PrettyPaper>

@@ -18,6 +18,8 @@ import NewChallenge from '../pages/NewChallenge'
 import DraftChallenge from '../pages/DraftChallenge'
 import ConfigureTimeSlots from '../pages/ConfigureTimeSlots'
 import BookTimeSlot from '../pages/BookTimeSlot'
+import SignUp from '../pages/SignUp'
+import LogIn from '../pages/LogIn'
 import NotFound from '../pages/NotFound'
 
 // Marketing
@@ -43,6 +45,8 @@ class Main extends Component {
           <Route exact path="/new-challenge" component={NewChallenge} />
           <Route exact path="/draft-challenge" component={DraftChallenge} />
           <Route exact path="/" component={DraftChallenge} />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/log-in" component={LogIn} />
           {/* Marketing */}
           <Route path="/benefits" component={Benefits} />
           <Route path="/configure-time-slots" component={ConfigureTimeSlots} />

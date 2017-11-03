@@ -156,7 +156,9 @@ class TitleBar extends Component {
                   <ProfileMenu />
                 </Flex>
               ) : (
-                <Button color="contrast">Sign Up</Button>
+                <Button color="contrast" component={Link} to="/signup">
+                  Sign Up
+                </Button>
               )}
             </Flex>
           </FluidContainer>

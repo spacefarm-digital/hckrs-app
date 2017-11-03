@@ -45,14 +45,7 @@ const HackPreview = props => {
           <Text mb={1}>
             Submitted in <PrettyLink to="/">Challenge name</PrettyLink>
           </Text>
-          <Text mb={3}>{props.description}</Text>
-          <Flex mx={-1} justify="flex-end" align="center">
-            <Box px={1}>
-              <Button raised color="primary">
-                See more
-              </Button>
-            </Box>
-          </Flex>
+          <Text>{props.description}</Text>
         </CardContent>
       </Card>
     </div>

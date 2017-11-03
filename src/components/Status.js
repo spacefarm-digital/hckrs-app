@@ -31,4 +31,5 @@ const Status = props => (
 )
 Status.propTypes = propTypes
 Status.defaultProps = defaultProps
+
 export default Status

@@ -12,7 +12,7 @@ class CategoriesField extends React.Component {
     return (
       <FormControl component="fieldset">
         <Box mb={3}>
-          <FormLabel component="legend">Pick categories</FormLabel>
+          <FormLabel component="legend">{this.props.label}</FormLabel>
         </Box>
         <Flex mx={-2} wrap>
           {categories.map((category, value) => {

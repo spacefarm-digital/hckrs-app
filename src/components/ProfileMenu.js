@@ -41,8 +41,20 @@ class ProfileMenu extends Component {
           >
             My Profile
           </MenuItem>
-          <MenuItem onClick={this.handleRequestClose}>My Challenges</MenuItem>
-          <MenuItem onClick={this.handleRequestClose}>My Hacks</MenuItem>
+          <MenuItem
+            component={Link}
+            to="/profile"
+            onClick={this.handleRequestClose}
+          >
+            My Challenges
+          </MenuItem>
+          <MenuItem
+            component={Link}
+            to="/profile"
+            onClick={this.handleRequestClose}
+          >
+            My Hacks
+          </MenuItem>
           <MenuItem color="error" onClick={this.handleRequestClose}>
             <Text bold color="red">
               Log out

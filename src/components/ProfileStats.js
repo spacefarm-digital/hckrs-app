@@ -26,17 +26,17 @@ const ProfileStats = props => (
             </Text>
             <Flex wrap mx={-1} align="center" is="ul">
               <Box is="li" px={1}>
-                <CleanLink to="/">
+                <CleanLink to="/profile">
                   <Avatar src={placeholder} size="1.5em" />
                 </CleanLink>
               </Box>
               <Box is="li" px={1}>
-                <CleanLink to="/">
+                <CleanLink to="/profile">
                   <Avatar src={placeholder} size="1.5em" />
                 </CleanLink>
               </Box>
               <Box is="li" px={1}>
-                <CleanLink to="/">
+                <CleanLink to="/profile">
                   <Avatar src={placeholder} size="1.5em" />
                 </CleanLink>
               </Box>
@@ -53,7 +53,7 @@ const ProfileStats = props => (
         <Flex is="ul" mx={-1} mb={3} wrap>
           {props.categories.map((category, index) => (
             <Box is="li" px={1} mb={2}>
-              <CleanLink to="/">
+              <CleanLink to={category}>
                 <CategoryPreview title={category} />
               </CleanLink>
             </Box>

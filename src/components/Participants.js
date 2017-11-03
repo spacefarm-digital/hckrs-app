@@ -25,7 +25,7 @@ const Participants = props => (
         <Grid container align="stretch">
           {props.data.map((participant, index) => (
             <Grid item xs={6} sm={4} lg={3} xl={2}>
-              <CleanLink to="#">
+              <CleanLink to="/profile">
                 <ProfilePreview
                   compact
                   name={participant.name}

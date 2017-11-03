@@ -40,14 +40,14 @@ const ChallengePreview = props => {
         />
         <CardContent>
           <Flex justify="space-between" mb={2}>
-            <PrettyLink to="/">{props.category}</PrettyLink>
+            <PrettyLink to={props.category}>{props.category}</PrettyLink>
             <Text>{props.date}</Text>
           </Flex>
           <Heading is="h3" f={2} mb={2}>
             {props.title}
           </Heading>
           <Text mb={2}>
-            Published by <PrettyLink to="/">{props.author}</PrettyLink>
+            Published by <PrettyLink to="profile">{props.author}</PrettyLink>
           </Text>
           <Text mb={3}>{props.excerpt}</Text>
           <Flex mx={-1} align="center">

@@ -33,7 +33,7 @@ const Subchallenge = props => (
     </Heading>
     <Text mb={3}>{props.description}</Text>
     <Flex justify="flex-end">
-      <Button component={Link} to="#" raised color="accent">
+      <Button raised color="accent">
         Submit a hack
       </Button>
     </Flex>
