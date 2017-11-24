@@ -21,6 +21,7 @@ import BookTimeSlot from '../pages/BookTimeSlot'
 import SignUp from '../pages/SignUp'
 import LogIn from '../pages/LogIn'
 import NotFound from '../pages/NotFound'
+import Hack from '../pages/Hack'
 
 // Marketing
 import MHome from '../pages/MHome'
@@ -37,6 +38,7 @@ class Main extends Component {
           <Route exact path="/dashboard" component={Home} />
           <Route exact path="/challenges" component={Challenges} />
           <Route path="/challenges/" component={Challenge} />
+          <Route path="/hacks/" component={Hack} />
           <Route exact path="/hackers" component={Hackers} />
           <Route exact path="/news" component={News} />
           <Route exact path="/activity" component={Activity} />
