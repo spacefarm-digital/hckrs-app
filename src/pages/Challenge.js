@@ -1,12 +1,11 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
-
 import React, { Component } from 'react'
 
-import { Box, Sticky } from 'rebass'
+import { Box, Sticky, Heading } from 'rebass'
 
 import Grid from 'material-ui/Grid'
 
 import ChallengeStats from '../components/ChallengeStats'
+import HackPreview from '../components/HackPreview'
 import Description from '../components/Description'
 import Subchallenges from '../components/Subchallenges'
 import Agenda from '../components/Agenda'
@@ -46,6 +45,18 @@ class Challenge extends Component {
             <Grid item xs={12} md={8} lg={8} xl={9}>
               {/* Description */}
               <ChallengeNav />
+              <Box mb={3}>
+                <Heading is="h2" f={3} mb={2} color="pA400">
+                  Hacks
+                </Heading>
+                <Grid container>
+                  {[0, 1, 2].map(value => (
+                    <Grid xs={12} sm={6} item>
+                      <HackPreview />
+                    </Grid>
+                  ))}
+                </Grid>
+              </Box>
               <Box>
                 <Description />
               </Box>

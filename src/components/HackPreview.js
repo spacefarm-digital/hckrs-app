@@ -4,51 +4,42 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Card, { CardContent } from 'material-ui/Card'
 import Button from 'material-ui/Button'
+import CleanLink from '../components/extended/CleanLink'
 import PrettyLink from '../components/extended/PrettyLink'
 
 import placeholder from '../assets/placeholder.jpg'
 
-import { Flex, Box, Heading, Text } from 'rebass'
+import { Flex, Box, Heading, Text, BackgroundImage } from 'rebass'
 
 const propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   categories: PropTypes.arrayOf(PropTypes.string),
-  location: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  numberOfHacks: PropTypes.number.isRequired,
-  status: PropTypes.oneOf(['Active', 'Upcoming', 'Past']).isRequired,
-  logo: PropTypes.string.isRequired,
+  url: PropTypes.string,
 }
 
 const defaultProps = {
-  title: 'Default title',
+  title: 'Hack name',
   description:
     'Default description. It will actually be much, much, much longer. Not that much though.',
   image: placeholder,
-  location: 'The world',
-  date: '01/01/2017',
-  numberOfHacks: 0,
-  status: 'Upcoming',
-  logo: placeholder,
+  url: '/hacks',
 }
 
 const HackPreview = props => {
   return (
-    <div>
+    <CleanLink to={props.url}>
       <Card>
+        <BackgroundImage src={placeholder} />
         <CardContent>
           <Heading is="h3" f={2} mb={2}>
             {props.title}
           </Heading>
-          <Text mb={1}>
-            Submitted in <PrettyLink to="/">Challenge name</PrettyLink>
-          </Text>
           <Text>{props.description}</Text>
         </CardContent>
       </Card>
-    </div>
+    </CleanLink>
   )
 }
 

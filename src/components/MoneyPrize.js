@@ -20,7 +20,7 @@ const defaultProps = {
 const MoneyPrize = props => (
   <PrettyPaper px={3} py={4}>
     {/* SVG */}
-    <Relative>
+    <Relative mb={3}>
       <svg
         viewBox="0 0 680 680"
         xmlns="http://www.w3.org/2000/svg"

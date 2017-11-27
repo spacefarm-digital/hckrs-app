@@ -3,6 +3,7 @@ import Tabs, { Tab } from 'material-ui/Tabs'
 
 import { Flex } from 'rebass'
 
+import LightbulbOutlineIcon from 'material-ui-icons/LightbulbOutline'
 import TextFieldsIcon from 'material-ui-icons/TextFields'
 import ListIcon from 'material-ui-icons/List'
 import DateRangeIcon from 'material-ui-icons/DateRange'
@@ -16,6 +17,11 @@ import PrettyPaper from './extended/PrettyPaper'
 const ChallengeNav = props => (
   <PrettyPaper justify="center" component={Flex} mb={3}>
     <Tabs scrollable indicatorColor="primary" textColor="primary" centered>
+      <Tab
+        label="Hacks"
+        icon={<LightbulbOutlineIcon />}
+        href="#challenge-hacks"
+      />
       <Tab
         label="Description"
         icon={<TextFieldsIcon />}

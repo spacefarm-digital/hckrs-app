@@ -5,10 +5,10 @@ import { Box, Sticky } from 'rebass'
 import Grid from 'material-ui/Grid'
 
 import HackStats from '../components/HackStats'
-import Description from '../components/Description'
-import Subchallenges from '../components/Subchallenges'
+import HackDescription from '../components/HackDescription'
+import InChallenges from '../components/InChallenges'
 import Agenda from '../components/Agenda'
-import Participants from '../components/Participants'
+import Authors from '../components/Authors'
 import Prizes from '../components/Prizes'
 import Advisors from '../components/Advisors'
 import Sponsors from '../components/Sponsors'
@@ -21,7 +21,7 @@ import FluidContainer from '../components/extended/FluidContainer'
 import agendaData from '../data/agendaData'
 import prizesData from '../data/prizesData'
 import advisorsData from '../data/advisorsData'
-import participantsData from '../data/participantsData'
+import authorsData from '../data/authorsData'
 
 class Hack extends Component {
   render() {
@@ -43,12 +43,12 @@ class Hack extends Component {
             </Grid>
             <Grid item xs={12} md={8} lg={8} xl={9}>
               <Box>
-                <Description />
+                <HackDescription />
               </Box>
               {/* Subchallenges */}
-              <Subchallenges />
+              <InChallenges />
               {/* Participants */}
-              <Participants data={participantsData} />
+              <Authors data={authorsData} />
             </Grid>
           </Grid>
         </Box>

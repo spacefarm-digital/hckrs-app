@@ -1,7 +1,15 @@
 import React from 'react'
 import Card, { CardContent } from 'material-ui/Card'
 
-import { Flex, Avatar, Heading, Text, Box, BackgroundImage } from 'rebass'
+import {
+  Flex,
+  Avatar,
+  Heading,
+  Text,
+  Box,
+  BackgroundImage,
+  Badge,
+} from 'rebass'
 
 import placeholder from '../assets/placeholder-avatar.jpg'
 
@@ -19,6 +27,11 @@ const HackStats = props => (
         <Heading f={3} is="h1" mb={2}>
           {props.name}
         </Heading>
+        <Box mx={-1} mb={3}>
+          <Badge f={1} px={3} bg="pA400">
+            Looking for Hackers
+          </Badge>
+        </Box>
       </Flex>
       {/* Bio */}
       <Text is="p" mb={3}>
